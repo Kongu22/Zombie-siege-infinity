@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public Camera playerCamera;
 
     //Shooting
     public bool isShooting, readyToShoot;
@@ -106,7 +105,7 @@ public class Weapon : MonoBehaviour
 
     public Vector3 CalculateDirectionAndSpread()
     {
-        Ray ray = playerCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); // ViewportPointToRay is a method that returns a ray going from the camera through a viewport point.
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); // ViewportPointToRay is a method that returns a ray going from the camera through a viewport point.
         RaycastHit hit;
 
         Vector3 targetPoint;
