@@ -23,6 +23,9 @@ public class Weapon : MonoBehaviour
    public float bulletVelocity = 30;
    public float bulletPrefabLifeTime = 3f;
 
+   public GameObject muzzleEffect;
+   private Animator animator; 
+
    public enum ShootingMode // Shooting mode object, enum is a type of object that can store a value from a list of values.
    {
         Single,
@@ -36,6 +39,7 @@ public class Weapon : MonoBehaviour
    {
         readyToShoot = true;
         burstBulletsLeft = bulletsPerBurst;
+        animator = GetComponent<Animator>();
    }
 
 
@@ -65,6 +69,12 @@ public class Weapon : MonoBehaviour
 
     private void FireWeapon() // Firing the weapon
     {
+        muzzleEffect.GetComponent<ParticleSystem>().Play(); // Play the muzzle effect
+        animator.SetTrigger("RECOIL"); // Set the trigger to shoot
+
+        SoundManager.Instance.shootingSoundPistol92.Play(); // Play the shooting sound
+
+
         readyToShoot = false;
 
         Vector3 shootingDirection = CalculateDirectionAndSpread().normalized; // Normalizing the shooting direction, Vector3 is a 3D vector, normalized is a method that returns the vector with a magnitude of 1.
