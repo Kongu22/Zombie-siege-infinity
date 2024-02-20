@@ -7,6 +7,8 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance { get;  set; }
 
     public AudioSource shootingSoundPistol92;
+    public AudioSource ReloadingSoundPistol92;
+    public AudioSource emptyMagazineSound;
 
 
     private void Awake()

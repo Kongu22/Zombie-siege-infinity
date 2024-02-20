@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Weapon : MonoBehaviour
 {
@@ -26,6 +27,12 @@ public class Weapon : MonoBehaviour
    public GameObject muzzleEffect;
    private Animator animator; 
 
+   //Loading
+   public float reloadTime;
+   public int magazineSize, bulletsLeft;
+    public bool isReloading;
+
+
    public enum ShootingMode // Shooting mode object, enum is a type of object that can store a value from a list of values.
    {
         Single,
@@ -40,6 +47,8 @@ public class Weapon : MonoBehaviour
         readyToShoot = true;
         burstBulletsLeft = bulletsPerBurst;
         animator = GetComponent<Animator>();
+
+        bulletsLeft = magazineSize;
    }
 
 
@@ -47,21 +56,43 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentShootingMode == ShootingMode.Auto) // Auto mode
+        if(bulletsLeft == 0 && isShooting)
         {
-            // Holding down left mouse button
+            SoundManager.Instance.emptyMagazineSound.Play();
+        }
+
+        // Check if the reload button is pressed and if reload conditions are met
+        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading)
+        {
+            Reload();
+        }
+
+        // If the weapon is reloading, ignore shooting inputs
+        if (isReloading)
+        {
+            return; // Exit the Update method early if reloading
+        }
+
+        // Determine shooting based on shooting mode and button presses
+        if (currentShootingMode == ShootingMode.Auto)
+        {
             isShooting = Input.GetKey(KeyCode.Mouse0);
         }
-        else if(currentShootingMode == ShootingMode.Single || currentShootingMode == ShootingMode.Burst) // Single and Burst mode
+        else if (currentShootingMode == ShootingMode.Single || currentShootingMode == ShootingMode.Burst)
         {
-            // Clicking left mouse button once. (GetKeyDown is true once per click).
             isShooting = Input.GetKeyDown(KeyCode.Mouse0);
         }
 
-        if(readyToShoot && isShooting) // If we are ready to shoot and we are shooting
+        // Proceed with shooting if ready and button is pressed
+        if (readyToShoot && isShooting && bulletsLeft > 0)
         {
-            burstBulletsLeft = bulletsPerBurst; 
-            FireWeapon(); 
+            burstBulletsLeft = bulletsPerBurst;
+            FireWeapon();
+        }
+
+        if(AmmoManager.Instance.ammoDisplay != null)
+        {
+            AmmoManager.Instance.ammoDisplay.text = $"{bulletsLeft/bulletsPerBurst}/{magazineSize/bulletsPerBurst}"; // Displaying the ammo count
         }
         
         
@@ -69,6 +100,7 @@ public class Weapon : MonoBehaviour
 
     private void FireWeapon() // Firing the weapon
     {
+        bulletsLeft--; // Decrease the bullets left
         muzzleEffect.GetComponent<ParticleSystem>().Play(); // Play the muzzle effect
         animator.SetTrigger("RECOIL"); // Set the trigger to shoot
 
@@ -104,6 +136,19 @@ public class Weapon : MonoBehaviour
             burstBulletsLeft--;
             Invoke("FireWeapon", shootingDelay);
         }
+    }
+
+    private void Reload()
+    {
+        SoundManager.Instance.ReloadingSoundPistol92.Play();
+        isReloading = true;
+        Invoke("ReloadCompleted", reloadTime);
+    }
+
+    private void ReloadCompleted()
+    {
+        bulletsLeft = magazineSize;
+        isReloading = false;
     }
 
     private void ResetShot()
