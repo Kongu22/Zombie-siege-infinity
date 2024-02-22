@@ -32,6 +32,24 @@ public class Weapon : MonoBehaviour
    public int magazineSize, bulletsLeft;
     public bool isReloading;
 
+public enum WeaponModel
+{
+    Pistol92,
+    SAR2000,
+    Scorpion,
+    Glock,
+    M500,
+    Thompson,
+    M16,
+    M4A4,
+    MP40,
+    AK47,
+    P90,
+    Scar,
+    MP7
+}
+    public WeaponModel thisWeaponModel; // Current weapon model 
+
 
    public enum ShootingMode // Shooting mode object, enum is a type of object that can store a value from a list of values.
    {
@@ -101,10 +119,12 @@ public class Weapon : MonoBehaviour
     private void FireWeapon() // Firing the weapon
     {
         bulletsLeft--; // Decrease the bullets left
+
         muzzleEffect.GetComponent<ParticleSystem>().Play(); // Play the muzzle effect
         animator.SetTrigger("RECOIL"); // Set the trigger to shoot
 
-        SoundManager.Instance.shootingSoundPistol92.Play(); // Play the shooting sound
+
+        SoundManager.Instance.PlayShootingSound(thisWeaponModel); // Play the shooting sound
 
 
         readyToShoot = false;
@@ -140,7 +160,10 @@ public class Weapon : MonoBehaviour
 
     private void Reload()
     {
-        SoundManager.Instance.ReloadingSoundPistol92.Play();
+        SoundManager.Instance.PlayReloadingSound(thisWeaponModel);
+
+        animator.SetTrigger("RELOAD");
+
         isReloading = true;
         Invoke("ReloadCompleted", reloadTime);
     }
