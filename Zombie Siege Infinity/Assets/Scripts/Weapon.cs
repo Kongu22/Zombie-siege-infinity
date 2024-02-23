@@ -31,6 +31,7 @@ public class Weapon : MonoBehaviour
    public float reloadTime;
    public int magazineSize, bulletsLeft;
     public bool isReloading;
+    private PlayerMovement playerMovement;
 
 public enum WeaponModel
 {
@@ -60,14 +61,22 @@ public enum WeaponModel
 
    public ShootingMode currentShootingMode; // Current shooting mode
 
-   private void Awake() // Awake is called when the script instance is being loaded.
-   {
+//    private void Awake() // Awake is called when the script instance is being loaded.
+//    {
+//         readyToShoot = true;
+//         burstBulletsLeft = bulletsPerBurst;
+//         animator = GetComponent<Animator>();
+
+//         bulletsLeft = magazineSize;
+//    }
+    private void Awake()
+    {
         readyToShoot = true;
         burstBulletsLeft = bulletsPerBurst;
         animator = GetComponent<Animator>();
-
         bulletsLeft = magazineSize;
-   }
+        playerMovement = GetComponentInParent<PlayerMovement>(); // Assuming the weapon is a child of the player
+    }
 
 
 
@@ -129,7 +138,8 @@ public enum WeaponModel
 
         readyToShoot = false;
 
-        Vector3 shootingDirection = CalculateDirectionAndSpread().normalized; // Normalizing the shooting direction, Vector3 is a 3D vector, normalized is a method that returns the vector with a magnitude of 1.
+        // Vector3 shootingDirection = CalculateDirectionAndSpread().normalized; // Normalizing the shooting direction, Vector3 is a 3D vector, normalized is a method that returns the vector with a magnitude of 1.
+        Vector3 shootingDirection = CalculateDirectionAndSpread().normalized;
 
         //Instantiate the bullet
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, Quaternion.identity);
@@ -201,11 +211,20 @@ public enum WeaponModel
 
         Vector3 direction = targetPoint - bulletSpawn.position; // Calculating the direction of the shooting.
 
-        float x = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
-        float y = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
-        float z = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
+        // float x = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
+        // float y = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
+        // float z = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
 
-        return direction + new Vector3(x, y, z); // Returning the direction of the shooting plus the spread.
+        
+        // return direction + new Vector3(x, y, z); // Returning the direction of the shooting plus the spread.
+        bool isPlayerMoving = playerMovement.IsMoving(); // Check if player is moving
+        float movementSpreadMultiplier = isPlayerMoving ? 1.5f : 1f; // Adjust spread based on movement
+
+        float x = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity) * movementSpreadMultiplier;
+        float y = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity) * movementSpreadMultiplier;
+        float z = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity) * movementSpreadMultiplier;
+
+        return direction + new Vector3(x, y, z);
 
     }
 

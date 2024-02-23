@@ -81,6 +81,11 @@ public class PlayerMovement : MonoBehaviour
         //executing the jump
         controller.Move(velocity * Time.deltaTime); //executing the jump
     }
+    public bool IsMoving()
+    {
+        // Check if the player has significant movement input
+        return Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f;
+    }
 
     void Crouch()
     {
