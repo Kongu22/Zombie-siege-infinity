@@ -17,6 +17,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip MP40Shot;
     public AudioClip M4A4Shot;
     public AudioClip AK47Shot;
+    public AudioClip P90Shot;
+    
 
     public AudioSource ReloadingSoundPistol92;
     public AudioSource ReloadingSoundScorpion;
@@ -26,6 +28,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource ReloadingSoundMP40;
     public AudioSource ReloadingSoundM4A4;
     public AudioSource ReloadingSoundAK47;
+    public AudioSource ReloadingSoundP90;
 
 
     private void Awake()
@@ -73,6 +76,7 @@ public class SoundManager : MonoBehaviour
                 ShootingChannel.PlayOneShot(AK47Shot);
                 break;
             case Weapon.WeaponModel.P90:
+                ShootingChannel.PlayOneShot(P90Shot);
                 break;
             case Weapon.WeaponModel.Scar:
                 break;
@@ -117,6 +121,7 @@ public class SoundManager : MonoBehaviour
                 ReloadingSoundAK47.Play();
                 break;
             case Weapon.WeaponModel.P90:
+                ReloadingSoundP90.Play();
                 break;
             case Weapon.WeaponModel.Scar:
                 break;

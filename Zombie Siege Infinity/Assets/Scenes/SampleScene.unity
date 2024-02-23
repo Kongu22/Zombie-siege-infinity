@@ -187,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7704846}
   - component: {fileID: 7704847}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (28)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 16149460}
   - component: {fileID: 16149459}
   - component: {fileID: 16149458}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 35460671}
   - component: {fileID: 35460670}
   - component: {fileID: 35460669}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 54432873}
   - component: {fileID: 54432874}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (27)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -545,6 +545,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &57531148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8144789526257187087, guid: 3eeb5e91648d2734bb390ef53810720a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8467956895155422343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &65997664
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +627,7 @@ GameObject:
   - component: {fileID: 68505256}
   - component: {fileID: 68505255}
   - component: {fileID: 68505254}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1036,7 +1042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 99041480}
   - component: {fileID: 99041481}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (35)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1157,7 +1163,7 @@ GameObject:
   - component: {fileID: 106585987}
   - component: {fileID: 106585986}
   - component: {fileID: 106585985}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1262,7 +1268,7 @@ GameObject:
   - component: {fileID: 114745728}
   - component: {fileID: 114745727}
   - component: {fileID: 114745726}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1597,7 +1603,7 @@ GameObject:
   - component: {fileID: 163744424}
   - component: {fileID: 163744423}
   - component: {fileID: 163744422}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1702,7 +1708,7 @@ GameObject:
   - component: {fileID: 177412401}
   - component: {fileID: 177412400}
   - component: {fileID: 177412399}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2024,7 +2030,7 @@ GameObject:
   - component: {fileID: 180630305}
   - component: {fileID: 180630304}
   - component: {fileID: 180630303}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2347,7 +2353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 245641555}
   - component: {fileID: 245641556}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (26)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2538,7 +2544,7 @@ GameObject:
   - component: {fileID: 261009820}
   - component: {fileID: 261009819}
   - component: {fileID: 261009818}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2724,7 +2730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 263125984}
   - component: {fileID: 263125985}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (12)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3158,6 +3164,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285352236}
   m_Mesh: {fileID: 4300002, guid: 0bb18f6e1b1695449ba0b6ab75a16ae3, type: 3}
+--- !u!1 &286181208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8472943463197667421, guid: 2e6377daadd99ff48b60bf38e792aef2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2008248937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &288020047
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,7 +3182,7 @@ GameObject:
   - component: {fileID: 288020051}
   - component: {fileID: 288020050}
   - component: {fileID: 288020049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3456,7 +3468,7 @@ GameObject:
   - component: {fileID: 298467214}
   - component: {fileID: 298467213}
   - component: {fileID: 298467212}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3644,7 +3656,7 @@ GameObject:
   - component: {fileID: 302126127}
   - component: {fileID: 302126126}
   - component: {fileID: 302126125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3813,7 +3825,7 @@ GameObject:
   - component: {fileID: 309113884}
   - component: {fileID: 309113883}
   - component: {fileID: 309113882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3918,7 +3930,7 @@ GameObject:
   - component: {fileID: 321633259}
   - component: {fileID: 321633258}
   - component: {fileID: 321633257}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4209,7 +4221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 347588506}
   - component: {fileID: 347588507}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4349,7 +4361,7 @@ GameObject:
   - component: {fileID: 352072046}
   - component: {fileID: 352072045}
   - component: {fileID: 352072044}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4884,7 +4896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 401803905}
   - component: {fileID: 401803906}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (32)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4945,7 +4957,7 @@ PrefabInstance:
     - target: {fileID: 1945668641894327022, guid: d47fbc9baf1aa164c818ae05e2aa3a5d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3283221768127992386, guid: d47fbc9baf1aa164c818ae05e2aa3a5d,
         type: 3}
@@ -5294,7 +5306,7 @@ GameObject:
   - component: {fileID: 433238109}
   - component: {fileID: 433238108}
   - component: {fileID: 433238107}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5399,7 +5411,7 @@ GameObject:
   - component: {fileID: 436124093}
   - component: {fileID: 436124092}
   - component: {fileID: 436124091}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5587,7 +5599,7 @@ GameObject:
   - component: {fileID: 444343139}
   - component: {fileID: 444343138}
   - component: {fileID: 444343137}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5983,7 +5995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 464024745}
   - component: {fileID: 464024746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (14)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -6041,7 +6053,7 @@ GameObject:
   - component: {fileID: 483936159}
   - component: {fileID: 483936158}
   - component: {fileID: 483936157}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6828,7 +6840,7 @@ GameObject:
   - component: {fileID: 536065915}
   - component: {fileID: 536065914}
   - component: {fileID: 536065913}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7057,7 +7069,7 @@ GameObject:
   - component: {fileID: 546754982}
   - component: {fileID: 546754981}
   - component: {fileID: 546754980}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7160,7 +7172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 553552042}
   - component: {fileID: 553552043}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (18)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7384,7 +7396,7 @@ GameObject:
   - component: {fileID: 566047097}
   - component: {fileID: 566047096}
   - component: {fileID: 566047095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7495,7 +7507,7 @@ GameObject:
   - component: {fileID: 570515269}
   - component: {fileID: 570515268}
   - component: {fileID: 570515267}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7801,7 +7813,7 @@ GameObject:
   - component: {fileID: 595113895}
   - component: {fileID: 595113894}
   - component: {fileID: 595113893}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8099,7 +8111,7 @@ GameObject:
   - component: {fileID: 631426903}
   - component: {fileID: 631426902}
   - component: {fileID: 631426901}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8204,7 +8216,7 @@ GameObject:
   - component: {fileID: 634876134}
   - component: {fileID: 634876133}
   - component: {fileID: 634876132}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8309,7 +8321,7 @@ GameObject:
   - component: {fileID: 635174435}
   - component: {fileID: 635174434}
   - component: {fileID: 635174433}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8497,7 +8509,7 @@ GameObject:
   - component: {fileID: 662700265}
   - component: {fileID: 662700264}
   - component: {fileID: 662700263}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8602,7 +8614,7 @@ GameObject:
   - component: {fileID: 663418579}
   - component: {fileID: 663418578}
   - component: {fileID: 663418577}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9061,7 +9073,7 @@ GameObject:
   - component: {fileID: 730653965}
   - component: {fileID: 730653964}
   - component: {fileID: 730653963}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9249,7 +9261,7 @@ GameObject:
   - component: {fileID: 735186598}
   - component: {fileID: 735186597}
   - component: {fileID: 735186596}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9387,7 +9399,7 @@ GameObject:
   - component: {fileID: 755291656}
   - component: {fileID: 755291655}
   - component: {fileID: 755291654}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9719,6 +9731,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: 0bb18f6e1b1695449ba0b6ab75a16ae3, type: 3}
+--- !u!1 &774156587 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2592331109970704463, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
+    type: 3}
+  m_PrefabInstance: {fileID: 7391633418015184300}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &777477500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7414861582326706241, guid: b034ea92551bf744685b350e1999301e,
@@ -9737,7 +9755,7 @@ GameObject:
   - component: {fileID: 789980830}
   - component: {fileID: 789980829}
   - component: {fileID: 789980828}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9840,7 +9858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 794174833}
   - component: {fileID: 794174834}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -10001,7 +10019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 813759388}
   - component: {fileID: 813759389}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -10059,7 +10077,7 @@ GameObject:
   - component: {fileID: 814999461}
   - component: {fileID: 814999460}
   - component: {fileID: 814999459}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10424,7 +10442,7 @@ GameObject:
   - component: {fileID: 834339728}
   - component: {fileID: 834339727}
   - component: {fileID: 834339726}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10662,7 +10680,7 @@ GameObject:
   - component: {fileID: 863433256}
   - component: {fileID: 863433255}
   - component: {fileID: 863433254}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10767,7 +10785,7 @@ GameObject:
   - component: {fileID: 866981793}
   - component: {fileID: 866981792}
   - component: {fileID: 866981791}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10872,7 +10890,7 @@ GameObject:
   - component: {fileID: 876987800}
   - component: {fileID: 876987799}
   - component: {fileID: 876987798}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10977,7 +10995,7 @@ GameObject:
   - component: {fileID: 880377047}
   - component: {fileID: 880377046}
   - component: {fileID: 880377045}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11080,7 +11098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 901956404}
   - component: {fileID: 901956405}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (17)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -11221,7 +11239,7 @@ GameObject:
   - component: {fileID: 911274542}
   - component: {fileID: 911274541}
   - component: {fileID: 911274540}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11613,7 +11631,7 @@ GameObject:
   - component: {fileID: 926571313}
   - component: {fileID: 926571312}
   - component: {fileID: 926571311}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11850,7 +11868,7 @@ GameObject:
   - component: {fileID: 934712269}
   - component: {fileID: 934712268}
   - component: {fileID: 934712267}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11955,7 +11973,7 @@ GameObject:
   - component: {fileID: 952372105}
   - component: {fileID: 952372104}
   - component: {fileID: 952372103}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12060,7 +12078,7 @@ GameObject:
   - component: {fileID: 953895661}
   - component: {fileID: 953895660}
   - component: {fileID: 953895659}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12337,7 +12355,7 @@ GameObject:
   - component: {fileID: 981299002}
   - component: {fileID: 981299001}
   - component: {fileID: 981299000}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12440,7 +12458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 998691404}
   - component: {fileID: 998691405}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12714,7 +12732,7 @@ GameObject:
   - component: {fileID: 1030615807}
   - component: {fileID: 1030615806}
   - component: {fileID: 1030615805}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12813,7 +12831,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1325821423}
+    m_TransformParent: {fileID: 2001774631}
     m_Modifications:
     - target: {fileID: 1291381390799638593, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
@@ -12830,6 +12848,46 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.4919
       objectReference: {fileID: 0}
+    - target: {fileID: 2140590154869800956, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140590154869800956, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0025212665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140590154869800956, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0025209915
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140590154869800956, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071035
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140590154869800956, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071011
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140590154869800956, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.408
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140590154869800956, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -89.97299
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140590154869800956, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90.02701
+      objectReference: {fileID: 0}
     - target: {fileID: 7030813647224478348, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
       propertyPath: m_Name
@@ -12843,17 +12901,17 @@ PrefabInstance:
     - target: {fileID: 7414861582326706241, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.5312228
+      value: 0.2269999
       objectReference: {fileID: 0}
     - target: {fileID: 7414861582326706241, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.2725224
+      value: 1.221
       objectReference: {fileID: 0}
     - target: {fileID: 7414861582326706241, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.9038
+      value: 0.8220005
       objectReference: {fileID: 0}
     - target: {fileID: 7414861582326706241, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
@@ -12863,17 +12921,17 @@ PrefabInstance:
     - target: {fileID: 7414861582326706241, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000018099951
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414861582326706241, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000004371139
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414861582326706241, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 7.9178634e-14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414861582326706241, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
@@ -12892,13 +12950,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8043868392081597111, guid: b034ea92551bf744685b350e1999301e,
         type: 3}
+      propertyPath: reloadTime
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043868392081597111, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      propertyPath: magazineSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043868392081597111, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
       propertyPath: thisWeaponModel
       value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7030813647224478348, guid: b034ea92551bf744685b350e1999301e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1533021187}
   m_SourcePrefab: {fileID: 100100000, guid: b034ea92551bf744685b350e1999301e, type: 3}
 --- !u!1 &1033300169
 GameObject:
@@ -12993,7 +13065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1036224573}
   - component: {fileID: 1036224574}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (33)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -13050,7 +13122,7 @@ GameObject:
   - component: {fileID: 1042110403}
   - component: {fileID: 1042110402}
   - component: {fileID: 1042110401}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13209,7 +13281,7 @@ GameObject:
   - component: {fileID: 1057403444}
   - component: {fileID: 1057403443}
   - component: {fileID: 1057403442}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13376,7 +13448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066238734}
   - component: {fileID: 1066238735}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (11)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -13515,7 +13587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1087374455}
   - component: {fileID: 1087374456}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (13)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -13571,7 +13643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1088104755}
   - component: {fileID: 1088104756}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (29)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -13628,13 +13700,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1088338464}
   - component: {fileID: 1088338463}
-  - component: {fileID: 1088338462}
-  - component: {fileID: 1088338461}
-  - component: {fileID: 1088338460}
-  - component: {fileID: 1088338466}
-  - component: {fileID: 1088338465}
+  - component: {fileID: 1088338469}
   - component: {fileID: 1088338468}
   - component: {fileID: 1088338467}
+  - component: {fileID: 1088338466}
+  - component: {fileID: 1088338465}
+  - component: {fileID: 1088338470}
+  - component: {fileID: 1088338471}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -13642,294 +13714,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1088338460
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088338459}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d969b4b16c8ce954cb10b6e0b179b72f, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.752
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!82 &1088338461
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088338459}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3c67372831e2b0446b7e00bcc897cbeb, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.788
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!82 &1088338462
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088338459}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 27261ce35e4e3e7439dc7138607fc3d1, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.76
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &1088338463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13942,16 +13726,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff943ff673cb674fb9c69af867102fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emptyMagazineSound: {fileID: 1088338460}
-  shootingSoundPistol92: {fileID: 1088338462}
-  ReloadingSoundPistol92: {fileID: 1088338461}
-  ReloadingSoundScorpion: {fileID: 1088338461}
-  shootingSoundSAR2000: {fileID: 1088338467}
-  ReloadingSoundSAR2000: {fileID: 1088338461}
-  shootingSoundGlock: {fileID: 1088338468}
-  ReloadingSoundGlock: {fileID: 1088338461}
-  shootingSoundM4A4: {fileID: 1088338466}
+  ShootingChannel: {fileID: 1088338469}
+  emptyMagazineSound: {fileID: 1088338468}
+  Pistol92Shot: {fileID: 8300000, guid: 27261ce35e4e3e7439dc7138607fc3d1, type: 3}
+  SAR2000Shot: {fileID: 8300000, guid: 2203773368e4340d98c114f55c2dd7fd, type: 3}
+  GlockShot: {fileID: 8300000, guid: b33e2cff5225f4437a43a11d35763d46, type: 3}
+  ThompsonShot: {fileID: 8300000, guid: 2d0208795e9bd324ba0c378b5cb956a5, type: 3}
+  MP40Shot: {fileID: 8300000, guid: 0831a5ca2999cbb48a9a6da0c776e50b, type: 3}
+  M4A4Shot: {fileID: 8300000, guid: 801cf75e15ff3604f9648a3715b62bdc, type: 3}
+  AK47Shot: {fileID: 8300000, guid: 1156eae7ebb55a44e8f07377209ba93e, type: 3}
+  ReloadingSoundPistol92: {fileID: 1088338467}
+  ReloadingSoundScorpion: {fileID: 1088338467}
+  ReloadingSoundSAR2000: {fileID: 1088338467}
+  ReloadingSoundGlock: {fileID: 1088338467}
+  ReloadingSoundThompson: {fileID: 1088338466}
+  ReloadingSoundMP40: {fileID: 1088338470}
   ReloadingSoundM4A4: {fileID: 1088338465}
+  ReloadingSoundAK47: {fileID: 1088338471}
 --- !u!4 &1088338464
 Transform:
   m_ObjectHideFlags: 0
@@ -13979,7 +13770,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1fb1498b20350f54f9654d8856589800, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.787
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14073,9 +13864,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 801cf75e15ff3604f9648a3715b62bdc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 21edc5f5848467249bcec743b0db5a35, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.793
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14169,9 +13960,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2203773368e4340d98c114f55c2dd7fd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3c67372831e2b0446b7e00bcc897cbeb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.763
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14265,9 +14056,297 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b33e2cff5225f4437a43a11d35763d46, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d969b4b16c8ce954cb10b6e0b179b72f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.793
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1088338469
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088338459}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.781
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1088338470
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088338459}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9e0b94d569e88b9478dd5d4e73733ac6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.781
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1088338471
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088338459}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5d5c821db2666aa4881117706e8b1880, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.763
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14363,7 +14442,7 @@ GameObject:
   - component: {fileID: 1092403344}
   - component: {fileID: 1092403343}
   - component: {fileID: 1092403342}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14655,7 +14734,7 @@ GameObject:
   - component: {fileID: 1107740863}
   - component: {fileID: 1107740862}
   - component: {fileID: 1107740861}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14760,7 +14839,7 @@ GameObject:
   - component: {fileID: 1113447806}
   - component: {fileID: 1113447805}
   - component: {fileID: 1113447804}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14865,7 +14944,7 @@ GameObject:
   - component: {fileID: 1113816028}
   - component: {fileID: 1113816027}
   - component: {fileID: 1113816026}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15309,7 +15388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1160073919}
   - component: {fileID: 1160073920}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15364,7 +15443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1161123181}
   - component: {fileID: 1161123182}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (34)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15539,7 +15618,7 @@ GameObject:
   - component: {fileID: 1197456416}
   - component: {fileID: 1197456415}
   - component: {fileID: 1197456414}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15779,7 +15858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204081388}
   - component: {fileID: 1204081389}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (15)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15835,7 +15914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211496348}
   - component: {fileID: 1211496349}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (20)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15976,7 +16055,7 @@ GameObject:
   - component: {fileID: 1230697143}
   - component: {fileID: 1230697142}
   - component: {fileID: 1230697141}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16164,7 +16243,7 @@ GameObject:
   - component: {fileID: 1249754168}
   - component: {fileID: 1249754167}
   - component: {fileID: 1249754166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16266,7 +16345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1251860545}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fances holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16394,7 +16473,7 @@ GameObject:
   - component: {fileID: 1258731731}
   - component: {fileID: 1258731730}
   - component: {fileID: 1258731729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16783,7 +16862,7 @@ GameObject:
   - component: {fileID: 1285050510}
   - component: {fileID: 1285050509}
   - component: {fileID: 1285050508}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16888,7 +16967,7 @@ GameObject:
   - component: {fileID: 1286637112}
   - component: {fileID: 1286637111}
   - component: {fileID: 1286637110}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17159,7 +17238,7 @@ GameObject:
   - component: {fileID: 1291552997}
   - component: {fileID: 1291552996}
   - component: {fileID: 1291552995}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17264,7 +17343,7 @@ GameObject:
   - component: {fileID: 1295028827}
   - component: {fileID: 1295028826}
   - component: {fileID: 1295028825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17796,7 +17875,7 @@ GameObject:
   - component: {fileID: 1319655241}
   - component: {fileID: 1319655240}
   - component: {fileID: 1319655239}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17917,14 +17996,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 777477500}
-  - {fileID: 1933245658933802207}
-  - {fileID: 8754409510362545595}
-  - {fileID: 966673120}
-  - {fileID: 5260814377672278735}
-  - {fileID: 4171595047605148555}
-  - {fileID: 4427041787390584219}
+  m_Children: []
   m_Father: {fileID: 753822749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1330414092
@@ -17939,7 +18011,7 @@ GameObject:
   - component: {fileID: 1330414096}
   - component: {fileID: 1330414095}
   - component: {fileID: 1330414094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wooden_box_v1_LD1 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -18127,7 +18199,7 @@ GameObject:
   - component: {fileID: 1353800278}
   - component: {fileID: 1353800277}
   - component: {fileID: 1353800276}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18551,7 +18623,7 @@ GameObject:
   - component: {fileID: 1383952220}
   - component: {fileID: 1383952219}
   - component: {fileID: 1383952218}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18656,7 +18728,7 @@ GameObject:
   - component: {fileID: 1394057540}
   - component: {fileID: 1394057539}
   - component: {fileID: 1394057538}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18761,7 +18833,7 @@ GameObject:
   - component: {fileID: 1396729159}
   - component: {fileID: 1396729158}
   - component: {fileID: 1396729157}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19132,7 +19204,7 @@ GameObject:
   - component: {fileID: 1412445192}
   - component: {fileID: 1412445191}
   - component: {fileID: 1412445190}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19237,7 +19309,7 @@ GameObject:
   - component: {fileID: 1435650299}
   - component: {fileID: 1435650298}
   - component: {fileID: 1435650297}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19489,7 +19561,7 @@ GameObject:
   - component: {fileID: 1437235784}
   - component: {fileID: 1437235783}
   - component: {fileID: 1437235782}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19758,7 +19830,7 @@ GameObject:
   - component: {fileID: 1449129347}
   - component: {fileID: 1449129346}
   - component: {fileID: 1449129345}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20027,7 +20099,7 @@ GameObject:
   - component: {fileID: 1476295419}
   - component: {fileID: 1476295418}
   - component: {fileID: 1476295417}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20215,7 +20287,7 @@ GameObject:
   - component: {fileID: 1484119880}
   - component: {fileID: 1484119879}
   - component: {fileID: 1484119878}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20644,7 +20716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1500960253}
   - component: {fileID: 1500960254}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (25)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -20783,7 +20855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505056415}
   - component: {fileID: 1505056416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (16)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -20924,6 +20996,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: ac0fe20248fa88f4f9b160da4a4ea741, type: 3}
+--- !u!1 &1533021182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7030813647224478348, guid: b034ea92551bf744685b350e1999301e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1032995904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1533021187
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533021182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9020bf1e93a954c438a7d8b2a6f53792, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1540956344
 GameObject:
   m_ObjectHideFlags: 0
@@ -20999,7 +21098,7 @@ GameObject:
   - component: {fileID: 1544979993}
   - component: {fileID: 1544979992}
   - component: {fileID: 1544979991}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21174,7 +21273,7 @@ GameObject:
   - component: {fileID: 1575113740}
   - component: {fileID: 1575113739}
   - component: {fileID: 1575113738}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21445,7 +21544,7 @@ GameObject:
   - component: {fileID: 1601327908}
   - component: {fileID: 1601327907}
   - component: {fileID: 1601327906}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21550,7 +21649,7 @@ GameObject:
   - component: {fileID: 1606699140}
   - component: {fileID: 1606699139}
   - component: {fileID: 1606699138}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21653,7 +21752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1615966095}
   - component: {fileID: 1615966096}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -21791,7 +21890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1618031368}
   - component: {fileID: 1618031369}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (23)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -21984,7 +22083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1637608250}
   - component: {fileID: 1637608251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (22)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -22156,7 +22255,7 @@ GameObject:
   - component: {fileID: 1702723100}
   - component: {fileID: 1702723099}
   - component: {fileID: 1702723098}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22261,7 +22360,7 @@ GameObject:
   - component: {fileID: 1710038903}
   - component: {fileID: 1710038902}
   - component: {fileID: 1710038901}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wooden_box_v1_LD1 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -22366,7 +22465,7 @@ GameObject:
   - component: {fileID: 1711870338}
   - component: {fileID: 1711870337}
   - component: {fileID: 1711870336}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22687,7 +22786,7 @@ GameObject:
   - component: {fileID: 1724894810}
   - component: {fileID: 1724894809}
   - component: {fileID: 1724894808}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23086,7 +23185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1731417048}
   - component: {fileID: 1731417049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (21)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -23144,7 +23243,7 @@ GameObject:
   - component: {fileID: 1734519556}
   - component: {fileID: 1734519555}
   - component: {fileID: 1734519554}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23887,7 +23986,7 @@ GameObject:
   - component: {fileID: 1780113573}
   - component: {fileID: 1780113572}
   - component: {fileID: 1780113571}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24208,7 +24307,7 @@ GameObject:
   - component: {fileID: 1799262161}
   - component: {fileID: 1799262160}
   - component: {fileID: 1799262159}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24394,7 +24493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1805901271}
   - component: {fileID: 1805901272}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (24)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -24452,7 +24551,7 @@ GameObject:
   - component: {fileID: 1806559740}
   - component: {fileID: 1806559739}
   - component: {fileID: 1806559738}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24723,7 +24822,7 @@ GameObject:
   - component: {fileID: 1827580573}
   - component: {fileID: 1827580572}
   - component: {fileID: 1827580571}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24891,7 +24990,7 @@ GameObject:
   - component: {fileID: 1839121230}
   - component: {fileID: 1839121229}
   - component: {fileID: 1839121228}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25292,7 +25391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896211840}
   - component: {fileID: 1896211841}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (7)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -25433,7 +25532,7 @@ GameObject:
   - component: {fileID: 1903751508}
   - component: {fileID: 1903751507}
   - component: {fileID: 1903751506}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25538,7 +25637,7 @@ GameObject:
   - component: {fileID: 1911455618}
   - component: {fileID: 1911455617}
   - component: {fileID: 1911455616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25996,7 +26095,7 @@ GameObject:
   - component: {fileID: 1930902062}
   - component: {fileID: 1930902061}
   - component: {fileID: 1930902060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26101,7 +26200,7 @@ GameObject:
   - component: {fileID: 1944044819}
   - component: {fileID: 1944044818}
   - component: {fileID: 1944044817}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26439,7 +26538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1965177019}
   - component: {fileID: 1965177020}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (19)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -26676,7 +26775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1973704351}
   - component: {fileID: 1973704352}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (10)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -26732,7 +26831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1976458102}
   - component: {fileID: 1976458103}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (9)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -26790,7 +26889,7 @@ GameObject:
   - component: {fileID: 1986218127}
   - component: {fileID: 1986218126}
   - component: {fileID: 1986218125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26949,7 +27048,7 @@ GameObject:
   - component: {fileID: 1996382786}
   - component: {fileID: 1996382785}
   - component: {fileID: 1996382784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27076,6 +27175,13 @@ Transform:
   - {fileID: 1729454674}
   - {fileID: 1522408654}
   - {fileID: 1141151229387135414}
+  - {fileID: 1933245658933802207}
+  - {fileID: 777477500}
+  - {fileID: 8754409510362545595}
+  - {fileID: 966673120}
+  - {fileID: 5260814377672278735}
+  - {fileID: 4171595047605148555}
+  - {fileID: 4427041787390584219}
   m_Father: {fileID: 1461519407}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2005943133
@@ -27088,7 +27194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2005943134}
   - component: {fileID: 2005943135}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (31)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -27141,7 +27247,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1325821423}
+    m_TransformParent: {fileID: 2001774631}
     m_Modifications:
     - target: {fileID: 2876348667156777509, guid: 2e6377daadd99ff48b60bf38e792aef2,
         type: 3}
@@ -27155,14 +27261,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8316058848732040919, guid: 2e6377daadd99ff48b60bf38e792aef2,
         type: 3}
+      propertyPath: reloadTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316058848732040919, guid: 2e6377daadd99ff48b60bf38e792aef2,
+        type: 3}
       propertyPath: isReloading
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316058848732040919, guid: 2e6377daadd99ff48b60bf38e792aef2,
+        type: 3}
+      propertyPath: magazineSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316058848732040919, guid: 2e6377daadd99ff48b60bf38e792aef2,
+        type: 3}
+      propertyPath: muzzleEffect
+      value: 
+      objectReference: {fileID: 286181208}
+    - target: {fileID: 8316058848732040919, guid: 2e6377daadd99ff48b60bf38e792aef2,
+        type: 3}
+      propertyPath: shootingDelay
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 8316058848732040919, guid: 2e6377daadd99ff48b60bf38e792aef2,
         type: 3}
       propertyPath: thisWeaponModel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 8337238465049588487, guid: 2e6377daadd99ff48b60bf38e792aef2,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c710290642705a6489e0e4a3a448485b, type: 2}
     - target: {fileID: 8933436307474397588, guid: 2e6377daadd99ff48b60bf38e792aef2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27176,7 +27307,7 @@ PrefabInstance:
     - target: {fileID: 8933436307474397588, guid: 2e6377daadd99ff48b60bf38e792aef2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.761
+      value: 0.9540005
       objectReference: {fileID: 0}
     - target: {fileID: 8933436307474397588, guid: 2e6377daadd99ff48b60bf38e792aef2,
         type: 3}
@@ -27313,7 +27444,7 @@ GameObject:
   - component: {fileID: 2012512854}
   - component: {fileID: 2012512853}
   - component: {fileID: 2012512852}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27418,7 +27549,7 @@ GameObject:
   - component: {fileID: 2023004201}
   - component: {fileID: 2023004200}
   - component: {fileID: 2023004199}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27606,7 +27737,7 @@ GameObject:
   - component: {fileID: 2031499907}
   - component: {fileID: 2031499906}
   - component: {fileID: 2031499905}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27711,7 +27842,7 @@ GameObject:
   - component: {fileID: 2034400890}
   - component: {fileID: 2034400889}
   - component: {fileID: 2034400888}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27814,7 +27945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2036232264}
   - component: {fileID: 2036232265}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (6)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -27926,7 +28057,7 @@ GameObject:
   - component: {fileID: 2047649382}
   - component: {fileID: 2047649381}
   - component: {fileID: 2047649380}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28029,7 +28160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2055147671}
   - component: {fileID: 2055147672}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (30)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -28159,6 +28290,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066487625}
   m_Mesh: {fileID: 4300002, guid: ac0fe20248fa88f4f9b160da4a4ea741, type: 3}
+--- !u!1 &2069246004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4404834819374783297, guid: 3eeb5e91648d2734bb390ef53810720a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8467956895155422343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2072515910
 GameObject:
   m_ObjectHideFlags: 0
@@ -28322,7 +28459,7 @@ GameObject:
   - component: {fileID: 2078038346}
   - component: {fileID: 2078038345}
   - component: {fileID: 2078038344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28560,7 +28697,7 @@ GameObject:
   - component: {fileID: 2093407624}
   - component: {fileID: 2093407623}
   - component: {fileID: 2093407622}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28665,7 +28802,7 @@ GameObject:
   - component: {fileID: 2101692917}
   - component: {fileID: 2101692916}
   - component: {fileID: 2101692915}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29147,7 +29284,7 @@ GameObject:
   - component: {fileID: 2123617482}
   - component: {fileID: 2123617481}
   - component: {fileID: 2123617480}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29467,7 +29604,7 @@ GameObject:
   - component: {fileID: 2137147503}
   - component: {fileID: 2137147502}
   - component: {fileID: 2137147501}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29572,7 +29709,7 @@ GameObject:
   - component: {fileID: 2138819869}
   - component: {fileID: 2138819868}
   - component: {fileID: 2138819867}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29677,7 +29814,7 @@ GameObject:
   - component: {fileID: 2145648087}
   - component: {fileID: 2145648086}
   - component: {fileID: 2145648085}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30784,6 +30921,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8467956895155422343}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1933245658933802208
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069246004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 78f18cecfcc25ef47a010db1d7d06f15, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2660918415431679290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30800,7 +30958,7 @@ PrefabInstance:
     - target: {fileID: 2917324291134539940, guid: db23c3ed5c8255142a66fe154b0d8a33,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4380473027789786060, guid: db23c3ed5c8255142a66fe154b0d8a33,
         type: 3}
@@ -30887,7 +31045,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1325821423}
+    m_TransformParent: {fileID: 2001774631}
     m_Modifications:
     - target: {fileID: 713510349261583531, guid: d04e53bad1903c941bf88b11079ed8fc,
         type: 3}
@@ -30902,22 +31060,22 @@ PrefabInstance:
     - target: {fileID: 1373546215810748400, guid: d04e53bad1903c941bf88b11079ed8fc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.555223
+      value: 1.1992373
       objectReference: {fileID: 0}
     - target: {fileID: 1373546215810748400, guid: d04e53bad1903c941bf88b11079ed8fc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.3565226
+      value: 2.9050002
       objectReference: {fileID: 0}
     - target: {fileID: 1373546215810748400, guid: d04e53bad1903c941bf88b11079ed8fc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.1218
+      value: -107.960266
       objectReference: {fileID: 0}
     - target: {fileID: 1373546215810748400, guid: d04e53bad1903c941bf88b11079ed8fc,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.016719446
       objectReference: {fileID: 0}
     - target: {fileID: 1373546215810748400, guid: d04e53bad1903c941bf88b11079ed8fc,
         type: 3}
@@ -30927,7 +31085,7 @@ PrefabInstance:
     - target: {fileID: 1373546215810748400, guid: d04e53bad1903c941bf88b11079ed8fc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.9998602
       objectReference: {fileID: 0}
     - target: {fileID: 1373546215810748400, guid: d04e53bad1903c941bf88b11079ed8fc,
         type: 3}
@@ -31517,7 +31675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5644172366494716488}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_Gate
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -31536,7 +31694,7 @@ GameObject:
   - component: {fileID: 5633766151218669560}
   - component: {fileID: 5623768067270351460}
   - component: {fileID: 5672647176455152808}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_Gate_lattice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31555,7 +31713,7 @@ GameObject:
   - component: {fileID: 5633766151340768592}
   - component: {fileID: 5623768064097436340}
   - component: {fileID: 5672647164776326534}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31612,7 +31770,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1325821423}
+    m_TransformParent: {fileID: 2001774631}
     m_Modifications:
     - target: {fileID: 283691891516351170, guid: 8836fcf488b30b249b93baf66ce86550,
         type: 3}
@@ -31626,23 +31784,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611984567657256155, guid: 8836fcf488b30b249b93baf66ce86550,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.10000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611984567657256155, guid: 8836fcf488b30b249b93baf66ce86550,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611984567657256155, guid: 8836fcf488b30b249b93baf66ce86550,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.563223
+      value: 1.2102325
       objectReference: {fileID: 0}
     - target: {fileID: 2611984567657256155, guid: 8836fcf488b30b249b93baf66ce86550,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.340523
+      value: 2.8890004
       objectReference: {fileID: 0}
     - target: {fileID: 2611984567657256155, guid: 8836fcf488b30b249b93baf66ce86550,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.689798
+      value: -108.52821
       objectReference: {fileID: 0}
     - target: {fileID: 2611984567657256155, guid: 8836fcf488b30b249b93baf66ce86550,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.016719446
       objectReference: {fileID: 0}
     - target: {fileID: 2611984567657256155, guid: 8836fcf488b30b249b93baf66ce86550,
         type: 3}
@@ -31652,7 +31820,7 @@ PrefabInstance:
     - target: {fileID: 2611984567657256155, guid: 8836fcf488b30b249b93baf66ce86550,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.9998602
       objectReference: {fileID: 0}
     - target: {fileID: 2611984567657256155, guid: 8836fcf488b30b249b93baf66ce86550,
         type: 3}
@@ -32118,8 +32286,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1325821423}
+    m_TransformParent: {fileID: 2001774631}
     m_Modifications:
+    - target: {fileID: 315937361351829482, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553034438857082457, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
+        type: 3}
+      propertyPath: reloadTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553034438857082457, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
+        type: 3}
+      propertyPath: magazineSize
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 1553034438857082457, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
         type: 3}
       propertyPath: muzzleEffect
@@ -32133,17 +32316,17 @@ PrefabInstance:
     - target: {fileID: 2410552481758638018, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.540223
+      value: 0.152
       objectReference: {fileID: 0}
     - target: {fileID: 2410552481758638018, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.0595226
+      value: 1.102
       objectReference: {fileID: 0}
     - target: {fileID: 2410552481758638018, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.218798
+      value: 1.054
       objectReference: {fileID: 0}
     - target: {fileID: 2410552481758638018, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
         type: 3}
@@ -32153,17 +32336,17 @@ PrefabInstance:
     - target: {fileID: 2410552481758638018, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2410552481758638018, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2410552481758638018, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2410552481758638018, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
         type: 3}
@@ -32195,10 +32378,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'BulletSpawn  '
       objectReference: {fileID: 0}
+    - target: {fileID: 6926959700954876877, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2592331109970704463, guid: 366b1cb4b1a5c8e4888f299e26c3b7de,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8754409510362545598}
   m_SourcePrefab: {fileID: 100100000, guid: 366b1cb4b1a5c8e4888f299e26c3b7de, type: 3}
 --- !u!205 &7617756380629822844
 LODGroup:
@@ -32704,27 +32896,27 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1325821423}
+    m_TransformParent: {fileID: 2001774631}
     m_Modifications:
     - target: {fileID: 1615608310648514641, guid: 74402be6bb13f5e4da7e644208731820,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.546223
+      value: 1.2178948
       objectReference: {fileID: 0}
     - target: {fileID: 1615608310648514641, guid: 74402be6bb13f5e4da7e644208731820,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.4025226
+      value: 2.9510002
       objectReference: {fileID: 0}
     - target: {fileID: 1615608310648514641, guid: 74402be6bb13f5e4da7e644208731820,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.410799
+      value: -108.248795
       objectReference: {fileID: 0}
     - target: {fileID: 1615608310648514641, guid: 74402be6bb13f5e4da7e644208731820,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: -0.6951855
       objectReference: {fileID: 0}
     - target: {fileID: 1615608310648514641, guid: 74402be6bb13f5e4da7e644208731820,
         type: 3}
@@ -32734,7 +32926,7 @@ PrefabInstance:
     - target: {fileID: 1615608310648514641, guid: 74402be6bb13f5e4da7e644208731820,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.7188304
       objectReference: {fileID: 0}
     - target: {fileID: 1615608310648514641, guid: 74402be6bb13f5e4da7e644208731820,
         type: 3}
@@ -32835,7 +33027,7 @@ GameObject:
   - component: {fileID: 8173373622366831154}
   - component: {fileID: 8163094504995321448}
   - component: {fileID: 8214135248695861838}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32854,7 +33046,7 @@ GameObject:
   - component: {fileID: 8173373624878308580}
   - component: {fileID: 8163094507285197106}
   - component: {fileID: 8214135251142740572}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_lattice_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32871,7 +33063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8148877232869939004}
   - component: {fileID: 8150135260032369803}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Concrete_fence_v2_S
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -33139,7 +33331,7 @@ GameObject:
   - component: {fileID: 8257854562679837626}
   - component: {fileID: 8267836839442213250}
   - component: {fileID: 8217409629671288648}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wooden_box_v1_LD1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -33152,7 +33344,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1325821423}
+    m_TransformParent: {fileID: 2001774631}
     m_Modifications:
     - target: {fileID: 2380448874821170637, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
@@ -33169,6 +33361,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.4794
       objectReference: {fileID: 0}
+    - target: {fileID: 3343409377989267040, guid: 3eeb5e91648d2734bb390ef53810720a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4404834819374783297, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
       propertyPath: m_Name
@@ -33181,23 +33378,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5760298640204785868, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
+      propertyPath: magazineSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760298640204785868, guid: 3eeb5e91648d2734bb390ef53810720a,
+        type: 3}
+      propertyPath: muzzleEffect
+      value: 
+      objectReference: {fileID: 57531148}
+    - target: {fileID: 5760298640204785868, guid: 3eeb5e91648d2734bb390ef53810720a,
+        type: 3}
       propertyPath: thisWeaponModel
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8864240775815365854, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.530223
+      value: 0.167
       objectReference: {fileID: 0}
     - target: {fileID: 8864240775815365854, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.3765225
+      value: 1.264
       objectReference: {fileID: 0}
     - target: {fileID: 8864240775815365854, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.3508
+      value: 1.336
       objectReference: {fileID: 0}
     - target: {fileID: 8864240775815365854, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
@@ -33207,7 +33414,7 @@ PrefabInstance:
     - target: {fileID: 8864240775815365854, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8864240775815365854, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
@@ -33217,7 +33424,7 @@ PrefabInstance:
     - target: {fileID: 8864240775815365854, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8864240775815365854, guid: 3eeb5e91648d2734bb390ef53810720a,
         type: 3}
@@ -33237,7 +33444,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4404834819374783297, guid: 3eeb5e91648d2734bb390ef53810720a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1933245658933802208}
   m_SourcePrefab: {fileID: 100100000, guid: 3eeb5e91648d2734bb390ef53810720a, type: 3}
 --- !u!33 &8683739428841829213
 MeshFilter:
@@ -33377,6 +33588,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7391633418015184300}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &8754409510362545598
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774156587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 405640fd61ad6d748b88528ad8220089, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!136 &8984683097601942696
 CapsuleCollider:
   m_ObjectHideFlags: 0
