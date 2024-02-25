@@ -11,7 +11,6 @@ public class SoundManager : MonoBehaviour
     public AudioSource emptyMagazineSound;
 
     public AudioClip Pistol92Shot;
-    public AudioClip ScorpionShot;
     public AudioClip SAR2000Shot;
     public AudioClip GlockShot;
     public AudioClip ThompsonShot;
@@ -59,7 +58,6 @@ public class SoundManager : MonoBehaviour
                 ShootingChannel.PlayOneShot(SAR2000Shot);
                 break;
             case Weapon.WeaponModel.Scorpion:
-                ShootingChannel.PlayOneShot(ScorpionShot);
                 break;
             case Weapon.WeaponModel.Glock:
                 ShootingChannel.PlayOneShot(GlockShot);
