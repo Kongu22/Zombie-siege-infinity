@@ -117,10 +117,7 @@ public enum WeaponModel
                 FireWeapon();
             }
 
-            if(AmmoManager.Instance.ammoDisplay != null)
-            {
-                AmmoManager.Instance.ammoDisplay.text = $"{bulletsLeft/bulletsPerBurst}/{magazineSize/bulletsPerBurst}"; // Displaying the ammo count
-            }
+
         }
         
     }
