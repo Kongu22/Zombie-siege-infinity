@@ -53,9 +53,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Crouch
-    if (Input.GetKeyDown(KeyCode.LeftControl))
+    if (Input.GetKeyDown(KeyCode.LeftControl)) // If the player presses the crouch button
     {
-        Crouch();
+        Crouch(); // Call the crouch function
     }
     else if (Input.GetKeyUp(KeyCode.LeftControl))
     {

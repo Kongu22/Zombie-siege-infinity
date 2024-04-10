@@ -20,7 +20,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip P90Shot;
     public AudioClip ScarShot;
     public AudioClip MP7Shot;
-    
+    public AudioClip Scorpion;
 
     public AudioSource ReloadingSoundPistol92;
     public AudioSource ReloadingSoundScorpion;
@@ -58,6 +58,7 @@ public class SoundManager : MonoBehaviour
                 ShootingChannel.PlayOneShot(SAR2000Shot);
                 break;
             case Weapon.WeaponModel.Scorpion:
+                ShootingChannel.PlayOneShot(SAR2000Shot);
                 break;
             case Weapon.WeaponModel.Glock:
                 ShootingChannel.PlayOneShot(GlockShot);

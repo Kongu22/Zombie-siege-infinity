@@ -6,6 +6,8 @@ using TMPro;
 public class Weapon : MonoBehaviour
 {
 
+    public bool isActiveWeapon; // Is the weapon active
+
     //Shooting
     public bool isShooting, readyToShoot;
     bool allowReset = true;
@@ -25,13 +27,17 @@ public class Weapon : MonoBehaviour
    public float bulletPrefabLifeTime = 3f;
 
    public GameObject muzzleEffect;
-   private Animator animator; 
+   internal Animator animator; 
 
    //Loading
    public float reloadTime;
    public int magazineSize, bulletsLeft;
-    public bool isReloading;
-    private PlayerMovement playerMovement;
+   public bool isReloading;
+   private PlayerMovement playerMovement;
+
+   public Vector3 spawnPosition;
+   public Vector3 spawnRotation;
+
 
 public enum WeaponModel
 {
@@ -61,14 +67,6 @@ public enum WeaponModel
 
    public ShootingMode currentShootingMode; // Current shooting mode
 
-//    private void Awake() // Awake is called when the script instance is being loaded.
-//    {
-//         readyToShoot = true;
-//         burstBulletsLeft = bulletsPerBurst;
-//         animator = GetComponent<Animator>();
-
-//         bulletsLeft = magazineSize;
-//    }
     private void Awake()
     {
         readyToShoot = true;
@@ -83,45 +81,47 @@ public enum WeaponModel
     // Update is called once per frame
     void Update()
     {
-        if(bulletsLeft == 0 && isShooting)
-        {
-            SoundManager.Instance.emptyMagazineSound.Play();
-        }
+        if (isActiveWeapon)
+        { 
+            if(bulletsLeft == 0 && isShooting)
+            {
+                SoundManager.Instance.emptyMagazineSound.Play();
+            }
 
-        // Check if the reload button is pressed and if reload conditions are met
-        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading)
-        {
-            Reload();
-        }
+            // Check if the reload button is pressed and if reload conditions are met
+            if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading)
+            {
+                Reload();
+            }
 
-        // If the weapon is reloading, ignore shooting inputs
-        if (isReloading)
-        {
-            return; // Exit the Update method early if reloading
-        }
+            // If the weapon is reloading, ignore shooting inputs
+            if (isReloading)
+            {
+                return; // Exit the Update method early if reloading
+            }
 
-        // Determine shooting based on shooting mode and button presses
-        if (currentShootingMode == ShootingMode.Auto)
-        {
-            isShooting = Input.GetKey(KeyCode.Mouse0);
-        }
-        else if (currentShootingMode == ShootingMode.Single || currentShootingMode == ShootingMode.Burst)
-        {
-            isShooting = Input.GetKeyDown(KeyCode.Mouse0);
-        }
+            // Determine shooting based on shooting mode and button presses
+            if (currentShootingMode == ShootingMode.Auto)
+            {
+                isShooting = Input.GetKey(KeyCode.Mouse0);
+            }
+            else if (currentShootingMode == ShootingMode.Single || currentShootingMode == ShootingMode.Burst)
+            {
+                isShooting = Input.GetKeyDown(KeyCode.Mouse0);
+            }
 
-        // Proceed with shooting if ready and button is pressed
-        if (readyToShoot && isShooting && bulletsLeft > 0)
-        {
-            burstBulletsLeft = bulletsPerBurst;
-            FireWeapon();
-        }
+            // Proceed with shooting if ready and button is pressed
+            if (readyToShoot && isShooting && bulletsLeft > 0)
+            {
+                burstBulletsLeft = bulletsPerBurst;
+                FireWeapon();
+            }
 
-        if(AmmoManager.Instance.ammoDisplay != null)
-        {
-            AmmoManager.Instance.ammoDisplay.text = $"{bulletsLeft/bulletsPerBurst}/{magazineSize/bulletsPerBurst}"; // Displaying the ammo count
+            if(AmmoManager.Instance.ammoDisplay != null)
+            {
+                AmmoManager.Instance.ammoDisplay.text = $"{bulletsLeft/bulletsPerBurst}/{magazineSize/bulletsPerBurst}"; // Displaying the ammo count
+            }
         }
-        
         
     }
 
@@ -211,20 +211,12 @@ public enum WeaponModel
 
         Vector3 direction = targetPoint - bulletSpawn.position; // Calculating the direction of the shooting.
 
-        // float x = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
-        // float y = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
-        // float z = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
+        float x = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
+        float y = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
+        float z = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
 
-        
-        // return direction + new Vector3(x, y, z); // Returning the direction of the shooting plus the spread.
-        bool isPlayerMoving = playerMovement.IsMoving(); // Check if player is moving
-        float movementSpreadMultiplier = isPlayerMoving ? 1.5f : 1f; // Adjust spread based on movement
 
-        float x = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity) * movementSpreadMultiplier;
-        float y = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity) * movementSpreadMultiplier;
-        float z = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity) * movementSpreadMultiplier;
-
-        return direction + new Vector3(x, y, z);
+        return direction + new Vector3(x, y, z); // Returning the direction of the shooting plus the spread.
 
     }
 
