@@ -78,7 +78,7 @@ public class HUDManager : MonoBehaviour
         switch (model)
         {
             case Weapon.WeaponModel.Pistol92:
-                return Instantiate(Resources.Load<GameObject>("Pistol92_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return Instantiate(Resources.Load<GameObject>("Pistol92_Weapon")).GetComponent<SpriteRenderer>().sprite; 
 
             case Weapon.WeaponModel.SAR2000:
                 return Instantiate(Resources.Load<GameObject>("SAR2000_Weapon")).GetComponent<SpriteRenderer>().sprite;
