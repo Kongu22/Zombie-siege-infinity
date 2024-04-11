@@ -10,6 +10,11 @@ public class WeaponManager : MonoBehaviour
 
     public GameObject activeWeaponSlot;
 
+    [Header("Ammo")]
+    public int totalRifleAmmo = 0;
+    public int totalPistolAmmo = 0;
+
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -73,7 +78,23 @@ public class WeaponManager : MonoBehaviour
 
         weapon.animator.enabled = true; //Enable the animator of the Weapon component
     }
-    
+
+    internal void PickUpAmmo(AmmoBox ammo)
+    {
+        switch (ammo.ammoType)
+        {
+            case AmmoBox.AmmoType.PistolAmmoBox:
+                totalPistolAmmo += ammo.ammoAmount;
+                break;
+            case AmmoBox.AmmoType.SmallRifleBox:
+                totalRifleAmmo += ammo.ammoAmount;
+                break;
+            case AmmoBox.AmmoType.BigRifleBox:
+                totalRifleAmmo += ammo.ammoAmount;
+                break;
+        }
+    }
+
     private void DropCurrentWeapon(GameObject pickedupWeapon)
     {
         if (activeWeaponSlot.transform.childCount > 0)
@@ -103,6 +124,86 @@ public class WeaponManager : MonoBehaviour
         {
             Weapon newWeapon = activeWeaponSlot.transform.GetChild(0).GetComponent<Weapon>(); //Get the Weapon component of the first child of the activeWeaponSlot
             newWeapon.isActiveWeapon = true; //Set the isActiveWeapon variable of the newWeapon to true
+        }
+    }
+
+    internal void DecreaseTotalAmmo(int bulletsToDecrease, Weapon.WeaponModel thisWeaponModel)
+    {
+            switch (thisWeaponModel)
+        {
+            case Weapon.WeaponModel.Glock:
+                totalPistolAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.M500:
+                totalPistolAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.Pistol92:
+                totalPistolAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.SAR2000:
+                totalPistolAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.Scorpion:
+                totalPistolAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.Thompson:
+                totalRifleAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.M16:
+                totalRifleAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.M4A4:
+                totalRifleAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.MP40:
+                totalRifleAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.AK47:
+                totalRifleAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.P90:
+                totalRifleAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.Scar:
+                totalRifleAmmo -= bulletsToDecrease;
+                break;
+            case Weapon.WeaponModel.MP7:
+                totalRifleAmmo -= bulletsToDecrease;
+                break;
+
+        }
+    }
+    // Check the ammo left for the weapon model
+    public int CheckAmmoLeftFor(Weapon.WeaponModel thisWeaponModel)
+    {
+        switch (thisWeaponModel)
+        {
+            case Weapon.WeaponModel.Glock:
+                return totalPistolAmmo;
+            case Weapon.WeaponModel.Pistol92:
+                return totalPistolAmmo;
+            case Weapon.WeaponModel.SAR2000:
+                return totalPistolAmmo;
+            case Weapon.WeaponModel.Scorpion:
+                return totalPistolAmmo;
+            case Weapon.WeaponModel.Thompson:
+                return totalRifleAmmo;
+            case Weapon.WeaponModel.M16:
+                return totalRifleAmmo;
+            case Weapon.WeaponModel.M4A4:
+                return totalRifleAmmo;
+            case Weapon.WeaponModel.MP40:
+                return totalRifleAmmo;
+            case Weapon.WeaponModel.AK47:
+                return totalRifleAmmo;
+            case Weapon.WeaponModel.P90:
+                return totalRifleAmmo;
+            case Weapon.WeaponModel.Scar:
+                return totalRifleAmmo;
+            case Weapon.WeaponModel.MP7:
+                return totalRifleAmmo;
+            default:
+                return 0;
         }
     }
 }

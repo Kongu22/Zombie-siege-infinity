@@ -88,8 +88,8 @@ public enum WeaponModel
                 SoundManager.Instance.emptyMagazineSound.Play();
             }
 
-            // Check if the reload button is pressed and if reload conditions are met
-            if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading)
+            // Check if the reload button is pressed and if reload conditions are met 
+            if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading && WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel) > 0) 
             {
                 Reload();
             }
@@ -121,6 +121,7 @@ public enum WeaponModel
         }
         
     }
+ 
 
     private void FireWeapon() // Firing the weapon
     {
@@ -164,7 +165,7 @@ public enum WeaponModel
             Invoke("FireWeapon", shootingDelay);
         }
     }
-
+    // Reload the weapon method 
     private void Reload()
     {
         SoundManager.Instance.PlayReloadingSound(thisWeaponModel);
@@ -174,20 +175,33 @@ public enum WeaponModel
         isReloading = true;
         Invoke("ReloadCompleted", reloadTime);
     }
-
+    // Reload completed method to reset the bullets left
     private void ReloadCompleted()
     {
-        bulletsLeft = magazineSize;
-        isReloading = false;
-    }
+        int bulletsToLoad = magazineSize - bulletsLeft; // Calculate how many bullets need to be reloaded
+        int ammoAvailable = WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel); // Check how much ammo is available
 
+        if (ammoAvailable >= bulletsToLoad)
+        {
+            bulletsLeft = magazineSize; // Fully reload the magazine if enough ammo
+            WeaponManager.Instance.DecreaseTotalAmmo(bulletsToLoad, thisWeaponModel); // Decrease the total ammo by the number of bullets loaded
+        }
+        else
+        {
+            bulletsLeft += ammoAvailable; // Only load available ammo
+            WeaponManager.Instance.DecreaseTotalAmmo(ammoAvailable, thisWeaponModel); // Decrease the total ammo by the actual amount loaded
+        }
+
+        isReloading = false; // Mark reloading as complete
+    }
+    // Reset the shot after a certain amount of time
     private void ResetShot()
     {
         readyToShoot = true;
         allowReset = true;
     
     }
-
+    // Calculate the direction and spread of the shooting
     public Vector3 CalculateDirectionAndSpread()
     {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); // ViewportPointToRay is a method that returns a ray going from the camera through a viewport point.

@@ -43,11 +43,11 @@ public class HUDManager : MonoBehaviour
         Weapon activeWeapon = WeaponManager.Instance.activeWeaponSlot.GetComponentInChildren<Weapon>(); // Get active weapon
         Weapon UnActiveWeapon = GetUnActiveWeaponSlot().GetComponentInChildren<Weapon>(); // Get unactive weapon
 
-
         if (activeWeapon) // If active weapon is not null
         {
-            magazineAmmoUI.text = $"{activeWeapon.bulletsLeft / activeWeapon.bulletsPerBurst}"; // Set magazine ammo
-            totalAmmoUI.text = $"{activeWeapon.magazineSize / activeWeapon.bulletsPerBurst}"; // Set total ammo
+            // Directly display the bullets left in the magazine
+            magazineAmmoUI.text = activeWeapon.bulletsLeft.ToString(); // Set magazine ammo
+            totalAmmoUI.text = $"{WeaponManager.Instance.CheckAmmoLeftFor(activeWeapon.thisWeaponModel)}";
 
             Weapon.WeaponModel model = activeWeapon.thisWeaponModel; // Get active weapon model
             ammoTypeUI.sprite = GetAmmoSprite(model); // Set ammo type sprite
@@ -58,7 +58,6 @@ public class HUDManager : MonoBehaviour
             {
                 unActiveWeaponUI.sprite = GetWeaponSprite(UnActiveWeapon.thisWeaponModel); // Set unactive weapon sprite
             }
-
         }
         else // If active weapon is null
         {
@@ -70,7 +69,6 @@ public class HUDManager : MonoBehaviour
             activeWeaponUI.sprite = emptySlot; // Set active weapon sprite to empty
             unActiveWeaponUI.sprite = emptySlot; // Set unactive weapon sprite to empty
         }
-
     }
 
     private Sprite GetWeaponSprite(Weapon.WeaponModel model)
@@ -78,43 +76,43 @@ public class HUDManager : MonoBehaviour
         switch (model)
         {
             case Weapon.WeaponModel.Pistol92:
-                return Instantiate(Resources.Load<GameObject>("Pistol92_Weapon")).GetComponent<SpriteRenderer>().sprite; 
+                return (Resources.Load<GameObject>("Pistol92_Weapon")).GetComponent<SpriteRenderer>().sprite; 
 
             case Weapon.WeaponModel.SAR2000:
-                return Instantiate(Resources.Load<GameObject>("SAR2000_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("SAR2000_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.Scorpion:
-                return Instantiate(Resources.Load<GameObject>("Scorpion_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Scorpion_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.Glock:
-                return Instantiate(Resources.Load<GameObject>("Glock_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Glock_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.M500:
-                return Instantiate(Resources.Load<GameObject>("M500_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("M500_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.Thompson:
-                return Instantiate(Resources.Load<GameObject>("Thompson_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Thompson_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.M16:
-                return Instantiate(Resources.Load<GameObject>("M16_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("M16_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.M4A4:
-                return Instantiate(Resources.Load<GameObject>("M4A4_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("M4A4_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.MP40:
-                return Instantiate(Resources.Load<GameObject>("MP40_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("MP40_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.AK47:
-                return Instantiate(Resources.Load<GameObject>("AK47_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("AK47_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.P90:
-                return Instantiate(Resources.Load<GameObject>("P90_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("P90_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.Scar:
-                return Instantiate(Resources.Load<GameObject>("Scar_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Scar_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.MP7:
-                return Instantiate(Resources.Load<GameObject>("MP7_Weapon")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("MP7_Weapon")).GetComponent<SpriteRenderer>().sprite;
 
             default:
                 return null;
@@ -127,43 +125,43 @@ public class HUDManager : MonoBehaviour
         switch (model)
         {
             case Weapon.WeaponModel.Pistol92:
-                return Instantiate(Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.SAR2000:
-                return Instantiate(Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.Scorpion:
-                return Instantiate(Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.Glock:
-                return Instantiate(Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.M500:
-                return Instantiate(Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Pistol_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.Thompson:
-                return Instantiate(Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.M16:
-                return Instantiate(Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.M4A4:
-                return Instantiate(Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.MP40:
-                return Instantiate(Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.AK47:
-                return Instantiate(Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.P90:
-                return Instantiate(Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.Scar:
-                return Instantiate(Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             case Weapon.WeaponModel.MP7:
-                return Instantiate(Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
+                return (Resources.Load<GameObject>("Rifle_Ammo")).GetComponent<SpriteRenderer>().sprite;
 
             default:
                 return null;
