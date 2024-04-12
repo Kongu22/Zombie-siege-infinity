@@ -38,6 +38,8 @@ public class Weapon : MonoBehaviour
    public Vector3 spawnPosition;
    public Vector3 spawnRotation;
 
+    bool isADS;
+
 
 public enum WeaponModel
 {
@@ -83,7 +85,21 @@ public enum WeaponModel
     {
         if (isActiveWeapon)
         { 
-            if(bulletsLeft == 0 && isShooting)
+
+            if(Input.GetMouseButtonDown(1))
+            {
+                animator.SetTrigger("enterADS");
+                isADS = true;
+            }
+
+            if (Input.GetMouseButtonUp(1))
+            {
+                animator.SetTrigger("exitADS");
+                isADS = false;
+            }
+
+
+            if (bulletsLeft == 0 && isShooting)
             {
                 SoundManager.Instance.emptyMagazineSound.Play();
             }
@@ -128,7 +144,16 @@ public enum WeaponModel
         bulletsLeft--; // Decrease the bullets left
 
         muzzleEffect.GetComponent<ParticleSystem>().Play(); // Play the muzzle effect
-        animator.SetTrigger("RECOIL"); // Set the trigger to shoot
+
+        if(isADS)
+        {
+            // animator.SetTrigger("RECOIL_ADS"); // Set the trigger to shoot
+        }
+        else 
+        { 
+            animator.SetTrigger("RECOIL"); // Set the trigger to shoot
+        }
+        
 
 
         SoundManager.Instance.PlayShootingSound(thisWeaponModel); // Play the shooting sound
