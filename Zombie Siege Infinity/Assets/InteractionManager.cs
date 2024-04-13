@@ -8,6 +8,7 @@ public class InteractionManager : MonoBehaviour
 
     public Weapon hoveredWeapon = null;
     public AmmoBox hoveredAmmoBox = null;
+    private float interactionDistance = 5f; // Добавлено расстояние для взаимодействия
 
     private void Awake()
     {
@@ -23,59 +24,77 @@ public class InteractionManager : MonoBehaviour
 
     public void Update()
     {
-        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
         
-        //Weapon raycast interaction
-
-        if(Physics.Raycast(ray, out hit))  //If the raycast hits something
+        if(Physics.Raycast(ray, out hit)) // Если луч сталкивается с каким-либо объектом
         {
-            GameObject objectHitByRaycast = hit.transform.gameObject; //This is the object that the raycast hit
+            GameObject objectHitByRaycast = hit.transform.gameObject;
+            float distanceToObject = Vector3.Distance(Camera.main.transform.position, objectHitByRaycast.transform.position); // Вычисляем расстояние до объекта
 
-            if(objectHitByRaycast.GetComponent<Weapon>() && objectHitByRaycast.GetComponent<Weapon>().isActiveWeapon == false) //If the object that the raycast hit has a Weapon component
+            // Взаимодействие с оружием
+            if (objectHitByRaycast.GetComponent<Weapon>() && distanceToObject <= interactionDistance) // Проверяем расстояние
             {
-                hoveredWeapon = objectHitByRaycast.gameObject.GetComponent<Weapon>(); //Set the hoveredWeapon to the Weapon component of the object that the raycast hit
-                hoveredWeapon.GetComponent<Outline>().enabled = true; //Enable the outline of the hoveredWeapon
+                if (hoveredWeapon != null) // Сбрасываем предыдущее подсвеченное оружие
+                    hoveredWeapon.GetComponent<Outline>().enabled = false;
+                
+                hoveredWeapon = objectHitByRaycast.GetComponent<Weapon>(); // Устанавливаем новое оружие для подсветки
+                hoveredWeapon.GetComponent<Outline>().enabled = true;
 
-                if (Input.GetKeyDown(KeyCode.F)) //If the player presses the F key
+                if (Input.GetKeyDown(KeyCode.F))
                 {
-                    WeaponManager.Instance.PickUpWeapon(objectHitByRaycast.gameObject); //Call the PickUpWeapon function from the WeaponManager script
-                    hoveredWeapon.GetComponent<Outline>().enabled = false; //Disable the outline of the hoveredWeapon
-                    print("the player picked up a weapon!" + objectHitByRaycast.gameObject); //Print a message to the console
-                    
+                    WeaponManager.Instance.PickUpWeapon(objectHitByRaycast.gameObject); // Подбор оружия
+                    hoveredWeapon.GetComponent<Outline>().enabled = false;
+                    print("The player picked up a weapon! " + objectHitByRaycast.name);
+                    hoveredWeapon = null; // Сброс после взаимодействия
                 }
             }
             else
             {
-                if(hoveredWeapon) //If there is a hoveredWeapon
+                if (hoveredWeapon != null) 
                 {
-                    hoveredWeapon.GetComponent<Outline>().enabled = false; //Disable the outline of the hoveredWeapon
+                    hoveredWeapon.GetComponent<Outline>().enabled = false;
+                    hoveredWeapon = null; // Сброс, если объект вне диапазона
                 }
             }
 
-            //Ammo raycast interaction
-            if (objectHitByRaycast.GetComponent<AmmoBox>())  //If the object that the raycast hit has a Ammo component
+            // Взаимодействие с патронами
+            if (objectHitByRaycast.GetComponent<AmmoBox>() && distanceToObject <= interactionDistance) // Проверяем расстояние
             {
-                hoveredAmmoBox = objectHitByRaycast.gameObject.GetComponent<AmmoBox>(); //Set the hoveredAmmoBox to the Ammo component of the object that the raycast hit
-                hoveredAmmoBox.GetComponent<Outline>().enabled = true; //Enable the outline of the hoveredAmmoBox
+                if (hoveredAmmoBox != null) // Сбрасываем предыдущий подсвеченный AmmoBox
+                    hoveredAmmoBox.GetComponent<Outline>().enabled = false;
+                
+                hoveredAmmoBox = objectHitByRaycast.GetComponent<AmmoBox>(); // Устанавливаем новый AmmoBox для подсветки
+                hoveredAmmoBox.GetComponent<Outline>().enabled = true;
 
-                if (Input.GetKeyDown(KeyCode.F)) //If the player presses the F key
+                if (Input.GetKeyDown(KeyCode.F))
                 {
-                    WeaponManager.Instance.PickUpAmmo(hoveredAmmoBox); //Call the PickUpAmmo function from the WeaponManager script
-                    Destroy(objectHitByRaycast.gameObject); //Destroy the hoveredAmmoBox
-
+                    WeaponManager.Instance.PickUpAmmo(hoveredAmmoBox); // Подбор патронов
+                    Destroy(objectHitByRaycast.gameObject);
+                    hoveredAmmoBox = null; // Сброс после взаимодействия
                 }
             }
             else
             {
-                if (hoveredAmmoBox) //If there is a hoveredAmmoBox
+                if (hoveredAmmoBox != null)
                 {
-                    hoveredAmmoBox.GetComponent<Outline>().enabled = false; //Disable the outline of the hoveredAmmoBox
+                    hoveredAmmoBox.GetComponent<Outline>().enabled = false;
+                    hoveredAmmoBox = null; // Сброс, если объект вне диапазона
                 }
             }   
-
+        }
+        else // Если луч не попал ни в один объект
+        {
+            if (hoveredWeapon != null)
+            {
+                hoveredWeapon.GetComponent<Outline>().enabled = false;
+                hoveredWeapon = null; // Сброс подсветки
+            }
+            if (hoveredAmmoBox != null)
+            {
+                hoveredAmmoBox.GetComponent<Outline>().enabled = false;
+                hoveredAmmoBox = null; // Сброс подсветки
+            }
         }
     }
-
 }
-

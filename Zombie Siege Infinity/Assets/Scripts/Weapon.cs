@@ -272,9 +272,11 @@ public enum WeaponModel
 
     }
 
+
+// Destroy the bullet after a certain amount of time
     private IEnumerator DestroyBulletAfterTime(GameObject bullet, float delay)
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(delay); 
         Destroy(bullet);
     }
 }
