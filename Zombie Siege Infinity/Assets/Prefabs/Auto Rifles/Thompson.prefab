@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4292272646962685997}
   - component: {fileID: 4746003247920153432}
   - component: {fileID: 5601171067511768498}
+  - component: {fileID: 4611658446796753190}
   m_Layer: 7
   m_Name: Thompson
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2773276034725411060}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.2756156, y: 0.1788235, z: -0.69987065, w: 0.63422346}
+  m_LocalRotation: {x: -0.27561748, y: 0.17882116, z: -0.69987077, w: 0.63422304}
   m_LocalPosition: {x: -25.131098, y: -1.1306138, z: -115.575356}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -129,6 +130,7 @@ MonoBehaviour:
   bulletsPerBurst: 1
   burstBulletsLeft: 0
   spreadIntensity: 0.5
+  spreadIntensityADS: 0.2
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 2771293146434211469}
@@ -164,6 +166,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4611658446796753190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2773276034725411060}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &3421541288745288292
 GameObject:
   m_ObjectHideFlags: 0

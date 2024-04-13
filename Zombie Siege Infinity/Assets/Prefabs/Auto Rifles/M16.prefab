@@ -873,6 +873,7 @@ GameObject:
   - component: {fileID: 426487908571666048}
   - component: {fileID: 1633616201247464695}
   - component: {fileID: 4798910432386036889}
+  - component: {fileID: 3339152015665622701}
   m_Layer: 7
   m_Name: M16
   m_TagString: Untagged
@@ -888,7 +889,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5087441001792350817}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.66485333, y: 0.6648532, z: -0.24076995, w: -0.24076991}
+  m_LocalRotation: {x: 0.6648526, y: 0.6648526, z: -0.24077167, w: -0.24077167}
   m_LocalPosition: {x: -19.096022, y: -1.23, z: -115.62243}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -937,7 +938,8 @@ MonoBehaviour:
   shootingDelay: 0.17
   bulletsPerBurst: 3
   burstBulletsLeft: 0
-  spreadIntensity: 0.5
+  spreadIntensity: 1
+  spreadIntensityADS: 0.4
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 5280696104653688638}
@@ -973,6 +975,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3339152015665622701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5087441001792350817}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5311217264536338660
 GameObject:
   m_ObjectHideFlags: 0

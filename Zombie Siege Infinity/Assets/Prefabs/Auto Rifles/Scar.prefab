@@ -4912,6 +4912,7 @@ GameObject:
   - component: {fileID: 8095767659525302384}
   - component: {fileID: 2783506641677326359}
   - component: {fileID: 4681062547941053328}
+  - component: {fileID: 4778907926377851960}
   m_Layer: 7
   m_Name: Scar
   m_TagString: Untagged
@@ -4927,7 +4928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4494891089069790477}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30351448, y: 0.63865405, z: -0.63865405, w: 0.30351448}
+  m_LocalRotation: {x: 0.30351466, y: 0.63865393, z: -0.63865393, w: 0.30351466}
   m_LocalPosition: {x: -19.989004, y: -1.23, z: -115.628075}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -4978,7 +4979,8 @@ MonoBehaviour:
   shootingDelay: 0.17
   bulletsPerBurst: 1
   burstBulletsLeft: 0
-  spreadIntensity: 0.5
+  spreadIntensity: 0.8
+  spreadIntensityADS: 0.3
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 3613260219021182804}
@@ -5014,6 +5016,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4778907926377851960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4494891089069790477}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &4630277861941301023
 GameObject:
   m_ObjectHideFlags: 0

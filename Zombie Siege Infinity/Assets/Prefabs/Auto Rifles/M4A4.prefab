@@ -5231,6 +5231,7 @@ GameObject:
   - component: {fileID: 9064015167828809553}
   - component: {fileID: 7595571084654851863}
   - component: {fileID: 4368580428998968027}
+  - component: {fileID: 3705988216437022265}
   m_Layer: 7
   m_Name: M4A4
   m_TagString: Untagged
@@ -5296,7 +5297,8 @@ MonoBehaviour:
   shootingDelay: 0.17
   bulletsPerBurst: 1
   burstBulletsLeft: 0
-  spreadIntensity: 0.5
+  spreadIntensity: 0.7
+  spreadIntensityADS: 0.4
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 5087271105596123942}
@@ -5332,6 +5334,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3705988216437022265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513140460356378661}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &3916304671477001440
 GameObject:
   m_ObjectHideFlags: 0

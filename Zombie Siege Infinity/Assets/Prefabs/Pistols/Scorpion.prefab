@@ -5108,6 +5108,7 @@ GameObject:
   - component: {fileID: 3769649123643154705}
   - component: {fileID: 4379477673963202094}
   - component: {fileID: 426853231659946245}
+  - component: {fileID: 2527244607056283713}
   m_Layer: 7
   m_Name: Scorpion
   m_TagString: Untagged
@@ -5123,7 +5124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8158642726508956230}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.623852, y: 0.623852, z: -0.33287936, w: -0.3328793}
+  m_LocalRotation: {x: 0.62385094, y: 0.62385094, z: -0.33288142, w: -0.33288142}
   m_LocalPosition: {x: -13.357666, y: -1.2447, z: -116.12095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5172,7 +5173,8 @@ MonoBehaviour:
   shootingDelay: 0.25
   bulletsPerBurst: 1
   burstBulletsLeft: 0
-  spreadIntensity: 0.3
+  spreadIntensity: 0.7
+  spreadIntensityADS: 0.3
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 1840951476780544512}
@@ -5208,6 +5210,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2527244607056283713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8158642726508956230}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &8430542019118731167
 GameObject:
   m_ObjectHideFlags: 0

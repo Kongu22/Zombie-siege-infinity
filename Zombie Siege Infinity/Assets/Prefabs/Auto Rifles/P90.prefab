@@ -5226,6 +5226,7 @@ GameObject:
   - component: {fileID: 6112712610675918767}
   - component: {fileID: 1587819186199872742}
   - component: {fileID: -5099213708691446100}
+  - component: {fileID: 2456954940672404205}
   m_Layer: 7
   m_Name: P90
   m_TagString: Untagged
@@ -5290,15 +5291,16 @@ MonoBehaviour:
   shootingDelay: 0.17
   bulletsPerBurst: 1
   burstBulletsLeft: 0
-  spreadIntensity: 0.5
+  spreadIntensity: 0
+  spreadIntensityADS: 0
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 8559369437621387682}
   bulletVelocity: 900
   bulletPrefabLifeTime: 3
   muzzleEffect: {fileID: 201652154821878285}
-  reloadTime: 0
-  magazineSize: 0
+  reloadTime: 2.3
+  magazineSize: 50
   bulletsLeft: 0
   isReloading: 0
   spawnPosition: {x: 0.251, y: 1.305, z: 1.04}
@@ -5326,6 +5328,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2456954940672404205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9162214717791933642}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &9208053838423944500
 GameObject:
   m_ObjectHideFlags: 0

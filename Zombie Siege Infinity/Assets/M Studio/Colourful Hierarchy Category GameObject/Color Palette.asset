@@ -59,7 +59,12 @@ MonoBehaviour:
     textAlignment: 4
     fontStyle: 0
   - keyChar: '!M'
-    textColor: {r: 1, g: 1, b: 1, a: 1}
-    backgroundColor: {r: 0.8871656, g: 0.9433962, b: 0.28924885, a: 0.24705882}
+    textColor: {r: 0, g: 0, b: 0, a: 1}
+    backgroundColor: {r: 0.8871656, g: 0.9433962, b: 0.28924885, a: 1}
+    textAlignment: 4
+    fontStyle: 1
+  - keyChar: '!W'
+    textColor: {r: 0, g: 0, b: 0, a: 1}
+    backgroundColor: {r: 0.9716981, g: 0.0045834924, b: 0.82511777, a: 1}
     textAlignment: 4
     fontStyle: 1

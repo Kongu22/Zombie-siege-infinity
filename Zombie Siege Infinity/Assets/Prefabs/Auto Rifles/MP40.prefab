@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 6413837181906546958}
   - component: {fileID: 8357017672815424498}
   - component: {fileID: 300582124515873619}
+  - component: {fileID: 8155025021292365331}
   m_Layer: 7
   m_Name: MP40
   m_TagString: Untagged
@@ -291,6 +292,7 @@ MonoBehaviour:
   bulletsPerBurst: 1
   burstBulletsLeft: 0
   spreadIntensity: 0.5
+  spreadIntensityADS: 0.2
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 425364782519193125}
@@ -326,6 +328,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8155025021292365331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3099975456352005655}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &4597559380211451212
 GameObject:
   m_ObjectHideFlags: 0

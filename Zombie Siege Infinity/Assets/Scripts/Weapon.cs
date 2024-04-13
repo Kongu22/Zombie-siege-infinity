@@ -17,10 +17,11 @@ public class Weapon : MonoBehaviour
     public int bulletsPerBurst = 3;
     public int burstBulletsLeft;
 
-    //Spread
+    [Header("Shooting Settings")]
     public float spreadIntensity;
+    public float spreadIntensityADS;
 
-    //Bullet
+    [Header("Bullet Settings")]
    public GameObject bulletPrefab;
    public Transform bulletSpawn;
    public float bulletVelocity = 30;
@@ -79,23 +80,20 @@ public enum WeaponModel
     }
 
 
-
     // Update is called once per frame
     void Update()
     {
         if (isActiveWeapon)
         { 
 
-            if(Input.GetMouseButtonDown(1))
+            if(Input.GetMouseButtonDown(1) && !isReloading) //
             {
-                animator.SetTrigger("enterADS");
-                isADS = true;
+                enterADS();  // Enter ADS method
             }
 
             if (Input.GetMouseButtonUp(1))
             {
-                animator.SetTrigger("exitADS");
-                isADS = false;
+                exitADS(); // Exit ADS method
             }
 
 
@@ -105,7 +103,7 @@ public enum WeaponModel
             }
 
             // Check if the reload button is pressed and if reload conditions are met 
-            if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading && WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel) > 0) 
+            if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading && WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel) > 0 && isADS == false) 
             {
                 Reload();
             }
@@ -137,6 +135,19 @@ public enum WeaponModel
         }
         
     }
+
+    private void enterADS()
+    {
+        animator.SetTrigger("enterADS");
+        HUDManager.Instance.crosshair.SetActive(false);
+        isADS = true;  
+    }
+    private void exitADS()
+    {
+        animator.SetTrigger("exitADS");
+        HUDManager.Instance.crosshair.SetActive(true);
+        isADS = false;
+    }
  
 
     private void FireWeapon() // Firing the weapon
@@ -147,7 +158,7 @@ public enum WeaponModel
 
         if(isADS)
         {
-            // animator.SetTrigger("RECOIL_ADS"); // Set the trigger to shoot
+            animator.SetTrigger("RECOIL_ADS"); // Set the trigger to shoot
         }
         else 
         { 
@@ -161,8 +172,7 @@ public enum WeaponModel
 
         readyToShoot = false;
 
-        // Vector3 shootingDirection = CalculateDirectionAndSpread().normalized; // Normalizing the shooting direction, Vector3 is a 3D vector, normalized is a method that returns the vector with a magnitude of 1.
-        Vector3 shootingDirection = CalculateDirectionAndSpread().normalized;
+        Vector3 shootingDirection = CalculateDirectionAndSpread().normalized; // Normalizing the shooting direction, Vector3 is a 3D vector, normalized is a method that returns the vector with a magnitude of 1.
 
         //Instantiate the bullet
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, Quaternion.identity);
@@ -247,10 +257,16 @@ public enum WeaponModel
 
         Vector3 direction = targetPoint - bulletSpawn.position; // Calculating the direction of the shooting.
 
-        float x = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
-        float y = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
-        float z = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
+            float x = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
+            float y = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
+            float z = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity); // Random.Range is a method that returns a random float number between the min and max values.
 
+            if(isADS)
+            {
+                x = UnityEngine.Random.Range(-spreadIntensityADS, spreadIntensityADS); // Random.Range is a method that returns a random float number between the min and max values.
+                y = UnityEngine.Random.Range(-spreadIntensityADS, spreadIntensityADS); // Random.Range is a method that returns a random float number between the min and max values.
+                z = UnityEngine.Random.Range(-spreadIntensityADS, spreadIntensityADS); // Random.Range is a method that returns a random float number between the min and max values.
+            }
 
         return direction + new Vector3(x, y, z); // Returning the direction of the shooting plus the spread.
 

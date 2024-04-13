@@ -5323,6 +5323,7 @@ GameObject:
   - component: {fileID: 8136813487828002521}
   - component: {fileID: 5055049612304971768}
   - component: {fileID: 4722845650437206878}
+  - component: {fileID: 3185734159948971070}
   m_Layer: 7
   m_Name: AK47
   m_TagString: Untagged
@@ -5412,7 +5413,8 @@ MonoBehaviour:
   shootingDelay: 0.23
   bulletsPerBurst: 1
   burstBulletsLeft: 0
-  spreadIntensity: 0.5
+  spreadIntensity: 1
+  spreadIntensityADS: 0.4
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 6387416028205805774}
@@ -5427,3 +5429,21 @@ MonoBehaviour:
   spawnRotation: {x: 0, y: 0, z: 0}
   thisWeaponModel: 9
   currentShootingMode: 2
+--- !u!114 &3185734159948971070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214815807836397059}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

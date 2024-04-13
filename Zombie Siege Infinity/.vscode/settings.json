@@ -51,5 +51,7 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Zombie Siege Infinity.sln"
+    "dotnet.defaultSolution": "Zombie Siege Infinity.sln",
+    "FSharp.suggestGitignore": false,
+    "dotnet.preferCSharpExtension": true
 }

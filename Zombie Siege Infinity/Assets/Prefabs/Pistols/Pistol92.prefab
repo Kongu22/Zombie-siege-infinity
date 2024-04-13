@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 9197491976503127996}
   - component: {fileID: 1525096326728675891}
   - component: {fileID: 4458675337111042327}
+  - component: {fileID: 4073478251629955750}
   m_Layer: 7
   m_Name: Pistol92
   m_TagString: Untagged
@@ -308,9 +309,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5097305308057519951}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.6537941, y: -0.26935717, z: -0.26935717, w: 0.6537941}
+  m_LocalRotation: {x: -0.6537951, y: -0.2693547, z: -0.2693547, w: 0.6537951}
   m_LocalPosition: {x: -13.308, y: -1.194, z: -115.5271}
-  m_LocalScale: {x: 0.6999997, y: 0.70000017, z: 0.6999999}
+  m_LocalScale: {x: 0.7000019, y: 0.7000027, z: 0.7000019}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6828130450141096569}
@@ -340,7 +341,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8, y: 0.6, z: 0.2}
+  m_Size: {x: 0.8, y: 0.6, z: 0.4}
   m_Center: {x: 0, y: 0, z: -0.05}
 --- !u!114 &1525096326728675891
 MonoBehaviour:
@@ -360,7 +361,8 @@ MonoBehaviour:
   shootingDelay: 0.3
   bulletsPerBurst: 1
   burstBulletsLeft: 0
-  spreadIntensity: 0.01
+  spreadIntensity: 0.3
+  spreadIntensityADS: 0.15
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 6625718134457834987}
@@ -396,6 +398,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4073478251629955750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5097305308057519951}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5907203988674056540
 GameObject:
   m_ObjectHideFlags: 0

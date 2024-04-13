@@ -13,8 +13,8 @@ public class WeaponManager : MonoBehaviour
     [Header("Ammo")]
     public int totalRifleAmmo = 0;
     public int totalPistolAmmo = 0;
-
-
+        
+    
     private void Awake()
     {
         if (Instance != null && Instance != this)

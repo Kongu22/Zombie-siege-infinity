@@ -4795,6 +4795,7 @@ GameObject:
   - component: {fileID: 2225666121109732141}
   - component: {fileID: 3913931981526266279}
   - component: {fileID: 9129181748751717894}
+  - component: {fileID: 7913298503463623919}
   m_Layer: 7
   m_Name: Glock
   m_TagString: Untagged
@@ -4810,9 +4811,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2730703177130998028}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.67273927, y: -0.67273927, z: -0.21776573, w: -0.21776573}
+  m_LocalRotation: {x: -0.6727384, y: -0.6727384, z: -0.21776843, w: -0.21776843}
   m_LocalPosition: {x: -12.508051, y: -1.232, z: -115.5271}
-  m_LocalScale: {x: 0.0030000012, y: 0.0030000026, z: 0.0030000026}
+  m_LocalScale: {x: 0.003000009, y: 0.003000005, z: 0.0030000075}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7276502715928857941}
@@ -4891,7 +4892,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 30.59113, y: 170.71414, z: 110.85553}
+  m_Size: {x: 40.59113, y: 190.7141, z: 150.8555}
   m_Center: {x: 0, y: 0.000015258789, z: 0.000061035156}
 --- !u!114 &3913931981526266279
 MonoBehaviour:
@@ -4911,7 +4912,8 @@ MonoBehaviour:
   shootingDelay: 0.3
   bulletsPerBurst: 3
   burstBulletsLeft: 0
-  spreadIntensity: 0.01
+  spreadIntensity: 0.6
+  spreadIntensityADS: 0.3
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 2163021644585258675}
@@ -4947,6 +4949,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7913298503463623919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2730703177130998028}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &2783105060384353011
 GameObject:
   m_ObjectHideFlags: 0
