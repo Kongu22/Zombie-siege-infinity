@@ -58030,6 +58030,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: ff3e8c3aad864db4394551f29cc6f224, type: 3}
   m_Animations:
   - {fileID: 7400000, guid: ff3e8c3aad864db4394551f29cc6f224, type: 3}
+  - {fileID: 7400000, guid: 15c34637462a2fa4a9d9e3c43013938d, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -58237,7 +58238,7 @@ Transform:
   - {fileID: 9116928452896614946}
   - {fileID: 9116928452896614944}
   m_Father: {fileID: 1066157097}
-  m_LocalEulerAnglesHint: {x: 11.062, y: -227.9, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.7797394, y: -296.34442, z: -2.6037848}
 --- !u!23 &9116928452898384064
 MeshRenderer:
   m_ObjectHideFlags: 0
