@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5109824046498233652}
   - component: {fileID: 6080898978400134578}
   - component: {fileID: 2999101104994665866}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7153784748976045464}
   - component: {fileID: 7801284436533265125}
   - component: {fileID: 8506485629269219064}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: M500
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,12 +155,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4094ee222542d45409dcd608e3ec4687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActiveWeapon: 0
+  weaponDamage: 0
   isShooting: 0
   readyToShoot: 1
   shootingDelay: 0.3
   bulletsPerBurst: 1
   burstBulletsLeft: 1
   spreadIntensity: 0.01
+  spreadIntensityADS: 0
   bulletPrefab: {fileID: 79318760958634060, guid: c3a4036319861c3479f933d944f4fb08,
     type: 3}
   bulletSpawn: {fileID: 6776106096385308341}
@@ -186,7 +189,7 @@ GameObject:
   - component: {fileID: 5536745311607513542}
   - component: {fileID: 2962155025099528544}
   - component: {fileID: 7448743468362149700}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: M500_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +272,7 @@ GameObject:
   - component: {fileID: 8846077391926888237}
   - component: {fileID: 7050299019665159016}
   - component: {fileID: 6155565500225179738}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: M500_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +353,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6776106096385308341}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'BulletSpawn  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +387,7 @@ GameObject:
   - component: {fileID: 4723803504702404061}
   - component: {fileID: 1588354683284569660}
   - component: {fileID: 8191599586619923801}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +471,7 @@ GameObject:
   - component: {fileID: 601025856230352054}
   - component: {fileID: 8911655803997266157}
   - component: {fileID: 7999984369114625255}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: M500_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +555,7 @@ GameObject:
   - component: {fileID: 8227202353745306377}
   - component: {fileID: 6487683296369917763}
   - component: {fileID: 2504949342119597597}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: M500_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +660,7 @@ GameObject:
   - component: {fileID: 5145152952022990974}
   - component: {fileID: 6466688778160392580}
   - component: {fileID: 8814034562748527480}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: M500_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +743,7 @@ GameObject:
   - component: {fileID: 486975863203859632}
   - component: {fileID: 4937813181042737844}
   - component: {fileID: 4156970923178167693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: M500_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -825,7 +828,7 @@ GameObject:
   - component: {fileID: 1041568967021931838}
   - component: {fileID: 1751651329650037430}
   - component: {fileID: 2833627603999283395}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MuzzleFlashEffect (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5606,7 +5609,7 @@ GameObject:
   - component: {fileID: 1195340454767938358}
   - component: {fileID: 8801456233645011755}
   - component: {fileID: 6747288611732590279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: M500_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}

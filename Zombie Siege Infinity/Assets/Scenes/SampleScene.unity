@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: bde0bb541cdd528409fe08ea9cde86c9, type: 2}
 --- !u!1 &7613479
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,8 +301,8 @@ GameObject:
   m_Name: FR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &10997209
 Transform:
@@ -596,7 +596,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &19298585
 Transform:
@@ -775,10 +775,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1117951147510809929, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250279129208270665, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150084533322544380, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748047510505625821, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784211874123840810, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4722845650437206878, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: weaponDamage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102504445542045740, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160275374205064341, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514635248782849342, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8214815807836397059, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
         type: 3}
       propertyPath: m_Name
       value: AK47 lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214815807836397059, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -994,6 +1044,163 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35460667}
   m_Mesh: {fileID: 4300008, guid: ed9ec036e5afbd34dae4f1602a3d77b8, type: 3}
+--- !u!1 &44689548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 44689553}
+  - component: {fileID: 44689552}
+  - component: {fileID: 44689551}
+  - component: {fileID: 44689550}
+  - component: {fileID: 44689555}
+  - component: {fileID: 44689554}
+  - component: {fileID: 44689556}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Zombie
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &44689550
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44689548}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &44689551
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44689548}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &44689552
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44689548}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &44689553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44689548}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 73.23, y: -1.856, z: -105.94}
+  m_LocalScale: {x: 1.2, y: 1.8, z: 1.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44689554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44689548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d84a7ed6f481d41a5ea23dd16c5586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!195 &44689555
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44689548}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.50000006
+  m_Speed: 15
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &44689556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44689548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594af53e9f9e5ad4c86a956c556944e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 100
 --- !u!1 &44840789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,8 +1217,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &44840790
 Transform:
@@ -1115,8 +1322,8 @@ GameObject:
   m_Name: Truck_Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &45493481
 Transform:
@@ -1337,8 +1544,8 @@ GameObject:
   m_Name: FL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &57407462
 Transform:
@@ -1658,8 +1865,8 @@ GameObject:
   m_Name: BR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &74895406
 Transform:
@@ -1741,8 +1948,8 @@ GameObject:
   m_Name: tank_gun_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &77912711
 Transform:
@@ -1900,6 +2107,111 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 244781439634624649, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 512976500521926342, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 743830271835182326, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 931230516139082922, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105228019717757034, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109506012736519585, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1470927376719055279, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483472304450006846, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742133239773069941, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768548964168549175, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862632827334292983, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309707223960592140, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407303079951770754, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461409636493525943, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558213383956890672, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761502833575347129, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891402657461548853, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063896279815595931, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156780163162614399, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3310098638939921807, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424451214686284810, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1965,10 +2277,170 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 3443679477525829903, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515454396033270609, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649017344408092268, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775864172134868761, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780042836772313728, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854449610560069484, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308978280098171831, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589984987347277, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923934403280189999, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960522703999156550, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5202627101980604499, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212756375279305793, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269922712995330329, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388476997760715857, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707207035147953137, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936792397389513, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934430296123110168, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314616295584720148, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326642602793732737, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564525280036525010, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671594923808178615, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6997707072506734399, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7557727822979960579, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_Name
       value: MP7 lay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557727822979960579, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610799382722519543, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691693413922124363, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7769650060398805389, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826643150755811585, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998502021572259501, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810262777572131102, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108290956651778080, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118092835514748076, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221644873276836055, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1991,8 +2463,8 @@ GameObject:
   m_Name: Road_block_v1 (14)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &88584590
 Transform:
@@ -2179,8 +2651,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &89418670
 Transform:
@@ -2801,8 +3273,8 @@ GameObject:
   m_Name: Barrel_v3_quadro (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &108396778
 Transform:
@@ -2909,8 +3381,8 @@ GameObject:
   m_Name: tent_001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &111213906
 Transform:
@@ -3057,8 +3529,8 @@ GameObject:
   m_Name: F_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &111929525
 Transform:
@@ -3258,8 +3730,8 @@ GameObject:
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &116268078
 Transform:
@@ -3313,8 +3785,8 @@ GameObject:
   m_Name: FL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &117221232
 Transform:
@@ -3564,7 +4036,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &122781551
 Transform:
@@ -3733,8 +4205,8 @@ GameObject:
   m_Name: P_rsg_military_antitank_hedgehog_01 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &152214722
 Transform:
@@ -4032,8 +4504,8 @@ GameObject:
   m_Name: B_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &171374120
 Transform:
@@ -4306,8 +4778,8 @@ GameObject:
   m_Name: Truck_Zil130_TrailerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &178825548
 Transform:
@@ -4649,8 +5121,8 @@ GameObject:
   m_Name: BL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &190911965
 Transform:
@@ -4840,8 +5312,8 @@ GameObject:
   m_Name: BL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &206601067
 Transform:
@@ -4923,8 +5395,8 @@ GameObject:
   m_Name: ZIL130_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &209204732
 Transform:
@@ -5016,8 +5488,8 @@ GameObject:
   m_Name: BL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &210381983
 Transform:
@@ -5100,8 +5572,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &221016212
 Transform:
@@ -5247,10 +5719,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1463723005367972051, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2808782601385817962, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3099975456352005655, guid: 3791c5b78fe926b4db1057fed45ef0b9,
         type: 3}
       propertyPath: m_Name
       value: MP40 lay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099975456352005655, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597559380211451212, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6645410471174021571, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017519557909864457, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099393747268974494, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5273,8 +5780,8 @@ GameObject:
   m_Name: Road_block_v1 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &228398407
 Transform:
@@ -5517,8 +6024,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &249242625
 Transform:
@@ -6104,8 +6611,8 @@ GameObject:
   m_Name: P_rsg_military_antitank_hedgehog_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &265196362
 Transform:
@@ -6551,10 +7058,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1463723005367972051, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2808782601385817962, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3099975456352005655, guid: 3791c5b78fe926b4db1057fed45ef0b9,
         type: 3}
       propertyPath: m_Name
       value: MP40 lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099975456352005655, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597559380211451212, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6645410471174021571, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017519557909864457, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099393747268974494, guid: 3791c5b78fe926b4db1057fed45ef0b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6848,8 +7390,8 @@ GameObject:
   m_Name: Road_block_v1 (7)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &288809425
 Transform:
@@ -7026,8 +7568,8 @@ GameObject:
   m_Name: P_rsg_military_antitank_hedgehog_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &294443832
 Transform:
@@ -7320,8 +7862,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &299206002
 Transform:
@@ -7865,8 +8407,8 @@ GameObject:
   m_Name: P_rsg_military_antitank_hedgehog_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &312996582
 Transform:
@@ -7971,8 +8513,8 @@ GameObject:
   m_Name: Truck_Zil130_TrailerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &313573733
 Transform:
@@ -8182,8 +8724,8 @@ GameObject:
   m_Name: Military_Vehicle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &329396156
 Transform:
@@ -8991,8 +9533,8 @@ GameObject:
   m_Name: BR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &353187925
 Transform:
@@ -9067,10 +9609,100 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 540521885276319721, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091400306332998675, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509528724015622657, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700070851843942910, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710576947004228911, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737062463086449855, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258240593799067527, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371104569986899468, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544833439069587457, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687279121308194085, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749195354825292181, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991644160438090295, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5087441001792350817, guid: 4edcaa96bf0771a4a99975d71c6790af,
         type: 3}
       propertyPath: m_Name
       value: M16 lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087441001792350817, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5311217264536338660, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5783828370182229286, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835471563105443349, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096960601934169652, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914619193510008430, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6950949948739507632, guid: 4edcaa96bf0771a4a99975d71c6790af,
         type: 3}
@@ -9122,6 +9754,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7054195675233877108, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162400640002850521, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599007351700070017, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7989870255160107990, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967069772291353297, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040498474575290966, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168885905839698915, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9144,7 +9811,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &372191806
 Transform:
@@ -9248,8 +9915,8 @@ GameObject:
   m_Name: BR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &382065430
 Transform:
@@ -9332,8 +9999,8 @@ GameObject:
   m_Name: Road_block_v1 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &382275684
 Transform:
@@ -9933,6 +10600,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thompson lay
       objectReference: {fileID: 0}
+    - target: {fileID: 2773276034725411060, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421541288745288292, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437026572571850640, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7867832384079865446, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9983,6 +10665,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -97.598
       objectReference: {fileID: 0}
+    - target: {fileID: 8212333404123758009, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489009988143379257, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10003,8 +10695,8 @@ GameObject:
   m_Name: F_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &407354062
 Transform:
@@ -10102,7 +10794,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -10196,8 +10888,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &425968543
 Transform:
@@ -11005,7 +11697,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &462722093
 Transform:
@@ -11102,10 +11794,95 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 75720513097878696, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 110010532031133955, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003969249861460499, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297046256370267987, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512777266900311197, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894497835905076425, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106890509872608792, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156021092840217749, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453321228616049276, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206875142115681025, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276883000266829319, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3513140460356378661, guid: 681e81dd88d46df478a6dbbca9619312,
         type: 3}
       propertyPath: m_Name
       value: M4A4 lay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513140460356378661, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916304671477001440, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941605285330401649, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023390258286089909, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526238966652783896, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7170272016428816100, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7309953335862516673, guid: 681e81dd88d46df478a6dbbca9619312,
         type: 3}
@@ -11161,6 +11938,21 @@ PrefabInstance:
         type: 3}
       propertyPath: spreadIntensityADS
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799755586569624695, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498777914774743505, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513860820476290250, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11240,8 +12032,8 @@ GameObject:
   m_Name: Road_block_v1 (25)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &470401231
 Transform:
@@ -11448,8 +12240,8 @@ GameObject:
   m_Name: Zil_Door_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &471380446
 Transform:
@@ -11742,8 +12534,8 @@ GameObject:
   m_Name: BR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &484572898
 Transform:
@@ -12038,6 +12830,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 201652154821878285, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 530694597063709849, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134471163293740039, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247997811716004648, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1279941780618675858, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12088,10 +12900,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1564173020664341205, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500483685279052582, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560940101343824161, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865452725138488657, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6141324931349595146, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195556506081064651, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398293748209024990, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9162214717791933642, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
         type: 3}
       propertyPath: m_Name
       value: P90 lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162214717791933642, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208053838423944500, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12439,8 +13296,8 @@ GameObject:
   m_Name: Truck_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &515424548
 Transform:
@@ -12545,8 +13402,8 @@ GameObject:
   m_Name: P_rsg_military_antitank_hedgehog_01 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &517093675
 Transform:
@@ -12791,6 +13648,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thompson lay (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2773276034725411060, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421541288745288292, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437026572571850640, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7867832384079865446, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12840,6 +13712,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -97.598
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212333404123758009, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489009988143379257, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13253,7 +14135,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &557347654
 Transform:
@@ -13740,8 +14622,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &571119390
 Transform:
@@ -13842,8 +14724,8 @@ GameObject:
   m_Name: Truck_Wheel_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &573109982
 Transform:
@@ -13877,8 +14759,8 @@ GameObject:
   m_Name: ZIL130_NoCover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &586147166
 Transform:
@@ -14110,7 +14992,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &591208611
 Transform:
@@ -14215,8 +15097,8 @@ GameObject:
   m_Name: Road_block_v1 (19)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &591840054
 Transform:
@@ -14564,10 +15446,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 678777536737545951, guid: 72675502c1eb7ec499e55daf8cda0858,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2730703177130998028, guid: 72675502c1eb7ec499e55daf8cda0858,
         type: 3}
       propertyPath: m_Name
       value: Glock lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730703177130998028, guid: 72675502c1eb7ec499e55daf8cda0858,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2783105060384353011, guid: 72675502c1eb7ec499e55daf8cda0858,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4604313161287264054, guid: 72675502c1eb7ec499e55daf8cda0858,
         type: 3}
@@ -14618,6 +15515,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238430593466209962, guid: 72675502c1eb7ec499e55daf8cda0858,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933865018889332854, guid: 72675502c1eb7ec499e55daf8cda0858,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804756606802966707, guid: 72675502c1eb7ec499e55daf8cda0858,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8153979362886367754, guid: 72675502c1eb7ec499e55daf8cda0858,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14722,8 +15639,8 @@ GameObject:
   m_Name: FR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &609496419
 Transform:
@@ -14807,7 +15724,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &613270516
 Transform:
@@ -14912,8 +15829,8 @@ GameObject:
   m_Name: Road_block_v1 (11)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &620179249
 Transform:
@@ -15369,8 +16286,8 @@ GameObject:
   m_Name: FR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &635960587
 Transform:
@@ -15453,8 +16370,8 @@ GameObject:
   m_Name: Cargo_container_v1_LD1close (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &638282661
 Transform:
@@ -15550,10 +16467,100 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 540521885276319721, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091400306332998675, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509528724015622657, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700070851843942910, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710576947004228911, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737062463086449855, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258240593799067527, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371104569986899468, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544833439069587457, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687279121308194085, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749195354825292181, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991644160438090295, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5087441001792350817, guid: 4edcaa96bf0771a4a99975d71c6790af,
         type: 3}
       propertyPath: m_Name
       value: M16 lay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087441001792350817, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5311217264536338660, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5783828370182229286, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835471563105443349, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096960601934169652, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914619193510008430, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6950949948739507632, guid: 4edcaa96bf0771a4a99975d71c6790af,
         type: 3}
@@ -15604,6 +16611,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054195675233877108, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162400640002850521, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599007351700070017, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7989870255160107990, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967069772291353297, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040498474575290966, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168885905839698915, guid: 4edcaa96bf0771a4a99975d71c6790af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16137,8 +17179,8 @@ GameObject:
   m_Name: tent_001 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &666982558
 Transform:
@@ -16278,6 +17320,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 201652154821878285, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 530694597063709849, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134471163293740039, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247997811716004648, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1279941780618675858, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16328,6 +17390,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1564173020664341205, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1843570096836635826, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16343,10 +17410,50 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.001
       objectReference: {fileID: 0}
+    - target: {fileID: 4500483685279052582, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560940101343824161, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865452725138488657, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6141324931349595146, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195556506081064651, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398293748209024990, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9162214717791933642, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
         type: 3}
       propertyPath: m_Name
       value: P90 lay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162214717791933642, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208053838423944500, guid: 2c2f74df4ebc8a94bb85630f3f26056f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16559,8 +17666,8 @@ GameObject:
   m_Name: tent_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &683086423
 Transform:
@@ -16706,8 +17813,8 @@ GameObject:
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &683224363
 Transform:
@@ -16762,8 +17869,8 @@ GameObject:
   m_Name: Truck_Covers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &690218805
 Transform:
@@ -16868,8 +17975,8 @@ GameObject:
   m_Name: Road_block_v1 (18)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &691311580
 Transform:
@@ -17227,7 +18334,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &704504002
 Transform:
@@ -17498,8 +18605,8 @@ GameObject:
   m_Name: Zil_Door_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &725014385
 Transform:
@@ -17987,8 +19094,8 @@ GameObject:
   m_Name: Truck_Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &737302514
 Transform:
@@ -18085,6 +19192,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 1442963995987787105, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2671655707308488741, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905176323934569008, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3965460883220763757, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18135,10 +19257,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -44.782
       objectReference: {fileID: 0}
+    - target: {fileID: 4104624050925698089, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5097305308057519951, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
         type: 3}
       propertyPath: m_Name
       value: Pistol 92 lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097305308057519951, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907203988674056540, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951258493201006902, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239535029949184722, guid: a8598d8a20cde8e42a8d0eb9dffa4f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18161,8 +19308,8 @@ GameObject:
   m_Name: Zil_Door_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &747394568
 Transform:
@@ -18619,8 +19766,8 @@ GameObject:
   m_Name: Road_block_v1 (30)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &768981364
 Transform:
@@ -18750,8 +19897,8 @@ GameObject:
   m_Name: F_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &771656643
 Transform:
@@ -19102,8 +20249,8 @@ GameObject:
   m_Name: Truck_Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &797353127
 Transform:
@@ -19209,7 +20356,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &804077856
 Transform:
@@ -20097,8 +21244,8 @@ GameObject:
   m_Name: Truck_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &841191093
 Transform:
@@ -20203,8 +21350,8 @@ GameObject:
   m_Name: Truck_Zil130_TrailerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &841934172
 Transform:
@@ -20524,8 +21671,8 @@ GameObject:
   m_Name: Truck_Zil130_TrailerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &858494661
 Transform:
@@ -20944,8 +22091,8 @@ GameObject:
   m_Name: Road_block_v1 (20)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &880224059
 Transform:
@@ -21149,12 +22296,13 @@ GameObject:
   - component: {fileID: 882255767}
   - component: {fileID: 882255769}
   - component: {fileID: 882255768}
+  - component: {fileID: 882255770}
   m_Layer: 0
   m_Name: Hangar_v2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &882255767
 Transform:
@@ -21221,6 +22369,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882255766}
   m_Mesh: {fileID: 4300000, guid: 3d0ff318627531f4ab4d637dbe23a019, type: 3}
+--- !u!64 &882255770
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882255766}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 3d0ff318627531f4ab4d637dbe23a019, type: 3}
 --- !u!1 &885328275
 GameObject:
   m_ObjectHideFlags: 0
@@ -21234,8 +22404,8 @@ GameObject:
   m_Name: Truck_Wheel_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &885328276
 Transform:
@@ -21325,8 +22495,8 @@ GameObject:
   m_Name: B_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &907438695
 Transform:
@@ -21637,8 +22807,8 @@ GameObject:
   m_Name: Truck_Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &914864158
 Transform:
@@ -22623,8 +23793,8 @@ GameObject:
   m_Name: Hangar_v4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &951096802
 Transform:
@@ -22833,8 +24003,8 @@ GameObject:
   m_Name: Zil_Door_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &953549845
 Transform:
@@ -23043,8 +24213,8 @@ GameObject:
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &968670243
 Transform:
@@ -23174,6 +24344,111 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 244781439634624649, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 512976500521926342, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 743830271835182326, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 931230516139082922, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105228019717757034, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109506012736519585, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1470927376719055279, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483472304450006846, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742133239773069941, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768548964168549175, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862632827334292983, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309707223960592140, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407303079951770754, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461409636493525943, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558213383956890672, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761502833575347129, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891402657461548853, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063896279815595931, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156780163162614399, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3310098638939921807, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424451214686284810, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -23182,17 +24457,17 @@ PrefabInstance:
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.099999994
       objectReference: {fileID: 0}
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.100000024
+      value: 0.10000002
       objectReference: {fileID: 0}
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.394
+      value: -22.393997
       objectReference: {fileID: 0}
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
@@ -23202,7 +24477,7 @@ PrefabInstance:
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.101
+      value: -8.100998
       objectReference: {fileID: 0}
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
@@ -23212,12 +24487,12 @@ PrefabInstance:
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.23021144
+      value: -0.23021145
       objectReference: {fileID: 0}
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.23021144
+      value: 0.23021145
       objectReference: {fileID: 0}
     - target: {fileID: 3434441566181942615, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
@@ -23239,10 +24514,170 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 3443679477525829903, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515454396033270609, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649017344408092268, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775864172134868761, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780042836772313728, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854449610560069484, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308978280098171831, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589984987347277, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923934403280189999, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960522703999156550, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5202627101980604499, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212756375279305793, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269922712995330329, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388476997760715857, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707207035147953137, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936792397389513, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934430296123110168, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314616295584720148, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326642602793732737, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564525280036525010, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671594923808178615, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6997707072506734399, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7557727822979960579, guid: 5f062624fdb670e4fafe99f60371ad8d,
         type: 3}
       propertyPath: m_Name
       value: MP7 lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557727822979960579, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610799382722519543, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691693413922124363, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7769650060398805389, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826643150755811585, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998502021572259501, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810262777572131102, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108290956651778080, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118092835514748076, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221644873276836055, guid: 5f062624fdb670e4fafe99f60371ad8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23266,7 +24701,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &971602528
 Transform:
@@ -23371,8 +24806,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &975055080
 Transform:
@@ -23663,8 +25098,8 @@ GameObject:
   m_Name: BL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &981533815
 Transform:
@@ -23746,8 +25181,8 @@ GameObject:
   m_Name: F_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &994508378
 Transform:
@@ -24004,8 +25439,8 @@ GameObject:
   m_Name: Road_block_v1 (21)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1005894004
 Transform:
@@ -24596,8 +26031,8 @@ GameObject:
   m_Name: tank_tower_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1035580312
 Transform:
@@ -24682,8 +26117,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1035874360
 Transform:
@@ -25064,8 +26499,8 @@ GameObject:
   m_Name: TruckBody_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1055006539
 Transform:
@@ -25112,9 +26547,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 2012079440110828994, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111311893439943003, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397717766475149633, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435757144869974825, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2435757144869974825, guid: cea35c38b49bf0c448145391ebd1f1ba,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2769456205877300046, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025614749481539622, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559136086550863631, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886244542600860715, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4826647736709775659, guid: cea35c38b49bf0c448145391ebd1f1ba,
@@ -25135,7 +26610,7 @@ PrefabInstance:
     - target: {fileID: 4826647736709775659, guid: cea35c38b49bf0c448145391ebd1f1ba,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.63496363
+      value: 0.6349636
       objectReference: {fileID: 0}
     - target: {fileID: 4826647736709775659, guid: cea35c38b49bf0c448145391ebd1f1ba,
         type: 3}
@@ -25150,7 +26625,7 @@ PrefabInstance:
     - target: {fileID: 4826647736709775659, guid: cea35c38b49bf0c448145391ebd1f1ba,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.63496363
+      value: -0.6349636
       objectReference: {fileID: 0}
     - target: {fileID: 4826647736709775659, guid: cea35c38b49bf0c448145391ebd1f1ba,
         type: 3}
@@ -25167,10 +26642,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 5145609343959877955, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661187251781519377, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365474413449805538, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8164270919013726058, guid: cea35c38b49bf0c448145391ebd1f1ba,
         type: 3}
       propertyPath: m_Name
       value: SAR2000 lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164270919013726058, guid: cea35c38b49bf0c448145391ebd1f1ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25354,10 +26849,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 3072448427958415765, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126244605179448636, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564219723694073106, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4494891089069790477, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
         type: 3}
       propertyPath: m_Name
       value: Scar lay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4494891089069790477, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630277861941301023, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427969902944746418, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715266137225619351, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6556921394955023011, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
         type: 3}
@@ -25409,6 +26939,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 50.837997
       objectReference: {fileID: 0}
+    - target: {fileID: 6674972536680182192, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001618556933135350, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128074494040498508, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433176231435131285, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802419812900346954, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25431,8 +26986,8 @@ GameObject:
   m_Name: Military_Vehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1061069346
 Transform:
@@ -25559,8 +27114,8 @@ GameObject:
   m_Name: B_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1063088647
 Transform:
@@ -25646,7 +27201,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1065576411
 Transform:
@@ -25951,8 +27506,8 @@ GameObject:
   m_Name: TruckBody_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1067092465
 Transform:
@@ -26019,8 +27574,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1069947179
 Transform:
@@ -26124,8 +27679,8 @@ GameObject:
   m_Name: P_rsg_military_antitank_hedgehog_01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1072430383
 Transform:
@@ -26230,8 +27785,8 @@ GameObject:
   m_Name: Truck_Wheel_AR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1073871952
 Transform:
@@ -27571,7 +29126,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1088647405
 Transform:
@@ -27676,8 +29231,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1090228490
 Transform:
@@ -28073,8 +29628,8 @@ GameObject:
   m_Name: Road_block_v1 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1101343182
 Transform:
@@ -28178,8 +29733,8 @@ GameObject:
   m_Name: Road_block_v1 (12)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1102002954
 Transform:
@@ -28617,8 +30172,8 @@ GameObject:
   m_Name: Road_block_v1 (23)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1120658138
 Transform:
@@ -29260,8 +30815,8 @@ GameObject:
   m_Name: Road_block_v1 (6)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1157299435
 Transform:
@@ -29703,7 +31258,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1179467389
 Transform:
@@ -29862,8 +31417,8 @@ GameObject:
   m_Name: Truck_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1188002251
 Transform:
@@ -29968,8 +31523,8 @@ GameObject:
   m_Name: Barrel_v3_quadro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1189390369
 Transform:
@@ -30475,8 +32030,8 @@ GameObject:
   m_Name: Truck_Wheel_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1207373169
 Transform:
@@ -30566,8 +32121,8 @@ GameObject:
   m_Name: F_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1217788183
 Transform:
@@ -31195,8 +32750,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 9162214717969806434}
   - {fileID: 1424686778}
+  - {fileID: 60601597}
+  - {fileID: 1919955923}
+  - {fileID: 9162214717969806434}
   - {fileID: 1387079398}
   - {fileID: 769597551}
   - {fileID: 1938032193}
@@ -31205,13 +32762,11 @@ Transform:
   - {fileID: 1465826201}
   - {fileID: 535995200}
   - {fileID: 45662614}
-  - {fileID: 1919955923}
   - {fileID: 1114010848}
   - {fileID: 836512144}
   - {fileID: 1432232825}
   - {fileID: 152502097}
   - {fileID: 530782100}
-  - {fileID: 60601597}
   - {fileID: 1324701913}
   - {fileID: 734589365}
   - {fileID: 1587534830}
@@ -31528,8 +33083,8 @@ GameObject:
   m_Name: BL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1263341232
 Transform:
@@ -31941,8 +33496,8 @@ GameObject:
   m_Name: Truck_Wheel_AR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1280863869
 Transform:
@@ -32130,8 +33685,8 @@ GameObject:
   m_Name: Truck_Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1284200645
 Transform:
@@ -32530,8 +34085,8 @@ GameObject:
   m_Name: Road_block_v1 (28)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1288917231
 Transform:
@@ -32656,8 +34211,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1289417415
 Transform:
@@ -32845,7 +34400,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1290558937
 Transform:
@@ -33440,8 +34995,8 @@ GameObject:
   m_Name: Truck_Covers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1309277270
 Transform:
@@ -33544,8 +35099,8 @@ GameObject:
   m_Name: Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1311843005
 Transform:
@@ -33940,8 +35495,8 @@ GameObject:
   m_Name: BR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1324815663
 Transform:
@@ -34444,8 +35999,8 @@ GameObject:
   m_Name: tank_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1346080840
 Transform:
@@ -34835,8 +36390,8 @@ GameObject:
   m_Name: Road_block_v1 (29)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1368632624
 Transform:
@@ -34961,8 +36516,8 @@ GameObject:
   m_Name: Road_block_v1 (16)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1370538028
 Transform:
@@ -35407,8 +36962,8 @@ GameObject:
   m_Name: Hangar_v1_full (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1391483456
 Transform:
@@ -35616,8 +37171,8 @@ GameObject:
   m_Name: Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1394560586
 Transform:
@@ -35778,7 +37333,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1399971520
 Transform:
@@ -35884,8 +37439,8 @@ GameObject:
   m_Name: Military_Vehicle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1406131257
 Transform:
@@ -36383,8 +37938,8 @@ GameObject:
   m_Name: FL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1416439011
 Transform:
@@ -36592,8 +38147,8 @@ GameObject:
   m_Name: ZIL130_NoCover (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1420874407
 Transform:
@@ -37400,8 +38955,8 @@ GameObject:
   m_Name: Road_block_v1 (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1453130259
 Transform:
@@ -37779,8 +39334,8 @@ GameObject:
   m_Name: Hangar_v1_full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1474264417
 Transform:
@@ -38261,8 +39816,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1484178807
 Transform:
@@ -38399,8 +39954,8 @@ GameObject:
   m_Name: Military_Vehicle (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1491562931
 Transform:
@@ -39067,10 +40622,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 3072448427958415765, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126244605179448636, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564219723694073106, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4494891089069790477, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
         type: 3}
       propertyPath: m_Name
       value: Scar lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 4494891089069790477, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630277861941301023, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427969902944746418, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715266137225619351, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6556921394955023011, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
         type: 3}
@@ -39121,6 +40711,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 50.837997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674972536680182192, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001618556933135350, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128074494040498508, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433176231435131285, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802419812900346954, guid: 04d7c19d85b8d2e45857b5ba8910d2dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39232,8 +40847,8 @@ GameObject:
   m_Name: P_rsg_military_antitank_hedgehog_01 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1533631630
 Transform:
@@ -39338,8 +40953,8 @@ GameObject:
   m_Name: Truck_Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1538733178
 Transform:
@@ -39506,8 +41121,8 @@ GameObject:
   m_Name: FR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1542033375
 Transform:
@@ -39589,8 +41204,8 @@ GameObject:
   m_Name: ZIL130_Cover (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1544875086
 Transform:
@@ -39788,8 +41403,8 @@ GameObject:
   m_Name: tank_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1547053869
 Transform:
@@ -39896,7 +41511,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1559755089
 Transform:
@@ -40001,8 +41616,8 @@ GameObject:
   m_Name: Truck_Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1564447211
 Transform:
@@ -40276,8 +41891,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1577152971
 Transform:
@@ -40382,8 +41997,8 @@ GameObject:
   m_Name: Road_block_v1 (27)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1579434958
 Transform:
@@ -40785,8 +42400,8 @@ GameObject:
   m_Name: Road_block_v1 (10)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1603157359
 Transform:
@@ -40987,6 +42602,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 928104606075536697, guid: 6287be78b0f513e4e8c9c84aef101cf1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563157960873767110, guid: 6287be78b0f513e4e8c9c84aef101cf1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2931722264034228016, guid: 6287be78b0f513e4e8c9c84aef101cf1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259878738767096912, guid: 6287be78b0f513e4e8c9c84aef101cf1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3627682663701167024, guid: 6287be78b0f513e4e8c9c84aef101cf1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41037,10 +42672,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6380605915987713745, guid: 6287be78b0f513e4e8c9c84aef101cf1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992469459789267215, guid: 6287be78b0f513e4e8c9c84aef101cf1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8158642726508956230, guid: 6287be78b0f513e4e8c9c84aef101cf1,
         type: 3}
       propertyPath: m_Name
       value: Scorpion lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158642726508956230, guid: 6287be78b0f513e4e8c9c84aef101cf1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430542019118731167, guid: 6287be78b0f513e4e8c9c84aef101cf1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41254,8 +42909,8 @@ GameObject:
   m_Name: Truck_Wheel_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1621863178
 Transform:
@@ -41291,7 +42946,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1630376817
 Transform:
@@ -41612,8 +43267,8 @@ GameObject:
   m_Name: Zil_Door_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1637251457
 Transform:
@@ -41754,7 +43409,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1670380909
 Transform:
@@ -41860,8 +43515,8 @@ GameObject:
   m_Name: Military_Vehicle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1674374594
 Transform:
@@ -42043,8 +43698,8 @@ GameObject:
   m_Name: Road_block_v1 (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1688627570
 Transform:
@@ -42548,8 +44203,8 @@ GameObject:
   m_Name: B_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1711872029
 Transform:
@@ -43143,8 +44798,8 @@ GameObject:
   m_Name: Zil_Door_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1729449975
 Transform:
@@ -43736,8 +45391,8 @@ GameObject:
   m_Name: Road_block_v1
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1744647372
 Transform:
@@ -44267,8 +45922,8 @@ GameObject:
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1766246314
 Transform:
@@ -44322,8 +45977,8 @@ GameObject:
   m_Name: tank_tower_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1766460873
 Transform:
@@ -44408,8 +46063,8 @@ GameObject:
   m_Name: Road_block_v1 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1770100178
 Transform:
@@ -44659,8 +46314,8 @@ GameObject:
   m_Name: P_rsg_military_antitank_hedgehog_01 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1777340993
 Transform:
@@ -45082,8 +46737,8 @@ GameObject:
   m_Name: Zil_Door_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1788990539
 Transform:
@@ -45367,8 +47022,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1801929477
 Transform:
@@ -45935,8 +47590,8 @@ GameObject:
   m_Name: Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1821340808
 Transform:
@@ -46179,8 +47834,8 @@ GameObject:
   m_Name: Road_block_v1 (13)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1833478273
 Transform:
@@ -46535,8 +48190,8 @@ GameObject:
   m_Name: Hangar_v1_full (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1859372442
 Transform:
@@ -46871,8 +48526,8 @@ GameObject:
   m_Name: B_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1878291025
 Transform:
@@ -47089,8 +48744,8 @@ GameObject:
   m_Name: Road_block_v1 (15)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1887651252
 Transform:
@@ -47416,8 +49071,8 @@ GameObject:
   m_Name: Truck_Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1902397620
 Transform:
@@ -47709,8 +49364,8 @@ GameObject:
   m_Name: FR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1906118756
 Transform:
@@ -47793,8 +49448,8 @@ GameObject:
   m_Name: Truck_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1906287410
 Transform:
@@ -48191,8 +49846,8 @@ GameObject:
   m_Name: Hangar_v1_full (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1915433518
 Transform:
@@ -48680,8 +50335,8 @@ GameObject:
   m_Name: Road_block_v1 (26)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1932224354
 Transform:
@@ -48806,8 +50461,8 @@ GameObject:
   m_Name: Truck_Wheel_AR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1934090968
 Transform:
@@ -48913,7 +50568,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1936101997
 Transform:
@@ -49024,8 +50679,8 @@ GameObject:
   m_Name: Truck_Wheel_AR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1939548790
 Transform:
@@ -49131,8 +50786,8 @@ GameObject:
   m_Name: Road_block_v1 (22)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1941259863
 Transform:
@@ -49509,8 +51164,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1958280662
 Transform:
@@ -49614,8 +51269,8 @@ GameObject:
   m_Name: Road_block_v1 (17)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1962721595
 Transform:
@@ -49761,10 +51416,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1117951147510809929, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250279129208270665, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150084533322544380, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748047510505625821, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784211874123840810, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102504445542045740, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160275374205064341, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514635248782849342, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8214815807836397059, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
         type: 3}
       propertyPath: m_Name
       value: AK47 lay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214815807836397059, guid: 1f8967d4948cf074da7dbcac4b7b2d8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49924,8 +51624,8 @@ GameObject:
   m_Name: TruckBody_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1973532956
 Transform:
@@ -50196,8 +51896,8 @@ GameObject:
   m_Name: Zil_Door_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1992719163
 Transform:
@@ -50497,10 +52197,95 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253094425}
     m_Modifications:
+    - target: {fileID: 75720513097878696, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 110010532031133955, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003969249861460499, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297046256370267987, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512777266900311197, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894497835905076425, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106890509872608792, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156021092840217749, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453321228616049276, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206875142115681025, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276883000266829319, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3513140460356378661, guid: 681e81dd88d46df478a6dbbca9619312,
         type: 3}
       propertyPath: m_Name
       value: M4A4 lay
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513140460356378661, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916304671477001440, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941605285330401649, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023390258286089909, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526238966652783896, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7170272016428816100, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7309953335862516673, guid: 681e81dd88d46df478a6dbbca9619312,
         type: 3}
@@ -50551,6 +52336,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799755586569624695, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498777914774743505, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513860820476290250, guid: 681e81dd88d46df478a6dbbca9619312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51038,8 +52838,8 @@ GameObject:
   m_Name: TruckBody_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2016912366
 Transform:
@@ -51476,8 +53276,8 @@ GameObject:
   m_Name: Road_block_v1 (9)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2033534075
 Transform:
@@ -51741,8 +53541,8 @@ GameObject:
   m_Name: FL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2036800427
 Transform:
@@ -51824,8 +53624,8 @@ GameObject:
   m_Name: tank_gun_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2038400276
 Transform:
@@ -52275,8 +54075,8 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2074906852
 Transform:
@@ -52380,8 +54180,8 @@ GameObject:
   m_Name: Dumpsters_v1_garbadge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2075090053
 Transform:
@@ -52807,7 +54607,7 @@ GameObject:
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2085525485
 Transform:
@@ -53014,8 +54814,8 @@ GameObject:
   m_Name: Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2094121800
 Transform:
@@ -53468,8 +55268,8 @@ GameObject:
   m_Name: FL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2117712803
 Transform:
@@ -54341,8 +56141,8 @@ GameObject:
   m_Name: Road_block_v1 (24)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2139621885
 Transform:
@@ -58566,3 +60366,4 @@ SceneRoots:
   - {fileID: 1490571572}
   - {fileID: 701919769}
   - {fileID: 1066157097}
+  - {fileID: 44689553}

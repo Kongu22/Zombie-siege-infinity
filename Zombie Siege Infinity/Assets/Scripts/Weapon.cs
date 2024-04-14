@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
 {
 
     public bool isActiveWeapon; // Is the weapon active
+    public int weaponDamage; // Weapon damage
 
     //Shooting
     public bool isShooting, readyToShoot;
@@ -81,12 +82,15 @@ public enum WeaponModel
 
 
     // Update is called once per frame
-    void Update()
+     void Update()
     {
+         foreach (Transform child in transform)
+            {
+                child.gameObject.layer = LayerMask.NameToLayer("WeaponRender"); // Исправлено с "Defoult" на "Default"
+            }
         if (isActiveWeapon)
         { 
-
-            if(Input.GetMouseButtonDown(1) && !isReloading) //
+            if(Input.GetMouseButtonDown(1) && !isReloading)
             {
                 enterADS();  // Enter ADS method
             }
@@ -96,25 +100,21 @@ public enum WeaponModel
                 exitADS(); // Exit ADS method
             }
 
-
             if (bulletsLeft == 0 && isShooting)
             {
                 SoundManager.Instance.emptyMagazineSound.Play();
             }
 
-            // Check if the reload button is pressed and if reload conditions are met 
-            if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading && WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel) > 0 && isADS == false) 
+            if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading && WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel) > 0 && !isADS) 
             {
                 Reload();
             }
 
-            // If the weapon is reloading, ignore shooting inputs
             if (isReloading)
             {
-                return; // Exit the Update method early if reloading
+                return;
             }
 
-            // Determine shooting based on shooting mode and button presses
             if (currentShootingMode == ShootingMode.Auto)
             {
                 isShooting = Input.GetKey(KeyCode.Mouse0);
@@ -124,16 +124,19 @@ public enum WeaponModel
                 isShooting = Input.GetKeyDown(KeyCode.Mouse0);
             }
 
-            // Proceed with shooting if ready and button is pressed
             if (readyToShoot && isShooting && bulletsLeft > 0)
             {
                 burstBulletsLeft = bulletsPerBurst;
                 FireWeapon();
             }
-
-
         }
-        
+        else
+        {
+            foreach (Transform child in transform)
+            {
+                child.gameObject.layer = LayerMask.NameToLayer("Default"); // Исправлено с "Defoult" на "Default"
+            }
+        }
     }
 
     private void enterADS()
@@ -164,8 +167,6 @@ public enum WeaponModel
         { 
             animator.SetTrigger("RECOIL"); // Set the trigger to shoot
         }
-        
-
 
         SoundManager.Instance.PlayShootingSound(thisWeaponModel); // Play the shooting sound
 
@@ -176,6 +177,9 @@ public enum WeaponModel
 
         //Instantiate the bullet
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, Quaternion.identity);
+
+        Bullet bul = bullet.GetComponent<Bullet>();
+        bul.bulletDamage = weaponDamage;
 
         // Pointing the bullet to the direction of the shooting.
         bullet.transform.forward = shootingDirection;
