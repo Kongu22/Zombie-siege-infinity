@@ -10458,6 +10458,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4746003247920153432, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: weaponDamage
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7867832384079865446, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13505,6 +13510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746003247920153432, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
+        type: 3}
+      propertyPath: weaponDamage
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7867832384079865446, guid: 4bf3960b468f7f84ba75c3a069a03b7d,
         type: 3}
@@ -60691,7 +60701,7 @@ GameObject:
   - component: {fileID: 7575551773086012601}
   m_Layer: 0
   m_Name: Zombie
-  m_TagString: Zombie
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
