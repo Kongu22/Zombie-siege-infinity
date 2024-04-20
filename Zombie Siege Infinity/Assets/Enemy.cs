@@ -48,18 +48,17 @@ public class Enemy : MonoBehaviour
             }
         }
     
-
-//
-    private void Update()
+    private void OnDrawGizmos()
     {
-        // Check if the zombie is moving or not and set the animation accordingly
-        if (navAgent.velocity.magnitude > 0.1f)
-        {
-            animator.SetBool("isWalking", true);
-        }
-        else
-        {
-            animator.SetBool("isWalking", false);
-        }
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 2.5f); // Attack distance
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, 25f); // Detection distance
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, 24f); // Stop chasing distance
     }
+
+ 
 }
