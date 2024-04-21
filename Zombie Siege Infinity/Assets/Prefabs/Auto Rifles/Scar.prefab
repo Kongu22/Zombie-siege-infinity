@@ -4993,7 +4993,11 @@ MonoBehaviour:
   bulletsLeft: 0
   isReloading: 0
   spawnPosition: {x: 0.242, y: 1.351, z: 1.329}
-  spawnRotation: {x: 0, y: 90, z: 0}
+  spawnRotation: {x: 0, y: 0, z: 0}
+  normalFOV: 60
+  pistolZoomFOV: 55
+  rifleZoomFOV: 55
+  rifleWithScopeZoomFOV: 40
   thisWeaponModel: 11
   currentShootingMode: 2
 --- !u!95 &4681062547941053328

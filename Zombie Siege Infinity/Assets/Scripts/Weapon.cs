@@ -42,6 +42,15 @@ public class Weapon : MonoBehaviour
 
     bool isADS;
 
+    // Camera settings
+    
+    public float normalFOV = 60f;  // Normal field of view
+    public float pistolZoomFOV = 55f;  // Zoomed field of view for pistols
+    public float rifleZoomFOV = 50f;  // Zoomed field of view for pistols
+    public float rifleWithScopeZoomFOV = 45f;  // Zoomed field of view for rifles with scope
+    // public float rifleZoomFOV = 50f;    // Zoomed field of view for rifles
+    private Camera MainCamera;
+
 
 public enum WeaponModel
 {
@@ -73,11 +82,13 @@ public enum WeaponModel
 
     private void Awake()
     {
+
         readyToShoot = true;
         burstBulletsLeft = bulletsPerBurst;
         animator = GetComponent<Animator>();
         bulletsLeft = magazineSize;
         playerMovement = GetComponentInParent<PlayerMovement>(); // Assuming the weapon is a child of the player
+        MainCamera = Camera.main;
     }
 
 
@@ -134,22 +145,56 @@ public enum WeaponModel
         {
             foreach (Transform child in transform)
             {
-                child.gameObject.layer = LayerMask.NameToLayer("Default"); 
+                child.gameObject.layer = LayerMask.NameToLayer("Default"); // Исправлено с "Defoult" на "Default"
             }
         }
     }
 
-    private void enterADS()
+// Simplified enterADS Method
+private void enterADS()
+{
+    if (MainCamera == null)
     {
-        animator.SetTrigger("enterADS");
-        HUDManager.Instance.crosshair.SetActive(false);
-        isADS = true;  
+        Debug.LogError("Main camera is not assigned!");
+        return;
     }
+    
+    
+
+    // Determine the FOV based on the weapon model
+    if (thisWeaponModel == WeaponModel.Pistol92 || thisWeaponModel == WeaponModel.SAR2000 || 
+        thisWeaponModel == WeaponModel.Scorpion || thisWeaponModel == WeaponModel.Glock)
+    {
+        MainCamera.fieldOfView = pistolZoomFOV;
+    }
+    else if (thisWeaponModel == WeaponModel.M4A4 || thisWeaponModel == WeaponModel.Scar || 
+             thisWeaponModel == WeaponModel.P90 || thisWeaponModel == WeaponModel.MP7)
+    {
+        MainCamera.fieldOfView = rifleWithScopeZoomFOV;
+    }
+    else
+    {
+        MainCamera.fieldOfView = rifleZoomFOV;
+    }
+
+    HUDManager.Instance.crosshair.SetActive(false);
+    isADS = true;
+    animator.SetTrigger("enterADS");
+}
+
     private void exitADS()
     {
-        animator.SetTrigger("exitADS");
+        if (MainCamera == null)
+        {
+            Debug.LogError("Main camera is not assigned!");
+            return;
+        }
+
+        // Reset the FOV to normal when exiting ADS
+        MainCamera.fieldOfView = normalFOV;
         HUDManager.Instance.crosshair.SetActive(true);
         isADS = false;
+        animator.SetTrigger("exitADS");
     }
  
 
