@@ -134,7 +134,7 @@ public enum WeaponModel
         {
             foreach (Transform child in transform)
             {
-                child.gameObject.layer = LayerMask.NameToLayer("Default"); // Исправлено с "Defoult" на "Default"
+                child.gameObject.layer = LayerMask.NameToLayer("Default"); 
             }
         }
     }

@@ -10,6 +10,7 @@ public class SoundManager : MonoBehaviour
 
     public AudioSource emptyMagazineSound;
 
+    [Header(" Shooting Sounds")]
     public AudioClip Pistol92Shot;
     public AudioClip SAR2000Shot;
     public AudioClip GlockShot;
@@ -22,6 +23,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip MP7Shot;
     public AudioClip Scorpion;
 
+    [Header(" Reloading Sounds")]
     public AudioSource ReloadingSoundPistol92;
     public AudioSource ReloadingSoundScorpion;
     public AudioSource ReloadingSoundSAR2000;
@@ -33,6 +35,15 @@ public class SoundManager : MonoBehaviour
     public AudioSource ReloadingSoundP90;
     public AudioSource ReloadingSoundScar;
     public AudioSource ReloadingSoundMP7;
+
+    [Header("Zombie Sound")]
+    public AudioClip ZombieWalking;
+    public AudioClip ZombieChase;
+    public AudioClip ZombieAttack;
+    public AudioClip ZombieHit;
+    public AudioClip ZombieDeath;
+
+    public AudioSource ZombieChannel;
 
 
     private void Awake()

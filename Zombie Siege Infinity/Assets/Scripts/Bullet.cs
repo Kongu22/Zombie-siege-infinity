@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,8 +30,22 @@ public class Bullet : MonoBehaviour
         {
             ObjectWeHit.gameObject.GetComponent<Enemy>().TakeDamage(bulletDamage);
 
+            CreateBulletSprayEffect(ObjectWeHit);
+
             Destroy(gameObject);
         }
+    }
+
+    private void CreateBulletSprayEffect(Collision ObjectWeHit)
+    {
+        ContactPoint contact = ObjectWeHit.contacts[0];
+        GameObject blood = Instantiate(
+            GlobalReferences.Instance.bloodSprayEffect,
+            contact.point,
+            Quaternion.LookRotation(contact.normal)
+        );
+
+        blood.transform.SetParent(ObjectWeHit.gameObject.transform);
     }
 
     void CreateBulletImpactEffect(Collision ObjectWeHit)

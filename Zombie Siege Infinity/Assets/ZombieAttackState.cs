@@ -11,6 +11,11 @@ public class ZombieAttackState : StateMachineBehaviour
     float stopAttckingDistance = 2.5f;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+         if(SoundManager.Instance.ZombieChannel.isPlaying == false)
+        {
+            SoundManager.Instance.ZombieChannel.PlayOneShot(SoundManager.Instance.ZombieAttack);
+        }
+
        //--- initialize the attack state ---//
 
         player = GameObject.FindGameObjectWithTag("Player").transform;

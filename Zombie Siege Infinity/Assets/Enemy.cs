@@ -39,12 +39,12 @@ public class Enemy : MonoBehaviour
                 {
                     animator.SetTrigger("DIE2");
                 }
-                print("Zombie is dead!");
+                SoundManager.Instance.ZombieChannel.PlayOneShot(SoundManager.Instance.ZombieDeath);
             }
             else
             {
                 animator.SetTrigger("DAMAGE");
-                print("Zombie took damage!");
+                SoundManager.Instance.ZombieChannel.PlayOneShot(SoundManager.Instance.ZombieHit);
             }
         }
     

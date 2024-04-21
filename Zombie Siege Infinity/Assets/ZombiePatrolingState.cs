@@ -40,6 +40,11 @@ public class ZombiePatrolingState : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if(SoundManager.Instance.ZombieChannel.isPlaying == false)
+        {
+            SoundManager.Instance.ZombieChannel.PlayOneShot(SoundManager.Instance.ZombieWalking);
+            SoundManager.Instance.ZombieChannel.PlayDelayed(1f);
+        }
        //--- check if arived at the waypoint ---//
 
         if(agent.remainingDistance <= agent.stoppingDistance)
@@ -69,6 +74,7 @@ public class ZombiePatrolingState : StateMachineBehaviour
     {
         //--- stop the zombie from moving ---//
        agent.SetDestination(animator.transform.position);
+       SoundManager.Instance.ZombieChannel.Stop();
     }
 
 }
