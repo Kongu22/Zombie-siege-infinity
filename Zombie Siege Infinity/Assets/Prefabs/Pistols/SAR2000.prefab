@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2821003320741867239}
   - component: {fileID: 1309858097439830357}
   - component: {fileID: 8835448813371304768}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bullet_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6906879554628494226}
   - component: {fileID: 2462142239509054725}
   - component: {fileID: 7704052706468815714}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SAR_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 5261554045495260661}
   - component: {fileID: 1921763601937104189}
   - component: {fileID: 868027315604568663}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SAR_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 3010504093898335458}
   - component: {fileID: 3083523272337858335}
   - component: {fileID: 3035477605073605406}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5050,7 +5050,7 @@ GameObject:
   - component: {fileID: 3830836537888705856}
   - component: {fileID: 535278773815247277}
   - component: {fileID: 733760849480536082}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SAR_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5133,7 +5133,7 @@ GameObject:
   - component: {fileID: 6859615096381237652}
   - component: {fileID: 6569837045299337744}
   - component: {fileID: 4306714070469911044}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SAR_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5216,7 +5216,7 @@ GameObject:
   - component: {fileID: 9031167952095458251}
   - component: {fileID: 3332861691483606508}
   - component: {fileID: 205237419243723043}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SAR_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5297,7 +5297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4352950825007841001}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: 'BulletSpawn '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5331,7 +5331,7 @@ GameObject:
   - component: {fileID: 4650201396200633979}
   - component: {fileID: 3673674914848880147}
   - component: {fileID: 8788239160325736991}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SAR_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5414,7 +5414,7 @@ GameObject:
   - component: {fileID: 4138401924037037145}
   - component: {fileID: 7368378260327385316}
   - component: {fileID: 4922756812734783082}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SAR_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5497,7 +5497,7 @@ GameObject:
   - component: {fileID: 759865777261327970}
   - component: {fileID: 8048635960298404025}
   - component: {fileID: 8824799597407552880}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SAR_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5582,7 +5582,7 @@ GameObject:
   - component: {fileID: 6641933531966914348}
   - component: {fileID: 4234991533453703603}
   - component: {fileID: 4901350940805729114}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SAR2000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5659,6 +5659,10 @@ MonoBehaviour:
   isReloading: 0
   spawnPosition: {x: 0.175, y: 1.407, z: 0.775}
   spawnRotation: {x: 0, y: 0, z: 0}
+  normalFOV: 60
+  pistolZoomFOV: 55
+  rifleZoomFOV: 55
+  rifleWithScopeZoomFOV: 40
   thisWeaponModel: 1
   currentShootingMode: 0
 --- !u!95 &4234991533453703603

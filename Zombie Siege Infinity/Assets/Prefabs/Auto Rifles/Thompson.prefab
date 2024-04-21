@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4746003247920153432}
   - component: {fileID: 5601171067511768498}
   - component: {fileID: 4611658446796753190}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Thompson
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,6 +144,10 @@ MonoBehaviour:
   isReloading: 0
   spawnPosition: {x: 0.227, y: 1.221, z: 0.822}
   spawnRotation: {x: 0, y: 0, z: 0}
+  normalFOV: 60
+  pistolZoomFOV: 55
+  rifleZoomFOV: 55
+  rifleWithScopeZoomFOV: 40
   thisWeaponModel: 5
   currentShootingMode: 2
 --- !u!95 &5601171067511768498
@@ -196,7 +200,7 @@ GameObject:
   - component: {fileID: 135848580573076679}
   - component: {fileID: 381474749535701612}
   - component: {fileID: 7791661415426394401}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4975,7 +4979,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2771293146434211469}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: 'BulletSpawn '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5009,7 +5013,7 @@ GameObject:
   - component: {fileID: 5448690978771584741}
   - component: {fileID: 1822541255321580088}
   - component: {fileID: 2974725880496757711}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PPSh_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5092,7 +5096,7 @@ GameObject:
   - component: {fileID: 1292560074792541843}
   - component: {fileID: 2392156109131580650}
   - component: {fileID: 987673336988615817}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PPSh_Mag
   m_TagString: Untagged
   m_Icon: {fileID: 0}

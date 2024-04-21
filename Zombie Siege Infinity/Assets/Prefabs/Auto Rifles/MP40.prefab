@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7860892696198276571}
   - component: {fileID: 7026580500508701008}
   - component: {fileID: 5712085306605478364}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MP40_VC_MP40_mo_VC_MP40_md_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 1602460404110802421}
   - component: {fileID: 4429730666712371392}
   - component: {fileID: 2801769015754701743}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MP40_001_VC_MP40_mo_VC_MP40_md_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 8357017672815424498}
   - component: {fileID: 300582124515873619}
   - component: {fileID: 8155025021292365331}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MP40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,6 +306,10 @@ MonoBehaviour:
   isReloading: 0
   spawnPosition: {x: 0.236, y: 1.008, z: 1.137}
   spawnRotation: {x: 0, y: 0, z: 0}
+  normalFOV: 60
+  pistolZoomFOV: 55
+  rifleZoomFOV: 55
+  rifleWithScopeZoomFOV: 40
   thisWeaponModel: 8
   currentShootingMode: 2
 --- !u!95 &300582124515873619
@@ -359,7 +363,7 @@ GameObject:
   - component: {fileID: 334492639700684853}
   - component: {fileID: 7598105160287264059}
   - component: {fileID: 2496253095845532334}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MP40_002_VC_MP40_mo_VC_MP40_md_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +468,7 @@ GameObject:
   - component: {fileID: 7259317488586168799}
   - component: {fileID: 5707629499017286101}
   - component: {fileID: 7523783034435571581}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5246,7 +5250,7 @@ GameObject:
   - component: {fileID: 5148746391466817503}
   - component: {fileID: 6025362057752832096}
   - component: {fileID: 4667613339679468690}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MP40_003_VC_MP40_mo_VC_MP40_md_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5349,7 +5353,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425364782519193125}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: 'BulletSpawn  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}

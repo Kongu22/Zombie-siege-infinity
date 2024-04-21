@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5119407976873917170}
   - component: {fileID: 585990859592780725}
   - component: {fileID: 1902393800487721409}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4790,7 +4790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3274249510898832459}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Fire_mod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4823,7 +4823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1832974287130649160}
   - component: {fileID: 7586572803878712325}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M4A4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4917,7 +4917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1097058808214470504}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: flap_Bullet_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4950,7 +4950,7 @@ GameObject:
   - component: {fileID: 8023674729573643285}
   - component: {fileID: 2751017657663841879}
   - component: {fileID: 5662228583295823998}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Scope_a1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5034,7 +5034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7279625154632556752}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5070,7 +5070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5087271105596123942}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: 'BulletSpawn  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5102,7 +5102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6979168670931328661}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: flap_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5134,7 +5134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5771262129913576257}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M4A4_rigged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5166,7 +5166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6507571576254329744}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Fire_mod_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5197,7 +5197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8257767978426808879}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Magazine_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5232,7 +5232,7 @@ GameObject:
   - component: {fileID: 7595571084654851863}
   - component: {fileID: 4368580428998968027}
   - component: {fileID: 3705988216437022265}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M4A4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5312,6 +5312,10 @@ MonoBehaviour:
   isReloading: 0
   spawnPosition: {x: 0.216, y: 1.125, z: 0.938}
   spawnRotation: {x: 0, y: 0, z: 0}
+  normalFOV: 60
+  pistolZoomFOV: 55
+  rifleZoomFOV: 55
+  rifleWithScopeZoomFOV: 40
   thisWeaponModel: 7
   currentShootingMode: 2
 --- !u!95 &4368580428998968027
@@ -5363,7 +5367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2692963748246280018}
   - component: {fileID: 3244927809468580875}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M4A4.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5453,7 +5457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101955180341335135}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5487,7 +5491,7 @@ GameObject:
   - component: {fileID: 1161643870632054076}
   - component: {fileID: 7536876010452469268}
   - component: {fileID: 4661304159013557032}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Scope_a3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5572,7 +5576,7 @@ GameObject:
   - component: {fileID: 5974314382406596516}
   - component: {fileID: 6900001572508889650}
   - component: {fileID: 5570553247371099568}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Scope_a2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5654,7 +5658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 79472031539107152}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5686,7 +5690,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2997148787932310831}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Reload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5718,7 +5722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4788287137551646588}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Reload_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5749,7 +5753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1142105940807140741}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Trigger_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}

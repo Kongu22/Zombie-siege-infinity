@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9121551856936246690}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Rifle_Caliber_5_56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 8632571103364734767}
   - component: {fileID: 5056476513736712651}
   - component: {fileID: 5719068038335343351}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_12_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5280696104653688638}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: 'BulletSpawn  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 7332494798355591360}
   - component: {fileID: 6068511093286065486}
   - component: {fileID: 3020117263104806187}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_9_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 4054183979587179676}
   - component: {fileID: 799893561826440965}
   - component: {fileID: 8718523679216823264}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_2_1_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5590684681186329521}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Rifle_Caliber_5_56_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 9131680900633294913}
   - component: {fileID: 3284659773418009619}
   - component: {fileID: 1546464421189317293}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_2_2_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 4587590628606422485}
   - component: {fileID: 743117121921718765}
   - component: {fileID: 2507262485170718203}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_10_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 4445371154168420243}
   - component: {fileID: 2723837645607119888}
   - component: {fileID: 591712272485381943}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_11_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 6409059113888846890}
   - component: {fileID: 6832998312430631425}
   - component: {fileID: 9190186415119605829}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_2_1_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 3371675417811330367}
   - component: {fileID: 3605297288130984525}
   - component: {fileID: 5966709062823179132}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_2_1_low2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -789,7 +789,7 @@ GameObject:
   - component: {fileID: 4530017807041120371}
   - component: {fileID: 3189019077456784713}
   - component: {fileID: 4401485317228155538}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_7_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -874,7 +874,7 @@ GameObject:
   - component: {fileID: 1633616201247464695}
   - component: {fileID: 4798910432386036889}
   - component: {fileID: 3339152015665622701}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 5708457348391309722}
   - component: {fileID: 5935716466638653282}
   - component: {fileID: 8268924247653619913}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_6_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 2464821170146436317}
   - component: {fileID: 8866640885909332050}
   - component: {fileID: 525372485836875078}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_8_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1175,7 +1175,7 @@ GameObject:
   - component: {fileID: 3538535656040587432}
   - component: {fileID: 7871314380989667005}
   - component: {fileID: 5808014656726713109}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_13_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1258,7 +1258,7 @@ GameObject:
   - component: {fileID: 2062717766052757220}
   - component: {fileID: 1680552113979414214}
   - component: {fileID: 8758440905483598674}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_3_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1341,7 +1341,7 @@ GameObject:
   - component: {fileID: 1576621074059089067}
   - component: {fileID: 785002626839110894}
   - component: {fileID: 9206638788330657005}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_2_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1424,7 +1424,7 @@ GameObject:
   - component: {fileID: 2636728682816322361}
   - component: {fileID: 1278221939314949259}
   - component: {fileID: 4909781738318915508}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_2_1_low3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1507,7 +1507,7 @@ GameObject:
   - component: {fileID: 5435065625259659234}
   - component: {fileID: 1768672829080253423}
   - component: {fileID: 1702958834505354176}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_5_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,7 +1590,7 @@ GameObject:
   - component: {fileID: 5910249091352420482}
   - component: {fileID: 6471999300452510399}
   - component: {fileID: 2526969429107432286}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_14_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1673,7 +1673,7 @@ GameObject:
   - component: {fileID: 2346243138054323164}
   - component: {fileID: 7145866339904909747}
   - component: {fileID: 4475848429985650282}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_4_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 7666675522199999613}
   - component: {fileID: 8294566651216778236}
   - component: {fileID: 9022425198207860237}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1839,7 +1839,7 @@ GameObject:
   - component: {fileID: 416335129137726415}
   - component: {fileID: 6347720029607493434}
   - component: {fileID: 534825752635045161}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: M16_1_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1922,7 +1922,7 @@ GameObject:
   - component: {fileID: 326474120433693738}
   - component: {fileID: 1483343723229211163}
   - component: {fileID: 7831622012449543329}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8987504725699024668}
   - component: {fileID: 8454712888536916880}
   - component: {fileID: 1369383373613327399}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4796,7 +4796,7 @@ GameObject:
   - component: {fileID: 3913931981526266279}
   - component: {fileID: 9129181748751717894}
   - component: {fileID: 7913298503463623919}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Glock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4927,6 +4927,10 @@ MonoBehaviour:
   isReloading: 0
   spawnPosition: {x: 0.09999999, y: 1.44, z: 0.65}
   spawnRotation: {x: -90, y: 0, z: -180}
+  normalFOV: 60
+  pistolZoomFOV: 55
+  rifleZoomFOV: 55
+  rifleWithScopeZoomFOV: 40
   thisWeaponModel: 3
   currentShootingMode: 1
 --- !u!95 &9129181748751717894
@@ -4979,7 +4983,7 @@ GameObject:
   - component: {fileID: 7276502715928857941}
   - component: {fileID: 4342938143371430130}
   - component: {fileID: 8882887337491972256}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PM-40_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5062,7 +5066,7 @@ GameObject:
   - component: {fileID: 8729103638449382197}
   - component: {fileID: 8399695529350515818}
   - component: {fileID: 4696945391319741481}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PM-40_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5145,7 +5149,7 @@ GameObject:
   - component: {fileID: 192688805072341298}
   - component: {fileID: 1900480156950386631}
   - component: {fileID: 6338244190827619799}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PM-40_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5228,7 +5232,7 @@ GameObject:
   - component: {fileID: 7107707974509525258}
   - component: {fileID: 4594427668531394292}
   - component: {fileID: 3919256741994713426}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PM-40_Receiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5309,7 +5313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2163021644585258675}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}

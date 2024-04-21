@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4294745659345343199}
   - component: {fileID: 3987988394163373327}
   - component: {fileID: 6417605606570881880}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: mg61_gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1840951476780544512}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: 'BulletSpawn '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6427013214378671597}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: mg61_gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 2909008322248157211}
   - component: {fileID: 6226559129260025144}
   - component: {fileID: 1080656236348912555}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: mg61_ejection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 3008355885055760568}
   - component: {fileID: 3835141016080968335}
   - component: {fileID: 1187960641246302407}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5024,7 +5024,7 @@ GameObject:
   - component: {fileID: 1341510105041538541}
   - component: {fileID: 31438929116329265}
   - component: {fileID: 8711864450944163355}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: mg61_trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5109,7 +5109,7 @@ GameObject:
   - component: {fileID: 4379477673963202094}
   - component: {fileID: 426853231659946245}
   - component: {fileID: 2527244607056283713}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Scorpion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5188,6 +5188,10 @@ MonoBehaviour:
   isReloading: 0
   spawnPosition: {x: 0.233, y: 1.303, z: 0.845}
   spawnRotation: {x: 0, y: 180, z: 0}
+  normalFOV: 60
+  pistolZoomFOV: 55
+  rifleZoomFOV: 55
+  rifleWithScopeZoomFOV: 40
   thisWeaponModel: 2
   currentShootingMode: 2
 --- !u!95 &426853231659946245
@@ -5240,7 +5244,7 @@ GameObject:
   - component: {fileID: 7435393061778971104}
   - component: {fileID: 7685090496648865962}
   - component: {fileID: 5070730816424966589}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: mg61_mag
   m_TagString: Untagged
   m_Icon: {fileID: 0}

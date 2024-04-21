@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3587476526724583022}
   - component: {fileID: 3357986513791836389}
   - component: {fileID: 1736405956836201111}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4790,7 +4790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8559369437621387682}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: 'BulletSpawn  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4822,7 +4822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 878599552240056145}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4856,7 +4856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3842196639268463632}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: P90_rigged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4890,7 +4890,7 @@ GameObject:
   - component: {fileID: 6149008641439475335}
   - component: {fileID: 7799924742883906914}
   - component: {fileID: 3322406361123647265}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: P90_scope_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4973,7 +4973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4243730882217013818}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5005,7 +5005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8148641471073227826}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5038,7 +5038,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1037937245151875634}
   - component: {fileID: 4600621343545004387}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: P90_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5129,7 +5129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1413956083417026604}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bone.004_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5160,7 +5160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 485339359545163996}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bone.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5191,7 +5191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1843570096836635826}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: reload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5227,7 +5227,7 @@ GameObject:
   - component: {fileID: 1587819186199872742}
   - component: {fileID: -5099213708691446100}
   - component: {fileID: 2456954940672404205}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: P90
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5306,6 +5306,10 @@ MonoBehaviour:
   isReloading: 0
   spawnPosition: {x: 0.251, y: 1.305, z: 1.04}
   spawnRotation: {x: 0, y: 0, z: 0}
+  normalFOV: 60
+  pistolZoomFOV: 55
+  rifleZoomFOV: 55
+  rifleWithScopeZoomFOV: 40
   thisWeaponModel: 10
   currentShootingMode: 2
 --- !u!95 &-5099213708691446100
@@ -5356,7 +5360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2338789656326273909}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bone.002_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}

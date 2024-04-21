@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 514688889215132551}
   - component: {fileID: 8981028971924078596}
   - component: {fileID: 1609956015577706785}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6625718134457834987}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 2597247780160688418}
   - component: {fileID: 6586291094585548484}
   - component: {fileID: 2799745116156550113}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 1205980836238962721}
   - component: {fileID: 6442178649404021352}
   - component: {fileID: 942467957948058278}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,8 @@ GameObject:
   - component: {fileID: 1525096326728675891}
   - component: {fileID: 4458675337111042327}
   - component: {fileID: 4073478251629955750}
-  m_Layer: 7
+  - component: {fileID: -5643199672478534070}
+  m_Layer: 0
   m_Name: Pistol92
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,6 +377,10 @@ MonoBehaviour:
   isReloading: 0
   spawnPosition: {x: 0.163, y: 1.487, z: 0.8239994}
   spawnRotation: {x: 0, y: -90, z: 0}
+  normalFOV: 60
+  pistolZoomFOV: 55
+  rifleZoomFOV: 55
+  rifleWithScopeZoomFOV: 40
   thisWeaponModel: 0
   currentShootingMode: 0
 --- !u!95 &4458675337111042327
@@ -417,6 +422,14 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!33 &-5643199672478534070
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5097305308057519951}
+  m_Mesh: {fileID: 0}
 --- !u!1 &5907203988674056540
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +441,7 @@ GameObject:
   - component: {fileID: 6828130450141096569}
   - component: {fileID: 3286038520518444161}
   - component: {fileID: 30575849256694020}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube.000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +528,7 @@ GameObject:
   - component: {fileID: 4921045747761125935}
   - component: {fileID: 878896267442637758}
   - component: {fileID: 4254297516796724897}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5296,7 +5309,7 @@ GameObject:
   - component: {fileID: 8806614830514815316}
   - component: {fileID: 738091889757846934}
   - component: {fileID: 425176592942201170}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}

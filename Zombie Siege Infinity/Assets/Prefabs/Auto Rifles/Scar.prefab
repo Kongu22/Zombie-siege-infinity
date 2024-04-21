@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7856422332163414519}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: automate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6339426659787085385}
   - component: {fileID: 2786547534846967292}
   - component: {fileID: 1936566542247050825}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: scope (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 8178559201241045313}
   - component: {fileID: 8700041047155583564}
   - component: {fileID: 2510077749647290592}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MuzzleFlashEffect (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4913,7 +4913,7 @@ GameObject:
   - component: {fileID: 2783506641677326359}
   - component: {fileID: 4681062547941053328}
   - component: {fileID: 4778907926377851960}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Scar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5050,7 +5050,7 @@ GameObject:
   - component: {fileID: 2314780622503188445}
   - component: {fileID: 1241244887573518761}
   - component: {fileID: 4995248506873264901}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5133,7 +5133,7 @@ GameObject:
   - component: {fileID: 4780624268882661818}
   - component: {fileID: 8956899322984132010}
   - component: {fileID: 17906712700735155}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: aimp_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5214,7 +5214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3613260219021182804}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: 'BulletSpawn  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5248,7 +5248,7 @@ GameObject:
   - component: {fileID: 5146199834987480064}
   - component: {fileID: 4420244962885040564}
   - component: {fileID: 4668372377117300140}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5331,7 +5331,7 @@ GameObject:
   - component: {fileID: 23225028702597205}
   - component: {fileID: 6151574035528495432}
   - component: {fileID: 4138717038128416663}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: store
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5414,7 +5414,7 @@ GameObject:
   - component: {fileID: 9084696062120777588}
   - component: {fileID: 718398952708935800}
   - component: {fileID: 7735547374272608178}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5497,7 +5497,7 @@ GameObject:
   - component: {fileID: 2855980414517072799}
   - component: {fileID: 8407974914398851666}
   - component: {fileID: 1291943701798715898}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: aimp_glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5578,7 +5578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2718875310015969464}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: scope (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

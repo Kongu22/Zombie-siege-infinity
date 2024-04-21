@@ -95,12 +95,14 @@ public enum WeaponModel
     // Update is called once per frame
      void Update()
     {
-         foreach (Transform child in transform)
+
+        if (isActiveWeapon)
+        { 
+            foreach (Transform child in transform)
             {
                 child.gameObject.layer = LayerMask.NameToLayer("WeaponRender"); // Исправлено с "Defoult" на "Default"
             }
-        if (isActiveWeapon)
-        { 
+
             if(Input.GetMouseButtonDown(1) && !isReloading)
             {
                 enterADS();  // Enter ADS method
