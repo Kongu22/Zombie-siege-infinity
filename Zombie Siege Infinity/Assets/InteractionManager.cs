@@ -32,6 +32,7 @@ public class InteractionManager : MonoBehaviour
 
         if(Physics.Raycast(ray, out hit, interactionDistance)) // Check for collision within interactionDistance
         {
+           
             GameObject objectHitByRaycast = hit.transform.gameObject;
             float distanceToObject = Vector3.Distance(Camera.main.transform.position, objectHitByRaycast.transform.position); // Calculate distance to object
 

@@ -8,7 +8,7 @@ public class ZombieAttackState : StateMachineBehaviour
 {
     Transform player;
     NavMeshAgent agent;
-    float stopAttckingDistance = 2.5f;
+    public float stopAttckingDistance = 2.5f;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
          if(SoundManager.Instance.ZombieChannel.isPlaying == false)
