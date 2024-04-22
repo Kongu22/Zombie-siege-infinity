@@ -1416,7 +1416,7 @@ GameObject:
   m_Name: Truck_Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &45493481
@@ -3036,7 +3036,7 @@ GameObject:
   m_Name: Barrel_v3_quadro (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &108396778
@@ -4931,7 +4931,7 @@ GameObject:
   m_Name: ZIL130_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &209204732
@@ -5045,7 +5045,7 @@ GameObject:
   m_Name: BL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &210381983
@@ -5478,7 +5478,7 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &249242625
@@ -8909,7 +8909,7 @@ GameObject:
   m_Name: BR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &353187925
@@ -11210,7 +11210,7 @@ GameObject:
   m_Name: Road_block_v1 (25)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &470401231
@@ -11397,7 +11397,7 @@ GameObject:
   m_Name: Zil_Door_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &471380446
@@ -12399,7 +12399,7 @@ GameObject:
   m_Name: Truck_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &515424548
@@ -13352,7 +13352,7 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &571119390
@@ -15990,7 +15990,7 @@ GameObject:
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &683224363
@@ -16887,7 +16887,7 @@ GameObject:
   m_Name: Zil_Door_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &725014385
@@ -17293,7 +17293,7 @@ GameObject:
   m_Name: Truck_Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &737302514
@@ -19731,7 +19731,7 @@ GameObject:
   m_Name: Truck_Zil130_TrailerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &841934172
@@ -20240,7 +20240,7 @@ GameObject:
   m_Name: Truck_Zil130_TrailerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &858494661
@@ -21078,7 +21078,7 @@ GameObject:
   m_Name: Truck_Wheel_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &885328276
@@ -23350,7 +23350,7 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &975055080
@@ -24578,7 +24578,7 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1035874360
@@ -24960,7 +24960,7 @@ GameObject:
   m_Name: TruckBody_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1055006539
@@ -25474,7 +25474,7 @@ GameObject:
   m_Name: B_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1063088647
@@ -25937,7 +25937,7 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1069947179
@@ -26148,7 +26148,7 @@ GameObject:
   m_Name: Truck_Wheel_AR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1073871952
@@ -28993,7 +28993,7 @@ GameObject:
   m_Name: Road_block_v1 (23)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1120658138
@@ -30650,7 +30650,7 @@ GameObject:
   m_Name: Truck_Wheel_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1207373169
@@ -30741,7 +30741,7 @@ GameObject:
   m_Name: F_Suspension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1217788183
@@ -32038,7 +32038,7 @@ GameObject:
   m_Name: Truck_Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1284200645
@@ -32542,7 +32542,7 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1289417415
@@ -35122,7 +35122,7 @@ GameObject:
   m_Name: Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1394560586
@@ -38033,7 +38033,7 @@ GameObject:
   m_Name: Military_Vehicle (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1491562931
@@ -38716,7 +38716,7 @@ GameObject:
   m_Name: Truck_Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1538733178
@@ -38969,7 +38969,7 @@ GameObject:
   m_Name: ZIL130_Cover (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1544875086
@@ -39634,7 +39634,7 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1577152971
@@ -42395,7 +42395,7 @@ GameObject:
   m_Name: Zil_Door_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1729449975
@@ -43178,7 +43178,7 @@ GameObject:
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1766246314
@@ -44692,7 +44692,7 @@ GameObject:
   m_Name: Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1821340808
@@ -46168,7 +46168,7 @@ GameObject:
   m_Name: FR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1906118756
@@ -46252,7 +46252,7 @@ GameObject:
   m_Name: Truck_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1906287410
@@ -47488,7 +47488,7 @@ GameObject:
   m_Name: Truck_Wheel_AR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1939548790
@@ -47594,7 +47594,7 @@ GameObject:
   m_Name: Road_block_v1 (22)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1941259863
@@ -47887,7 +47887,7 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1958280662
@@ -48506,7 +48506,7 @@ GameObject:
   m_Name: Zil_Door_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1992719163
@@ -49409,7 +49409,7 @@ GameObject:
   m_Name: TruckBody_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2016912366
@@ -50662,7 +50662,7 @@ GameObject:
   m_Name: P_rsg_military_sandbox_01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2074906852
@@ -51978,7 +51978,7 @@ GameObject:
   m_Name: FL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2117712803
@@ -52552,7 +52552,7 @@ GameObject:
   m_Name: Road_block_v1 (24)
   m_TagString: Wall
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2139621885
@@ -53565,6 +53565,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 3694152263938060522, guid: 38b581db547599447bdb5b7d26a24d22,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54313,16 +54318,201 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 51583881152989909, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 52723518983833810, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177694200014437199, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343252586330377379, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 526379442147870547, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 666486048675856855, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 700139976051367061, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 700245946882647474, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 705462207450883323, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 810082711518506495, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 946042235511158444, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077048394970529122, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083340654383786883, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1184485857431718462, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475042725522326158, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727075171446199890, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757078823309979169, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775270272887843256, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882479330691234635, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957533683081857769, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957533683081857769, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957533683081857769, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028074428699741648, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031345447263884071, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2115693124055797258, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
         type: 3}
       propertyPath: m_Name
       value: BossZombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115693124055797258, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140932443185598104, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147001312694557644, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2615553611420390789, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618562902855401482, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2810042624274948948, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
         type: 3}
       propertyPath: zombieHand
       value: 
       objectReference: {fileID: 1606371894}
+    - target: {fileID: 3031106114603233856, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109753755628909551, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213883868311642298, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448950139436983228, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3634985679157161106, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104488484193883778, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476067643699987330, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579931723068551704, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5007409063284329293, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54331,7 +54521,7 @@ PrefabInstance:
     - target: {fileID: 5007409063284329293, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6378238
+      value: -4.04
       objectReference: {fileID: 0}
     - target: {fileID: 5007409063284329293, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
         type: 3}
@@ -54371,6 +54561,181 @@ PrefabInstance:
     - target: {fileID: 5007409063284329293, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034510802247080363, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058844257525470538, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083162408453019474, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133624270214668174, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376257751719675853, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456638928198322893, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609817696159049458, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672929769115660350, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855747818115608855, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857273095267260063, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878869210938636227, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260645192346792561, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269036117045693958, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6396947331866303188, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509737709895541934, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602649469005992468, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6648400165796373902, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046359150871967600, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380850902607944396, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485994447121322802, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582946249366109148, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7739536531112119051, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853620973237920097, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943555646699359933, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7966161098142429251, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983157519852201442, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993041763729107440, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081756012259648644, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8154493090417452150, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364520816834270583, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638555487787076628, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731454624309303642, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755011195523263121, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832540355252003931, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018416676114714755, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
+        type: 3}
+      propertyPath: m_NavMeshLayer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -55789,7 +56154,7 @@ SceneRoots:
   - {fileID: 1066157097}
   - {fileID: 3345760749459167318}
   - {fileID: 6042130503433946098}
-  - {fileID: 1450754672}
   - {fileID: 1551125754657665592}
+  - {fileID: 1450754672}
   - {fileID: 1190615832}
   - {fileID: 1182917580}
