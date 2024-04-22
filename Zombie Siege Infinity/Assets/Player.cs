@@ -12,110 +12,102 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI PlayerHealthUI;  // Ensure this is assigned in the Unity Inspector.
     public GameObject GameOverUI;  // Ensure this is assigned in the Unity Inspector.
 
-    public bool isDead;
+    public bool isDead = false;
 
    private void Start()
    {
          PlayerHealthUI.text = $"Health: {HP}"; // Initialize health display.
    }
 
-   public void TakeDamage(int damageAmount)
+  public void TakeDamage(int damageAmount)
     {
+        if (isDead) return;  // Early return if player is already dead
+
         HP -= damageAmount;
+        PlayerHealthUI.text = $"Health: {HP}";  // Update health display always
+
         if (HP <= 0)
         {
-            print("Player is dead!");
-            PlayerDead();
-            isDead = true;
+            if (!isDead)
+            {
+                isDead = true;  // Mark the player as dead
+                print("Player is dead!");
+                PlayerDead();
+                PlayerHealthUI.text = "Health: 0";
+                SoundManager.Instance.PlayerChannel.PlayOneShot(SoundManager.Instance.PlayerDeath);
+
+            }
         }
         else
         {
             print("Player HIT!");
             StartCoroutine(ShowBloodyScreen());
-            PlayerHealthUI.text = $"Health: {HP}"; // Update health display when taking damage.
-            // PlayerHealthUI.gameObject.SetActive(true);
+            SoundManager.Instance.PlayerChannel.PlayOneShot(SoundManager.Instance.PlayerHit);
         }
     }
 
-    private IEnumerator ShowBloodyScreen()
+   private IEnumerator ShowBloodyScreen()
     {
-        if(!bloodyScreen.activeInHierarchy)
+        if (!bloodyScreen.activeInHierarchy)
         {
             bloodyScreen.SetActive(true);
         }
-        
+
         Image image = bloodyScreen.GetComponentInChildren<Image>();
         if (image == null)
         {
             Debug.LogError("No Image component found in bloodyScreen's children!");
-            yield break; // Exit if no Image component is found.
+            yield break;
         }
- 
-        // Set the initial alpha value to 1 (fully visible).
-        Color startColor = image.color;
-        startColor.a = 1f;
-        image.color = startColor;
- 
+
         float duration = 3f;
         float elapsedTime = 0f;
- 
         while (elapsedTime < duration)
         {
-            // Calculate the new alpha value using Lerp.
             float alpha = Mathf.Lerp(1f, 0f, elapsedTime / duration);
- 
-            // Update the color with the new alpha value.
-            Color newColor = image.color;
-            newColor.a = alpha;
-            image.color = newColor;
- 
-            // Increment the elapsed time.
+            image.color = new Color(image.color.r, image.color.g, image.color.b, alpha);
             elapsedTime += Time.deltaTime;
- 
-            yield return null; ; // Wait for the next frame.
+            yield return null;
         }
-        if(bloodyScreen.activeInHierarchy )
-        {
-            bloodyScreen.SetActive(false);
-        }
+
+        bloodyScreen.SetActive(false);
     }
 
-    private void PlayerDead()
+  private void PlayerDead()
     {
+    // Ensure the PlayerChannel is not playing anything else
+        SoundManager.Instance.PlayerChannel.Stop();
+        
+        // Set the new clip for DeathMusic
+        SoundManager.Instance.PlayerChannel.clip = SoundManager.Instance.DeathMusic;
+
+        
+        // Play the DeathMusic after a 2-second delay
+        SoundManager.Instance.PlayerChannel.PlayDelayed(2f);
+
         GetComponent<MouseMovement>().enabled = false;
         GetComponent<PlayerMovement>().enabled = false;
 
-        // dying animation
+        // Start the blackout and game over UI only once
+        GetComponent<ScreenBlackOut>().StartFade();
+        StartCoroutine(ShowGameOverUI());
         GetComponentInChildren<Animator>().enabled = true;
 
-        if(isDead == true)
-        {
-            GetComponent<ScreenBlackOut>().StartFade();
-            StartCoroutine(ShowGameOverUI());
-        }
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("ZombieHand"))
-        {
-            TakeDamage(other.gameObject.GetComponent<ZombieHand>().damage);
-
-            if (HP <= 0)
-            {
-                PlayerHealthUI.text = $"Health: {0}";
-            }
-
-
-        }
     }
 
     private IEnumerator ShowGameOverUI()
     {
-        yield return new WaitForSeconds(1f);
-        GameOverUI.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f);  // Delay to ensure blackout transitions smoothly
+        GameOverUI.SetActive(true);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("ZombieHand") && !isDead)
+        {
+            int damage = other.gameObject.GetComponent<ZombieHand>().damage;
+            TakeDamage(damage);
+        }
     }
 }
-
 
