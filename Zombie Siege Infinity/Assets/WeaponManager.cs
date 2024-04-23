@@ -295,6 +295,7 @@ public class WeaponManager : MonoBehaviour
             weapon.isActiveWeapon = true;
             weapon.animator.enabled = true;
             SetLayerRecursively(pickedUpWeapon, LayerMask.NameToLayer("WeaponRender"));
+            weapon.GetComponent<BoxCollider>().enabled = false;
         }
     }
 
@@ -311,6 +312,7 @@ public class WeaponManager : MonoBehaviour
 
             weaponToDrop.transform.SetParent(null); // Or some other default parent
             SetLayerRecursively(weaponToDrop, LayerMask.NameToLayer("Default"));
+            weaponToDrop.GetComponent<BoxCollider>().enabled = true;
         }
     }
 
