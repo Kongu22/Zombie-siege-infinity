@@ -46,13 +46,15 @@ public class InteractionManager : MonoBehaviour
                 hoveredWeapon = objectHitByRaycast.GetComponent<Weapon>();
                 hoveredWeapon.GetComponent<Outline>().enabled = true;
 
-                if (Input.GetKeyDown(KeyCode.F))
-                {
-                    WeaponManager.Instance.PickUpWeapon(objectHitByRaycast.gameObject);
-                    hoveredWeapon.GetComponent<Outline>().enabled = false;
-                    print("The player picked up a weapon! " + objectHitByRaycast.name);
-                    hoveredWeapon = null;
-                }
+                // check if the player not reloading the weapon 
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        WeaponManager.Instance.PickUpWeapon(objectHitByRaycast.gameObject);
+                        hoveredWeapon.GetComponent<Outline>().enabled = false;
+                        print("The player picked up a weapon! " + objectHitByRaycast.name);
+                        hoveredWeapon = null;
+                    }
+                    
             }
             else
             {
@@ -102,5 +104,7 @@ public class InteractionManager : MonoBehaviour
                 hoveredAmmoBox = null;
             }
         }
+        
     }
+    
 }

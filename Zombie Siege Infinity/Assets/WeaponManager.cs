@@ -254,6 +254,7 @@ public class WeaponManager : MonoBehaviour
             Instance = this;
         }
     }
+    
 
     // Start is called before the first frame update
     private void Start()
