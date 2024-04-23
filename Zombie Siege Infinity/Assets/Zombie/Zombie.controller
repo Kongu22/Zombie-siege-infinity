@@ -622,5 +622,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolingTime: 3
-  detectionArea: 70
+  detectionArea: 20
   patrolSpeed: 1.5
