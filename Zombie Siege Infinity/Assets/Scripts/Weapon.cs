@@ -98,10 +98,11 @@ public enum WeaponModel
 
         if (isActiveWeapon)
         { 
-            foreach (Transform child in transform)
-            {
-                child.gameObject.layer = LayerMask.NameToLayer("WeaponRender"); // Исправлено с "Defoult" на "Default"
-            }
+            // foreach (Transform child in transform) // For each child in the weapon transform object  
+            // {
+            //     child.gameObject.layer = LayerMask.NameToLayer("WeaponRender"); //
+                
+            // }
 
             if(Input.GetMouseButtonDown(1) && !isReloading)
             {
@@ -143,13 +144,13 @@ public enum WeaponModel
                 FireWeapon();
             }
         }
-        else
-        {
-            foreach (Transform child in transform)
-            {
-                child.gameObject.layer = LayerMask.NameToLayer("Default"); // Исправлено с "Defoult" на "Default"
-            }
-        }
+        // else
+        // {
+        //     foreach (Transform child in transform)
+        //     {
+        //         child.gameObject.layer = LayerMask.NameToLayer("Default");
+        //     }
+        // }
     }
 
 // Simplified enterADS Method
