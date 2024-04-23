@@ -4,33 +4,36 @@ using UnityEngine;
 
 public class WeaponLoader : MonoBehaviour
 {
-    public Weapon weapon; // Основной компонент оружия (сделайте его публичным, чтобы назначить через редактор Unity)
-    public List<GameObject> childComponents; // Список дочерних компонентов, таких как магазины, прицелы и т.д.
+    public Weapon weapon; // The main weapon component (make it public to assign it through the Unity editor)
+    public List<GameObject> childComponents; // List of child components such as magazines, scopes, etc.
 
     void Start()
     {
+        // Load the weapon
         LoadWeapon();
     }
 
+    // Load the weapon
     void LoadWeapon()
     {
-        // Активация основного компонента оружия
+        // Activate the main weapon component
         weapon.gameObject.SetActive(true);
-        // Деактивация всех дочерних компонентов
+        // Deactivate all child components
         foreach (var component in childComponents)
         {
             component.SetActive(false);
         }
 
-        // Активация дочерних компонентов с задержкой
+        // Activate child components with a delay
         StartCoroutine(ActivateComponentsWithDelay());
     }
 
+    // Activate child components with a delay
     IEnumerator ActivateComponentsWithDelay()
     {
         foreach (var component in childComponents)
         {
-            yield return new WaitForSeconds(0.2f);  // Задержка перед активацией каждого компонента
+            yield return new WaitForSeconds(0.2f);  // Delay before activating each component
             component.SetActive(true);
         }
     }

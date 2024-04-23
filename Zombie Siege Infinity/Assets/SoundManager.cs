@@ -49,10 +49,6 @@ public class SoundManager : MonoBehaviour
     public AudioClip PlayerDeath;
     public AudioClip DeathMusic;
 
-
-
-
-
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -65,6 +61,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    // Plays the shooting sound based on the weapon model
     public void PlayShootingSound(Weapon.WeaponModel weaponModel)
     {
         switch(weaponModel)
@@ -82,6 +79,7 @@ public class SoundManager : MonoBehaviour
                 ShootingChannel.PlayOneShot(GlockShot);
                 break;
             case Weapon.WeaponModel.M500:
+                // No sound defined for M500
                 break;
             case Weapon.WeaponModel.Thompson:
                 ShootingChannel.PlayOneShot(ThompsonShot);
@@ -110,8 +108,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-
-
+    // Plays the reloading sound based on the weapon model
     public void PlayReloadingSound(Weapon.WeaponModel weaponModel)
     {
         switch(weaponModel)
@@ -129,6 +126,7 @@ public class SoundManager : MonoBehaviour
                 ReloadingSoundGlock.Play();
                 break;
             case Weapon.WeaponModel.M500:
+                // No sound defined for M500
                 break;
             case Weapon.WeaponModel.Thompson:
                 ReloadingSoundThompson.Play();

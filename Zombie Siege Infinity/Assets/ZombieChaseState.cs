@@ -11,6 +11,7 @@ public class ZombieChaseState : StateMachineBehaviour
     public float stopChaseDistance = 24;
     public float attackDistance = 2.5f;
 
+    // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         //--- initialize the chase state ---//
@@ -21,6 +22,7 @@ public class ZombieChaseState : StateMachineBehaviour
         agent.speed = chaseSpeed;
     }
 
+    // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
          if(SoundManager.Instance.ZombieChannel.isPlaying == false)
@@ -50,6 +52,7 @@ public class ZombieChaseState : StateMachineBehaviour
         }
     }
 
+    // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        //--- reset the chase state ---//

@@ -8,12 +8,14 @@ public class ScreenBlackOut : MonoBehaviour
     public Image fadeImage;
     public float fadeDuration = 7.0f;
  
+    // Starts the fade out effect.
     public void StartFade()
     {
         StartCoroutine(FadeOut());
         fadeImage.gameObject.SetActive(true);
     }
  
+    // Coroutine that gradually fades out the image over time.
     private IEnumerator FadeOut()
     {
         float timer = 0f;

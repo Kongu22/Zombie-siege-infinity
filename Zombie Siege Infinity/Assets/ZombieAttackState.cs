@@ -9,6 +9,8 @@ public class ZombieAttackState : StateMachineBehaviour
     Transform player;
     NavMeshAgent agent;
     public float stopAttckingDistance = 2.5f;
+
+    // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
          if(SoundManager.Instance.ZombieChannel.isPlaying == false)
@@ -22,6 +24,7 @@ public class ZombieAttackState : StateMachineBehaviour
         agent = animator.GetComponent<NavMeshAgent>();
     }
 
+    // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        LookAtPlayer();
@@ -36,6 +39,7 @@ public class ZombieAttackState : StateMachineBehaviour
     }
 
 
+    //Look at the player method 
     private void LookAtPlayer()
     {
         Vector3 direction = player.position - agent.transform.position;

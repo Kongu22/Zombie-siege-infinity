@@ -4,43 +4,44 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private CharacterController controller; //character controller component
-    public float speed = 8f; //speed of the player
-    public float crouchSpeed = 4f; //speed of the player when crouching
-    public float gravity = -9.81f * 2; //gravity of the player
-    public float jumpHeight = 3f; //jump height of the player
-    public Transform groundCheck; //ground check object
-    public float groundDistance = 20f; //ground distance
-    public LayerMask groundMask; //ground mask
+    private CharacterController controller; // Character controller component
+    public float speed = 8f; // Speed of the player
+    public float crouchSpeed = 4f; // Speed of the player when crouching
+    public float gravity = -9.81f * 2; // Gravity of the player
+    public float jumpHeight = 3f; // Jump height of the player
+    public Transform groundCheck; // Ground check object
+    public float groundDistance = 20f; // Ground distance
+    public LayerMask groundMask; // Ground mask
 
     private float originalHeight; // Original height of the character controller
     public float crouchHeight = 1f; // New height when crouching
 
-    Vector3 velocity; //velocity of the player
+    Vector3 velocity; // Velocity of the player
 
-    bool isGrounded; //is the player grounded
-    bool isCrouching = false; //is the player crouching
+    bool isGrounded; // Is the player grounded
+    bool isCrouching = false; // Is the player crouching
 
-    void Start() // Start is called before the first frame update
+    void Start() // Called before the first frame update
     {
-        controller = GetComponent<CharacterController>(); //getting the character controller component
-        originalHeight = controller.height; // Store original height
+        controller = GetComponent<CharacterController>(); // Get the character controller component
+        originalHeight = controller.height; // Store the original height
     }
 
+    // Update is called once per frame
     void Update()
     {
-        //ground check
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask); //checking if the player is grounded
+        // Ground check
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask); // Check if the player is grounded
 
-        //reset velocity
-        if (isGrounded && velocity.y < 0) //if the player is grounded and the velocity is less than 0
+        // Reset velocity
+        if (isGrounded && velocity.y < 0) // If the player is grounded and the velocity is less than 0
         {
             velocity.y = -2f;
         }
 
-        //getting input
-        float x = Input.GetAxis("Horizontal"); //getting the horizontal input
-        float z = Input.GetAxis("Vertical"); //getting the vertical input
+        // Get input
+        float x = Input.GetAxis("Horizontal"); // Get the horizontal input
+        float z = Input.GetAxis("Vertical"); // Get the vertical input
 
         // Check if Shift is pressed
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
@@ -53,46 +54,49 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Crouch
-    if (Input.GetKeyDown(KeyCode.LeftControl)) // If the player presses the crouch button
-    {
-        Crouch(); // Call the crouch function
-    }
-    else if (Input.GetKeyUp(KeyCode.LeftControl))
-    {
-        StandUp();
-    }
-
-
-        // creating the movement vector
-        Vector3 move = transform.right * x + transform.forward * z; // creating the movement vector 
-
-        //moving the player
-        controller.Move(move * speed * Time.deltaTime); //moving the player
-
-        //checking if the player is jumping
-        if (Input.GetButtonDown("Jump") && isGrounded && !isCrouching) //if the player presses the jump button and is grounded and not crouching
+        if (Input.GetKeyDown(KeyCode.LeftControl)) // If the player presses the crouch button
         {
-            //actually jumping
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); //jumping
+            Crouch(); // Call the crouch function
         }
-        //falling velocity
-        velocity.y += gravity * Time.deltaTime; //falling velocity
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            StandUp(); // Call the stand up function
+        }
 
-        //executing the jump
-        controller.Move(velocity * Time.deltaTime); //executing the jump
+        // Create the movement vector
+        Vector3 move = transform.right * x + transform.forward * z; // Create the movement vector 
+
+        // Move the player
+        controller.Move(move * speed * Time.deltaTime); // Move the player
+
+        // Check if the player is jumping
+        if (Input.GetButtonDown("Jump") && isGrounded && !isCrouching) // If the player presses the jump button and is grounded and not crouching
+        {
+            // Actually jump
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); // Jump
+        }
+
+        // Falling velocity
+        velocity.y += gravity * Time.deltaTime; // Falling velocity
+
+        // Execute the jump
+        controller.Move(velocity * Time.deltaTime); // Execute the jump
     }
+
+    // Check if the player is moving
     public bool IsMoving()
     {
-        // Check if the player has significant movement input
         return Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f;
     }
 
+    // Crouch function
     void Crouch()
     {
         controller.height = crouchHeight; // Reduce the height of the character controller
         isCrouching = true; // Set the crouching flag to true
     }
 
+    // Stand up function
     void StandUp()
     {
         controller.height = originalHeight; // Reset the height to the original value

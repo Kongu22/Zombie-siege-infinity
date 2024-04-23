@@ -242,6 +242,7 @@ public class WeaponManager : MonoBehaviour
     public int totalRifleAmmo = 0;
     public int totalPistolAmmo = 0;
 
+    // Awake is called when the script instance is being loaded
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -254,11 +255,13 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    // Start is called before the first frame update
     private void Start()
     {
         activeWeaponSlot = weaponSlots[0];
     }
 
+    // Update is called once per frame
     private void Update()
     {
         foreach (GameObject weaponSlot in weaponSlots)
@@ -276,12 +279,13 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    // Pick up a weapon and add it to the active weapon slot 
     public void PickUpWeapon(GameObject pickedUpWeapon)
     {
-        
         AddWeaponIntoActiveWeaponSlot(pickedUpWeapon);
     }
 
+    // Add the weapon to the active weapon slot 
     private void AddWeaponIntoActiveWeaponSlot(GameObject pickedUpWeapon)
     {
         DropCurrentWeapon(pickedUpWeapon);
@@ -299,6 +303,7 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    // Drop the current weapon from the active weapon slot 
     private void DropCurrentWeapon(GameObject pickedupWeapon)
     {
         if (activeWeaponSlot.transform.childCount > 0)
@@ -316,6 +321,7 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    // Set the layer of the weapon and its children
     private void SetLayerRecursively(GameObject obj, int newLayer)
     {
         obj.layer = newLayer;
@@ -325,6 +331,7 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    // Switch the active weapon slot 
     public void SwitchActiveWeaponSlot(int slotNumber)
     {
         if (activeWeaponSlot.transform.childCount > 0)
@@ -338,6 +345,7 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    // Pick up ammo and add it to the total ammo count
     internal void PickUpAmmo(AmmoBox ammo)
     {
         switch (ammo.ammoType)
@@ -352,9 +360,10 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
-     internal void DecreaseTotalAmmo(int bulletsToDecrease, Weapon.WeaponModel thisWeaponModel)
+    // Decrease the total ammo count for the weapon model
+    internal void DecreaseTotalAmmo(int bulletsToDecrease, Weapon.WeaponModel thisWeaponModel)
     {
-            switch (thisWeaponModel)
+        switch (thisWeaponModel)
         {
             case Weapon.WeaponModel.Glock:
                 totalPistolAmmo -= bulletsToDecrease;
@@ -398,6 +407,7 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    // Check the ammo left for the weapon model
     public int CheckAmmoLeftFor(Weapon.WeaponModel thisWeaponModel)
     {
         switch (thisWeaponModel)
