@@ -52196,6 +52196,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6540666651709536944, guid: 38b581db547599447bdb5b7d26a24d22,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6540666651709536944, guid: 38b581db547599447bdb5b7d26a24d22,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54635,7 +54645,7 @@ PrefabInstance:
     - target: {fileID: 1957533683081857769, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
         type: 3}
       propertyPath: m_AngularSpeed
-      value: 2000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1983899482989383082, guid: 45e25ea3790daeb4f9911d8a2b9ab936,
         type: 3}

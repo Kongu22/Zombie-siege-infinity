@@ -621,6 +621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ac76a338b3984eba16eda2bfc3d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolingTime: 3
+  patrolingTime: 7
   detectionArea: 20
-  patrolSpeed: 1.5
+  patrolSpeed: 3
