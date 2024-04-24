@@ -242,6 +242,9 @@ public class WeaponManager : MonoBehaviour
     public int totalRifleAmmo = 0;
     public int totalPistolAmmo = 0;
 
+
+    public bool canPickupWeapon = true;
+
     // Awake is called when the script instance is being loaded
     private void Awake()
     {
@@ -265,6 +268,8 @@ public class WeaponManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        CheckActiveWeaponReloading();
+        
         foreach (GameObject weaponSlot in weaponSlots)
         {
             weaponSlot.SetActive(weaponSlot == activeWeaponSlot);
@@ -283,7 +288,22 @@ public class WeaponManager : MonoBehaviour
     // Pick up a weapon and add it to the active weapon slot 
     public void PickUpWeapon(GameObject pickedUpWeapon)
     {
-        AddWeaponIntoActiveWeaponSlot(pickedUpWeapon);
+        if (canPickupWeapon)
+        {
+            AddWeaponIntoActiveWeaponSlot(pickedUpWeapon);
+        }
+    }
+
+        private void CheckActiveWeaponReloading()
+    {
+        if (activeWeaponSlot.transform.childCount > 0)
+        {
+            Weapon activeWeapon = activeWeaponSlot.transform.GetChild(0).GetComponent<Weapon>();
+            if (activeWeapon != null)
+            {
+                canPickupWeapon = !activeWeapon.isReloading;
+            }
+        }
     }
 
     // Add the weapon to the active weapon slot 

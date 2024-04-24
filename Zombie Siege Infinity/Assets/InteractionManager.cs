@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -37,6 +37,7 @@ public class InteractionManager : MonoBehaviour
             GameObject objectHitByRaycast = hit.transform.gameObject;
             float distanceToObject = Vector3.Distance(Camera.main.transform.position, objectHitByRaycast.transform.position); // Calculate distance to object
 
+            
             // Weapon interaction
             if (objectHitByRaycast.GetComponent<Weapon>()) // Check if it's a weapon within range
             {
@@ -46,7 +47,7 @@ public class InteractionManager : MonoBehaviour
                 hoveredWeapon = objectHitByRaycast.GetComponent<Weapon>();
                 hoveredWeapon.GetComponent<Outline>().enabled = true;
 
-                // check if the player not reloading the weapon 
+                
                     if (Input.GetKeyDown(KeyCode.F))
                     {
                         WeaponManager.Instance.PickUpWeapon(objectHitByRaycast.gameObject);
@@ -54,6 +55,7 @@ public class InteractionManager : MonoBehaviour
                         print("The player picked up a weapon! " + objectHitByRaycast.name);
                         hoveredWeapon = null;
                     }
+                
                     
             }
             else

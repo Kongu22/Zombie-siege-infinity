@@ -131,6 +131,13 @@ public class Weapon : MonoBehaviour
                 burstBulletsLeft = bulletsPerBurst;
                 FireWeapon(); // Fire the weapon
             }
+            
+            if(isReloading == true)
+            {
+                //disable the pickupweapon
+                WeaponManager.Instance.canPickupWeapon = false;
+            }
+
         }
     }
 
