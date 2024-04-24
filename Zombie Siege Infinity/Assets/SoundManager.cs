@@ -37,17 +37,24 @@ public class SoundManager : MonoBehaviour
     public AudioSource ReloadingSoundMP7;
 
     [Header("Zombie Sound")]
+    public AudioSource ZombieChannel;
     public AudioClip ZombieWalking;
     public AudioClip ZombieChase;
     public AudioClip ZombieAttack;
     public AudioClip ZombieHit;
     public AudioClip ZombieDeath;
 
-    public AudioSource ZombieChannel;
+    
+
+    [Header("Player Sound")]
     public AudioSource PlayerChannel;
     public AudioClip PlayerHit;
     public AudioClip PlayerDeath;
     public AudioClip DeathMusic;
+
+
+    [Header("Heli Sound")]
+    public AudioSource HeliChannel;
 
     private void Awake()
     {
