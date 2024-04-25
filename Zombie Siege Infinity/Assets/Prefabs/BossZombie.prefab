@@ -748,6 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 400
+  isDead: 0
 --- !u!195 &1957533683081857769
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -805,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9a7ce5449142cc4b87f7f9dc43262eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieHand: {fileID: 0}
+  zombieHand: {fileID: 2326189332117433814}
   zombieDamage: 40
 --- !u!1 &2140932443185598104
 GameObject:

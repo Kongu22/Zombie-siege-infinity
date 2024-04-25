@@ -9,7 +9,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int HP = 100;
     private Animator animator;
     private NavMeshAgent navAgent;
-    private bool isDead = false;
+
+    private CapsuleCollider[] capsuleColliders; 
+    public bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,10 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         // Get the NavMeshAgent component attached to the enemy object
         navAgent = GetComponent<NavMeshAgent>();
+
+        // Get all the CapsuleCollider components attached to the enemy object
+        capsuleColliders = GetComponents<CapsuleCollider>();
+
     }
 
     // Method to handle taking damage
@@ -35,6 +41,13 @@ public class Enemy : MonoBehaviour
         {
             // Set the flag to true as the zombie is now dead
             isDead = true;
+            // deactivate the capsule collider
+            foreach (CapsuleCollider capsuleCollider in capsuleColliders)
+            {
+                capsuleCollider.enabled = false;
+            }
+            
+            
             // Generate a random value between 0 and 1
             int randomValue = Random.Range(0, 2);
             if (randomValue == 0)
