@@ -153,6 +153,18 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+        public void DisableWeapons()
+    {
+        foreach (GameObject weaponSlot in weaponSlots)
+        {
+            Weapon weapon = weaponSlot.GetComponentInChildren<Weapon>();
+            if (weapon != null)
+            {
+                weapon.enabled = false; // Assuming the 'Weapon' script controls the shooting
+            }
+        }
+    }
+
     // Decrease the total ammo count for the weapon model
     internal void DecreaseTotalAmmo(int bulletsToDecrease, Weapon.WeaponModel thisWeaponModel)
     {

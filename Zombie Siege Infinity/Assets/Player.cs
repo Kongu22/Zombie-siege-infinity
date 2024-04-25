@@ -84,6 +84,7 @@ public class Player : MonoBehaviour
         
         // Play the DeathMusic after a 2-second delay
         SoundManager.Instance.PlayerChannel.PlayDelayed(2f);
+        WeaponManager.Instance.DisableWeapons();
 
         GetComponent<MouseMovement>().enabled = false;
         GetComponent<PlayerMovement>().enabled = false;

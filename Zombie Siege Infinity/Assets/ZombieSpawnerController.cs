@@ -34,14 +34,16 @@ public class ZombieSpawnerController : MonoBehaviour
         StartNextWave();
     }
 
+    // Start the next wave
     private void StartNextWave()
     {
         currentZombiesAlive.Clear();
         currentWave++;
         currentWaveUI.text = "Wave: " + currentWave.ToString();
         
+        // Increase the number of zombies per wave by 2 after the first wave
         if (currentWave > 1) {
-            currentZombiePerWave += 2;  // Incorrect logic fixed previously; it should multiply, not add
+            currentZombiePerWave += 2;  
         }
 
         StartCoroutine(SpawnWave());
@@ -63,12 +65,13 @@ public class ZombieSpawnerController : MonoBehaviour
                 Vector3 spawnPosition = GenerateRandomPosition();
                 InstantiateZombie(ZombieBossPrefab, spawnPosition);
             }
-            bossZombieCount++;  // Increase the boss count for the next fifth wave
+            bossZombieCount++;  
         }
     }
 
     private Vector3 GenerateRandomPosition()
     {
+        // Generate a random offset for the spawn position
         Vector3 spawnOffset = new Vector3(UnityEngine.Random.Range(-1f, 1f), 0f, UnityEngine.Random.Range(-1f, 1f));
         return transform.position + spawnOffset;
     }
@@ -80,8 +83,10 @@ public class ZombieSpawnerController : MonoBehaviour
         currentZombiesAlive.Add(enemyScript);
     }
 
+    // Update is called once per frame
     private void Update()
     {
+        // Remove dead zombies from the list
         List<Enemy> zombiesToRemove = new List<Enemy>();
         foreach (Enemy zombie in currentZombiesAlive)
         {
@@ -91,16 +96,19 @@ public class ZombieSpawnerController : MonoBehaviour
             }
         }
 
+        // Remove the dead zombies from the list
         foreach (Enemy zombie in zombiesToRemove)
         {
             currentZombiesAlive.Remove(zombie);
         }
 
+        // Check if all zombies are dead
         if (currentZombiesAlive.Count == 0 && !isCoolDown)
         {
             StartCoroutine(StartCoolDown());
         }
 
+        // Update the cooldown counter
         if (isCoolDown)
         {
             coolDownCounter -= Time.deltaTime;
@@ -112,8 +120,9 @@ public class ZombieSpawnerController : MonoBehaviour
         }
     }
 
+    // Start the cooldown timer
     private IEnumerator StartCoolDown()
-    {
+    {   
         isCoolDown = true;
         waveOverUI.gameObject.SetActive(true);
         yield return new WaitForSeconds(waveCooldown);
