@@ -86,6 +86,9 @@ public class Player : MonoBehaviour
         SoundManager.Instance.PlayerChannel.PlayDelayed(2f);
         WeaponManager.Instance.DisableWeapons();
 
+        // disable weapon visuals
+        GetComponentInChildren<Weapon>().gameObject.SetActive(false);
+
         GetComponent<MouseMovement>().enabled = false;
         GetComponent<PlayerMovement>().enabled = false;
 
