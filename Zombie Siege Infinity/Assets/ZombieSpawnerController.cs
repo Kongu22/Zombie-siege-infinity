@@ -7,10 +7,14 @@ using UnityEngine.UI;
 
 public class ZombieSpawnerController : MonoBehaviour
 {
-    public int initialZombiePerWave = 1;
-    public int currentZombiePerWave;
+    public static int TotalZombiesAlive = 0; // Общее количество зомби
+    public static int totalSpawnerCount = 0; // Общее количество спаунеров
+    public static List<ZombieSpawnerController> allSpawners = new List<ZombieSpawnerController>();
 
-    public int bossZombieCount = 1; // Counter for the number of boss zombies to spawn
+    public int initialZombiePerWave = 1;
+    public int zombiesToSpawnThisWave;
+
+    public int bossZombieCount = 1;
 
     public float spawnDelay = 0.5f;
     public int currentWave = 0;
@@ -28,30 +32,49 @@ public class ZombieSpawnerController : MonoBehaviour
     public TextMeshProUGUI coolDownCounterUI;
     public TextMeshProUGUI currentWaveUI;
 
+    private void Awake()
+    {
+        totalSpawnerCount++; // Increment total number of spawners when a new spawner is created
+        allSpawners.Add(this);
+    }
+
+    private void OnDestroy()
+    {
+        totalSpawnerCount--; // Decrement total number of spawners when a spawner is destroyed
+        allSpawners.Remove(this);
+    }
+
     private void Start()
     {
-        currentZombiePerWave = initialZombiePerWave;
+        CalculateZombiesPerWave();
         StartNextWave();
     }
 
-    // Start the next wave
+    private void CalculateZombiesPerWave()
+    {
+        int baseZombiesThisWave = (currentWave > 1) ? initialZombiePerWave + (2 * (currentWave - 1)) : initialZombiePerWave;
+        int zombiesPerSpawner = baseZombiesThisWave / totalSpawnerCount;
+        int extraZombies = baseZombiesThisWave % totalSpawnerCount;
+
+        foreach (var spawner in allSpawners)
+        {
+            spawner.zombiesToSpawnThisWave = zombiesPerSpawner + (extraZombies > 0 ? 1 : 0);
+            extraZombies--;
+        }
+    }
+
     private void StartNextWave()
     {
         currentZombiesAlive.Clear();
         currentWave++;
         currentWaveUI.text = "Wave: " + currentWave.ToString();
-        
-        // Increase the number of zombies per wave by 2 after the first wave
-        if (currentWave > 1) {
-            currentZombiePerWave += 2;  
-        }
-
+        CalculateZombiesPerWave();
         StartCoroutine(SpawnWave());
     }
 
     private IEnumerator SpawnWave()
     {
-        for (int i = 0; i < currentZombiePerWave; i++)
+        for (int i = 0; i < zombiesToSpawnThisWave; i++)
         {
             Vector3 spawnPosition = GenerateRandomPosition();
             InstantiateZombie(ZombieRegularPrefab, spawnPosition);
@@ -65,13 +88,11 @@ public class ZombieSpawnerController : MonoBehaviour
                 Vector3 spawnPosition = GenerateRandomPosition();
                 InstantiateZombie(ZombieBossPrefab, spawnPosition);
             }
-            bossZombieCount++;  
         }
     }
 
     private Vector3 GenerateRandomPosition()
     {
-        // Generate a random offset for the spawn position
         Vector3 spawnOffset = new Vector3(UnityEngine.Random.Range(-1f, 1f), 0f, UnityEngine.Random.Range(-1f, 1f));
         return transform.position + spawnOffset;
     }
@@ -81,34 +102,31 @@ public class ZombieSpawnerController : MonoBehaviour
         GameObject zombie = Instantiate(zombiePrefab, spawnPosition, Quaternion.identity);
         Enemy enemyScript = zombie.GetComponent<Enemy>();
         currentZombiesAlive.Add(enemyScript);
+        TotalZombiesAlive++;
     }
 
-    // Update is called once per frame
     private void Update()
     {
-        // Remove dead zombies from the list
         List<Enemy> zombiesToRemove = new List<Enemy>();
         foreach (Enemy zombie in currentZombiesAlive)
         {
             if (zombie.isDead)
             {
                 zombiesToRemove.Add(zombie);
+                TotalZombiesAlive--;
             }
         }
 
-        // Remove the dead zombies from the list
         foreach (Enemy zombie in zombiesToRemove)
         {
             currentZombiesAlive.Remove(zombie);
         }
 
-        // Check if all zombies are dead
-        if (currentZombiesAlive.Count == 0 && !isCoolDown)
+        if (TotalZombiesAlive == 0 && !isCoolDown)
         {
             StartCoroutine(StartCoolDown());
         }
 
-        // Update the cooldown counter
         if (isCoolDown)
         {
             coolDownCounter -= Time.deltaTime;
@@ -120,7 +138,6 @@ public class ZombieSpawnerController : MonoBehaviour
         }
     }
 
-    // Start the cooldown timer
     private IEnumerator StartCoolDown()
     {   
         isCoolDown = true;
