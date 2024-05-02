@@ -83,11 +83,11 @@ public class Enemy : MonoBehaviour
         // Set the color of the gizmo to green
         Gizmos.color = Color.green;
         // Draw a wire sphere at the enemy's position with a radius of 75f (detection distance)
-        Gizmos.DrawWireSphere(transform.position, 75f);
+        Gizmos.DrawWireSphere(transform.position, 120f);
 
         // Set the color of the gizmo to blue
         Gizmos.color = Color.blue;
         // Draw a wire sphere at the enemy's position with a radius of 25f (stop chasing distance)
-        Gizmos.DrawWireSphere(transform.position, 80f);
+        Gizmos.DrawWireSphere(transform.position, 121f);
     }
 }
