@@ -38,24 +38,22 @@ public class ZombieSpawnerController : MonoBehaviour
         allSpawners.Add(this);
     }
 
-    private void OnDestroy()
-    {
-        totalSpawnerCount--; // Decrement total number of spawners when a spawner is destroyed
-        allSpawners.Remove(this);
-    }
-
+    // Start is called before the first frame update
     private void Start()
     {
+        // Initialize the list of zombies alive
         CalculateZombiesPerWave();
         StartNextWave();
     }
 
     private void CalculateZombiesPerWave()
     {
+        // Calculate the number of zombies to spawn this wave
         int baseZombiesThisWave = (currentWave > 1) ? initialZombiePerWave + (2 * (currentWave - 1)) : initialZombiePerWave;
         int zombiesPerSpawner = baseZombiesThisWave / totalSpawnerCount;
         int extraZombies = baseZombiesThisWave % totalSpawnerCount;
 
+        // Assign the number of zombies to spawn to each spawner
         foreach (var spawner in allSpawners)
         {
             spawner.zombiesToSpawnThisWave = zombiesPerSpawner + (extraZombies > 0 ? 1 : 0);
@@ -63,8 +61,11 @@ public class ZombieSpawnerController : MonoBehaviour
         }
     }
 
+
+    // Start the next wave
     private void StartNextWave()
     {
+        // Clear the list of zombies alive
         currentZombiesAlive.Clear();
         currentWave++;
         currentWaveUI.text = "Wave: " + currentWave.ToString();
@@ -72,15 +73,17 @@ public class ZombieSpawnerController : MonoBehaviour
         StartCoroutine(SpawnWave());
     }
 
+    // Spawn a wave of zombies
     private IEnumerator SpawnWave()
     {
+        // Spawn the zombies
         for (int i = 0; i < zombiesToSpawnThisWave; i++)
         {
             Vector3 spawnPosition = GenerateRandomPosition();
             InstantiateZombie(ZombieRegularPrefab, spawnPosition);
             yield return new WaitForSeconds(spawnDelay);
         }
-
+        // Spawn the boss zombie
         if (currentWave % 5 == 0)
         {
             for (int j = 0; j < bossZombieCount; j++)
@@ -91,14 +94,18 @@ public class ZombieSpawnerController : MonoBehaviour
         }
     }
 
+    // Generate a random position around the spawner
     private Vector3 GenerateRandomPosition()
     {
+        // Generate a random position around the spawner
         Vector3 spawnOffset = new Vector3(UnityEngine.Random.Range(-1f, 1f), 0f, UnityEngine.Random.Range(-1f, 1f));
         return transform.position + spawnOffset;
     }
 
+    // Instantiate a zombie at the specified position
     private void InstantiateZombie(GameObject zombiePrefab, Vector3 spawnPosition)
     {
+        // Instantiate the zombie
         GameObject zombie = Instantiate(zombiePrefab, spawnPosition, Quaternion.identity);
         Enemy enemyScript = zombie.GetComponent<Enemy>();
         currentZombiesAlive.Add(enemyScript);
@@ -107,6 +114,7 @@ public class ZombieSpawnerController : MonoBehaviour
 
     private void Update()
     {
+        // Check if all zombies are dead
         List<Enemy> zombiesToRemove = new List<Enemy>();
         foreach (Enemy zombie in currentZombiesAlive)
         {
@@ -116,17 +124,17 @@ public class ZombieSpawnerController : MonoBehaviour
                 TotalZombiesAlive--;
             }
         }
-
+        // Remove the dead zombies from the list
         foreach (Enemy zombie in zombiesToRemove)
         {
             currentZombiesAlive.Remove(zombie);
         }
-
+        // Check if all zombies are dead and start the cooldown
         if (TotalZombiesAlive == 0 && !isCoolDown)
         {
             StartCoroutine(StartCoolDown());
         }
-
+        // Update the cooldown counter
         if (isCoolDown)
         {
             coolDownCounter -= Time.deltaTime;
@@ -134,12 +142,15 @@ public class ZombieSpawnerController : MonoBehaviour
         }
         else
         {
+            // Reset the cooldown counter
             coolDownCounter = waveCooldown;
         }
     }
 
+    // Start the cooldown
     private IEnumerator StartCoolDown()
     {   
+        // Start the cooldown
         isCoolDown = true;
         waveOverUI.gameObject.SetActive(true);
         yield return new WaitForSeconds(waveCooldown);
