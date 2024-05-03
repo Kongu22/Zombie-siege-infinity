@@ -80,5 +80,4 @@ public class ZombiePatrolingState : StateMachineBehaviour
        agent.SetDestination(animator.transform.position);
        SoundManager.Instance.ZombieChannel.Stop();
     }
-
 }
