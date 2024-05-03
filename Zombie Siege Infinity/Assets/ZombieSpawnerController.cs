@@ -46,20 +46,27 @@ public class ZombieSpawnerController : MonoBehaviour
         StartNextWave();
     }
 
-    private void CalculateZombiesPerWave()
+private void CalculateZombiesPerWave()
+{
+    // Calculate total number of zombies for the current wave based on the wave number
+    int totalZombiesForWave = initialZombiePerWave;
+    if (currentWave > 1)
     {
-        // Calculate the number of zombies to spawn this wave
-        int baseZombiesThisWave = (currentWave > 1) ? initialZombiePerWave + (2 * (currentWave - 1)) : initialZombiePerWave;
-        int zombiesPerSpawner = baseZombiesThisWave / totalSpawnerCount;
-        int extraZombies = baseZombiesThisWave % totalSpawnerCount;
-
-        // Assign the number of zombies to spawn to each spawner
-        foreach (var spawner in allSpawners)
-        {
-            spawner.zombiesToSpawnThisWave = zombiesPerSpawner + (extraZombies > 0 ? 1 : 0);
-            extraZombies--;
-        }
+        totalZombiesForWave += 2 * (currentWave - 1);
     }
+
+    // Calculate how many zombies each spawner should spawn
+    int baseZombiesPerSpawner = totalZombiesForWave / totalSpawnerCount;
+    int remainingZombies = totalZombiesForWave % totalSpawnerCount; // Zombies left after even distribution
+
+    // Distribute zombies to each spawner, with some spawners potentially getting an extra zombie to handle remainders
+    foreach (var spawner in allSpawners)
+    {
+        spawner.zombiesToSpawnThisWave = baseZombiesPerSpawner + (remainingZombies > 0 ? 1 : 0);
+        remainingZombies--; // Decrease the count of remaining zombies
+    }
+}
+
 
 
     // Start the next wave
