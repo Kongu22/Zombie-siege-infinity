@@ -13,6 +13,8 @@ public class GlobalReferences : MonoBehaviour
     // Prefab for blood spray effect
     public GameObject bloodSprayEffect;
 
+    public int WaveNumber;
+
     // Awake is called when the script instance is being loaded
     private void Awake()
     {

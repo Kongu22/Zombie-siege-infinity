@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI; // Make sure this using directive is included for handling UI elements.
 
 public class Player : MonoBehaviour
@@ -103,6 +104,24 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);  // Delay to ensure blackout transitions smoothly
         GameOverUI.SetActive(true);
+
+        // Save the high score
+        int waveSurvived = GlobalReferences.Instance.WaveNumber;
+
+        if (waveSurvived - 1 > SaveLoadManager.Instance.LoadHighScore())
+        {
+            SaveLoadManager.Instance.SaveHighScore(waveSurvived - 1);
+        }
+
+        StartCoroutine(ReturnToMainMenu());
+        
+    }
+
+    private IEnumerator ReturnToMainMenu()
+    {
+        yield return new WaitForSeconds(4f);
+
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     private void OnTriggerEnter(Collider other)

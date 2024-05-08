@@ -43,6 +43,7 @@ public class ZombieSpawnerController : MonoBehaviour
     {
         // Initialize the list of zombies alive
         CalculateZombiesPerWave();
+        GlobalReferences.Instance.WaveNumber = currentWave;
         StartNextWave();
     }
 
@@ -75,6 +76,7 @@ private void CalculateZombiesPerWave()
         // Clear the list of zombies alive
         currentZombiesAlive.Clear();
         currentWave++;
+        GlobalReferences.Instance.WaveNumber = currentWave;
         currentWaveUI.text = "Wave: " + currentWave.ToString();
         CalculateZombiesPerWave();
         StartCoroutine(SpawnWave());
@@ -105,7 +107,7 @@ private void CalculateZombiesPerWave()
     private Vector3 GenerateRandomPosition()
     {
         // Generate a random position around the spawner
-        Vector3 spawnOffset = new Vector3(UnityEngine.Random.Range(-1f, 1f), 0f, UnityEngine.Random.Range(-1f, 1f));
+        Vector3 spawnOffset = new Vector3(UnityEngine.Random.Range(-10f, 10f), 0f, UnityEngine.Random.Range(-10f, 10f));
         return transform.position + spawnOffset;
     }
 
