@@ -107,7 +107,7 @@ private void CalculateZombiesPerWave()
     private Vector3 GenerateRandomPosition()
     {
         // Generate a random position around the spawner
-        Vector3 spawnOffset = new Vector3(UnityEngine.Random.Range(-10f, 10f), 0f, UnityEngine.Random.Range(-10f, 10f));
+        Vector3 spawnOffset = new Vector3(UnityEngine.Random.Range(-20f, 40f), 5f, UnityEngine.Random.Range(-15f, 10f));
         return transform.position + spawnOffset;
     }
 
