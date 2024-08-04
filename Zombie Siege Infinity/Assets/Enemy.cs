@@ -9,9 +9,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int HP = 100;
     private Animator animator;
     private NavMeshAgent navAgent;
-
     private CapsuleCollider[] capsuleColliders; 
     public bool isDead = false;
+    public bool isBoss = false; // Add this property
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +20,8 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         // Get the NavMeshAgent component attached to the enemy object
         navAgent = GetComponent<NavMeshAgent>();
-
         // Get all the CapsuleCollider components attached to the enemy object
         capsuleColliders = GetComponents<CapsuleCollider>();
-
     }
 
     // Method to handle taking damage
@@ -46,8 +44,7 @@ public class Enemy : MonoBehaviour
             {
                 capsuleCollider.enabled = false;
             }
-            
-            
+
             // Generate a random value between 0 and 1
             int randomValue = Random.Range(0, 2);
             if (randomValue == 0)
@@ -62,6 +59,16 @@ public class Enemy : MonoBehaviour
             }
             // Play the zombie death sound
             SoundManager.Instance.ZombieChannel.PlayOneShot(SoundManager.Instance.ZombieDeath);
+
+            // Add coins to the player
+            if (isBoss)
+            {
+                CoinManager.Instance.AddCoins(Random.Range(10, 16));
+            }
+            else
+            {
+                CoinManager.Instance.AddCoins(Random.Range(1, 6));
+            }
         }
         else
         {
@@ -82,12 +89,12 @@ public class Enemy : MonoBehaviour
 
         // Set the color of the gizmo to green
         Gizmos.color = Color.green;
-        // Draw a wire sphere at the enemy's position with a radius of 75f (detection distance)
+        // Draw a wire sphere at the enemy's position with a radius of 120f (detection distance)
         Gizmos.DrawWireSphere(transform.position, 120f);
 
         // Set the color of the gizmo to blue
         Gizmos.color = Color.blue;
-        // Draw a wire sphere at the enemy's position with a radius of 25f (stop chasing distance)
+        // Draw a wire sphere at the enemy's position with a radius of 121f (stop chasing distance)
         Gizmos.DrawWireSphere(transform.position, 121f);
     }
 }

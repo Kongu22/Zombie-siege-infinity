@@ -47,28 +47,26 @@ public class ZombieSpawnerController : MonoBehaviour
         StartNextWave();
     }
 
-private void CalculateZombiesPerWave()
-{
-    // Calculate total number of zombies for the current wave based on the wave number
-    int totalZombiesForWave = initialZombiePerWave;
-    if (currentWave > 1)
+    private void CalculateZombiesPerWave()
     {
-        totalZombiesForWave += 2 * (currentWave - 1);
+        // Calculate total number of zombies for the current wave based on the wave number
+        int totalZombiesForWave = initialZombiePerWave;
+        if (currentWave > 1)
+        {
+            totalZombiesForWave += 2 * (currentWave - 1);
+        }
+
+        // Calculate how many zombies each spawner should spawn
+        int baseZombiesPerSpawner = totalZombiesForWave / totalSpawnerCount;
+        int remainingZombies = totalZombiesForWave % totalSpawnerCount; // Zombies left after even distribution
+
+        // Distribute zombies to each spawner, with some spawners potentially getting an extra zombie to handle remainders
+        foreach (var spawner in allSpawners)
+        {
+            spawner.zombiesToSpawnThisWave = baseZombiesPerSpawner + (remainingZombies > 0 ? 1 : 0);
+            remainingZombies--; // Decrease the count of remaining zombies
+        }
     }
-
-    // Calculate how many zombies each spawner should spawn
-    int baseZombiesPerSpawner = totalZombiesForWave / totalSpawnerCount;
-    int remainingZombies = totalZombiesForWave % totalSpawnerCount; // Zombies left after even distribution
-
-    // Distribute zombies to each spawner, with some spawners potentially getting an extra zombie to handle remainders
-    foreach (var spawner in allSpawners)
-    {
-        spawner.zombiesToSpawnThisWave = baseZombiesPerSpawner + (remainingZombies > 0 ? 1 : 0);
-        remainingZombies--; // Decrease the count of remaining zombies
-    }
-}
-
-
 
     // Start the next wave
     private void StartNextWave()
@@ -89,7 +87,7 @@ private void CalculateZombiesPerWave()
         for (int i = 0; i < zombiesToSpawnThisWave; i++)
         {
             Vector3 spawnPosition = GenerateRandomPosition();
-            InstantiateZombie(ZombieRegularPrefab, spawnPosition);
+            InstantiateZombie(ZombieRegularPrefab, spawnPosition, false);
             yield return new WaitForSeconds(spawnDelay);
         }
         // Spawn the boss zombie
@@ -98,7 +96,7 @@ private void CalculateZombiesPerWave()
             for (int j = 0; j < bossZombieCount; j++)
             {
                 Vector3 spawnPosition = GenerateRandomPosition();
-                InstantiateZombie(ZombieBossPrefab, spawnPosition);
+                InstantiateZombie(ZombieBossPrefab, spawnPosition, true);
             }
         }
     }
@@ -112,11 +110,12 @@ private void CalculateZombiesPerWave()
     }
 
     // Instantiate a zombie at the specified position
-    private void InstantiateZombie(GameObject zombiePrefab, Vector3 spawnPosition)
+    private void InstantiateZombie(GameObject zombiePrefab, Vector3 spawnPosition, bool isBoss)
     {
         // Instantiate the zombie
         GameObject zombie = Instantiate(zombiePrefab, spawnPosition, Quaternion.identity);
         Enemy enemyScript = zombie.GetComponent<Enemy>();
+        enemyScript.isBoss = isBoss; // Set the boss property
         currentZombiesAlive.Add(enemyScript);
         TotalZombiesAlive++;
     }
@@ -158,7 +157,7 @@ private void CalculateZombiesPerWave()
 
     // Start the cooldown
     private IEnumerator StartCoolDown()
-    {   
+    {
         // Start the cooldown
         isCoolDown = true;
         waveOverUI.gameObject.SetActive(true);
