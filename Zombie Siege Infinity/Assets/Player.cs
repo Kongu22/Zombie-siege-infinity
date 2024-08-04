@@ -74,31 +74,33 @@ public class Player : MonoBehaviour
         bloodyScreen.SetActive(false);
     }
 
-  private void PlayerDead()
-    {
+private void PlayerDead()
+{
     // Ensure the PlayerChannel is not playing anything else
-        SoundManager.Instance.PlayerChannel.Stop();
-        
-        // Set the new clip for DeathMusic
-        SoundManager.Instance.PlayerChannel.clip = SoundManager.Instance.DeathMusic;
+    SoundManager.Instance.PlayerChannel.Stop();
+    
+    // Set the new clip for DeathMusic
+    SoundManager.Instance.PlayerChannel.clip = SoundManager.Instance.DeathMusic;
 
-        
-        // Play the DeathMusic after a 2-second delay
-        SoundManager.Instance.PlayerChannel.PlayDelayed(2f);
-        WeaponManager.Instance.DisableWeapons();
+    // Play the DeathMusic after a 2-second delay
+    SoundManager.Instance.PlayerChannel.PlayDelayed(2f);
+    WeaponManager.Instance.DisableWeapons();
 
-        // disable weapon visuals
-        GetComponentInChildren<Weapon>().gameObject.SetActive(false);
-
-        GetComponent<MouseMovement>().enabled = false;
-        GetComponent<PlayerMovement>().enabled = false;
-
-        // Start the blackout and game over UI only once
-        GetComponent<ScreenBlackOut>().StartFade();
-        StartCoroutine(ShowGameOverUI());
-        GetComponentInChildren<Animator>().enabled = true;
-
+    // Check if the player has a weapon and disable weapon visuals if they do
+    Weapon weapon = GetComponentInChildren<Weapon>();
+    if (weapon != null)
+    {
+        weapon.gameObject.SetActive(false);
     }
+
+    GetComponent<MouseMovement>().enabled = false;
+    GetComponent<PlayerMovement>().enabled = false;
+
+    // Start the blackout and game over UI only once
+    GetComponent<ScreenBlackOut>().StartFade();
+    StartCoroutine(ShowGameOverUI());
+    GetComponentInChildren<Animator>().enabled = true;
+}
 
     private IEnumerator ShowGameOverUI()
     {
