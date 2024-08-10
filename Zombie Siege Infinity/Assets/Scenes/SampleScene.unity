@@ -265,7 +265,7 @@ Transform:
   m_GameObject: {fileID: 9698859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7061869, z: -0, w: 0.7080256}
-  m_LocalPosition: {x: 37.07273, y: 2.6463957, z: -97.87571}
+  m_LocalPosition: {x: 37.07273, y: -2.2, z: -97.87571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11009,7 +11009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PistolAmmo : 25 '
+  m_text: 'Pistol Ammo : 25 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d0f0bf716f26dd144ada58ec2fbc7a45, type: 2}
   m_sharedMaterial: {fileID: 24202990792880216, guid: d0f0bf716f26dd144ada58ec2fbc7a45,
@@ -15753,7 +15753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SmallArAmmo : 50 C'
+  m_text: 'Small Ammo box : 50 C'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d0f0bf716f26dd144ada58ec2fbc7a45, type: 2}
   m_sharedMaterial: {fileID: 24202990792880216, guid: d0f0bf716f26dd144ada58ec2fbc7a45,
@@ -35467,7 +35467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'BigArAmmo : 125 C'
+  m_text: 'Big Ammo Box : 125 C'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d0f0bf716f26dd144ada58ec2fbc7a45, type: 2}
   m_sharedMaterial: {fileID: 24202990792880216, guid: d0f0bf716f26dd144ada58ec2fbc7a45,
