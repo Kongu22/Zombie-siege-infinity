@@ -139,7 +139,10 @@ public class WeaponManager : MonoBehaviour
     }
 
     // Pick up ammo and add it to the total ammo count
-    internal void PickUpAmmo(AmmoBox ammo)
+public void PickUpAmmo(GameObject ammoGameObject)
+{
+    AmmoBox ammo = ammoGameObject.GetComponent<AmmoBox>();
+    if (ammo != null)
     {
         switch (ammo.ammoType)
         {
@@ -151,7 +154,15 @@ public class WeaponManager : MonoBehaviour
                 totalRifleAmmo += ammo.ammoAmount;
                 break;
         }
+        // Optional: Destroy the ammo GameObject if it's supposed to disappear on pickup
+        Destroy(ammoGameObject);
     }
+    else
+    {
+        Debug.LogError("No AmmoBox component found on the ammo GameObject");
+    }
+}
+
 
         public void DisableWeapons()
     {

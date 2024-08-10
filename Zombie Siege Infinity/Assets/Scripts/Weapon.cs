@@ -42,13 +42,14 @@ public class Weapon : MonoBehaviour
     bool isADS;
 
     // Camera settings
-
     public float normalFOV = 60f; // Normal field of view
     public float pistolZoomFOV = 55f; // Zoomed field of view for pistols
     public float rifleZoomFOV = 50f; // Zoomed field of view for pistols
     public float rifleWithScopeZoomFOV = 45f; // Zoomed field of view for rifles with scope
-    // public float rifleZoomFOV = 50f;    // Zoomed field of view for rifles
     private Camera MainCamera;
+
+    // Reference to ShopManager to check if the shop is open
+    private ShopManager shopManager;
 
     public enum WeaponModel
     {
@@ -85,59 +86,65 @@ public class Weapon : MonoBehaviour
         bulletsLeft = magazineSize;
         playerMovement = GetComponentInParent<PlayerMovement>(); // Assuming the weapon is a child of the player
         MainCamera = Camera.main;
+
+        // Find the ShopManager in the scene
+        shopManager = FindObjectOfType<ShopManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isActiveWeapon)
+        if (!isActiveWeapon || !enabled) return; // Stop processing if not ready or active
+
+        HandleInput();
+    }
+
+    private void HandleInput()
+    {
+        if (Input.GetMouseButtonDown(1) && !isReloading)
         {
-            if (Input.GetMouseButtonDown(1) && !isReloading)
-            {
-                enterADS(); // Enter Aim Down Sights (ADS) method
-            }
+            enterADS(); // Enter Aim Down Sights (ADS) method
+        }
 
-            if (Input.GetMouseButtonUp(1))
-            {
-                exitADS(); // Exit Aim Down Sights (ADS) method
-            }
+        if (Input.GetMouseButtonUp(1))
+        {
+            exitADS(); // Exit Aim Down Sights (ADS) method
+        }
 
-            if (bulletsLeft == 0 && isShooting)
-            {
-                SoundManager.Instance.emptyMagazineSound.Play();
-            }
+        if (bulletsLeft == 0 && isShooting)
+        {
+            SoundManager.Instance.emptyMagazineSound.Play();
+        }
 
-            if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading && WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel) > 0 && !isADS)
-            {
-                Reload(); // Reload the weapon
-            }
+        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading && WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel) > 0 && !isADS)
+        {
+            Reload(); // Reload the weapon
+        }
 
-            if (isReloading)
-            {
-                return;
-            }
+        if (isReloading)
+        {
+            return;
+        }
 
-            if (currentShootingMode == ShootingMode.Auto)
-            {
-                isShooting = Input.GetKey(KeyCode.Mouse0);
-            }
-            else if (currentShootingMode == ShootingMode.Single || currentShootingMode == ShootingMode.Burst)
-            {
-                isShooting = Input.GetKeyDown(KeyCode.Mouse0);
-            }
+        if (currentShootingMode == ShootingMode.Auto)
+        {
+            isShooting = Input.GetKey(KeyCode.Mouse0);
+        }
+        else if (currentShootingMode == ShootingMode.Single || currentShootingMode == ShootingMode.Burst)
+        {
+            isShooting = Input.GetKeyDown(KeyCode.Mouse0);
+        }
 
-            if (readyToShoot && isShooting && bulletsLeft > 0)
-            {
-                burstBulletsLeft = bulletsPerBurst;
-                FireWeapon(); // Fire the weapon
-            }
-            
-            if(isReloading == true)
-            {
-                //disable the pickupweapon
-                WeaponManager.Instance.canPickupWeapon = false;
-            }
-
+        if (readyToShoot && isShooting && bulletsLeft > 0)
+        {
+            burstBulletsLeft = bulletsPerBurst;
+            FireWeapon(); // Fire the weapon
+        }
+        
+        if(isReloading == true)
+        {
+            //disable the pickupweapon
+            WeaponManager.Instance.canPickupWeapon = false;
         }
     }
 
@@ -186,10 +193,18 @@ public class Weapon : MonoBehaviour
         isADS = false;
         animator.SetTrigger("exitADS");
     }
+    
 
     // Fire weapon method
     private void FireWeapon() // Firing the weapon
     {
+        // Check if the shop is open; if so, don't allow shooting
+        if (shopManager != null && shopManager.isShopOpen)
+        {
+            Debug.Log("Cannot shoot while shop is open.");
+            return;
+        }
+
         bulletsLeft--; // Decrease the bullets left
 
         muzzleEffect.GetComponent<ParticleSystem>().Play(); // Play the muzzle effect

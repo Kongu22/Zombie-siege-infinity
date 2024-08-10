@@ -63,11 +63,11 @@ public class Enemy : MonoBehaviour
             // Add coins to the player
             if (isBoss)
             {
-                CoinManager.Instance.AddCoins(Random.Range(10, 16));
+                CoinManager.Instance.AddCoins(Random.Range(150, 351));
             }
             else
             {
-                CoinManager.Instance.AddCoins(Random.Range(1, 6));
+                CoinManager.Instance.AddCoins(Random.Range(10, 51));
             }
         }
         else
