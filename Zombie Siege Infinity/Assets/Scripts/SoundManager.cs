@@ -68,34 +68,6 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-        public void TogglePause(bool isPaused)
-    {
-        // List all AudioSources that need to be paused
-        AudioSource[] allAudioSources = {
-            ShootingChannel, emptyMagazineSound, 
-            ReloadingSoundPistol92, ReloadingSoundScorpion, ReloadingSoundSAR2000,
-            ReloadingSoundGlock, ReloadingSoundThompson, ReloadingSoundMP40,
-            ReloadingSoundM4A4, ReloadingSoundAK47, ReloadingSoundP90, 
-            ReloadingSoundScar, ReloadingSoundMP7, ZombieChannel, PlayerChannel, HeliChannel
-        };
-
-        // Loop through each AudioSource and pause/resume based on the isPaused flag
-        foreach (AudioSource audioSource in allAudioSources)
-        {
-            if (audioSource != null)
-            {
-                if (isPaused)
-                {
-                    audioSource.Pause();
-                }
-                else
-                {
-                    audioSource.UnPause();
-                }
-            }
-        }
-    }
-
     // Plays the shooting sound based on the weapon model
     public void PlayShootingSound(Weapon.WeaponModel weaponModel)
     {

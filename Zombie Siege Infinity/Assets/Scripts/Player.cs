@@ -134,6 +134,5 @@ private void PlayerDead()
             TakeDamage(damage);
         }
     }
-
 }
 

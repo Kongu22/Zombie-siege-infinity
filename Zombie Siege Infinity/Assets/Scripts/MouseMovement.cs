@@ -19,7 +19,7 @@ public class MouseMovement : MonoBehaviour
     }
 
     // Gets the mouse inputs and applies rotation to the transform.
-    void Update() // Update is called once per frame
+    void Update()
     {
         // Get the horizontal mouse movement and apply sensitivity and time.
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
