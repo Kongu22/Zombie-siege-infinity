@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent navAgent;
     private CapsuleCollider[] capsuleColliders; 
     public bool isDead = false;
-    public bool isBoss = false; 
+    public bool isBoss = false; // Add this property
 
     // Start is called before the first frame update
     void Start()
@@ -51,14 +51,11 @@ public class Enemy : MonoBehaviour
             {
                 // Trigger the "DIE1" animation in the animator
                 animator.SetTrigger("DIE1");
-                // Destroy the zombie after 3 seconds
-                Invoke("DestroyZombie", 3f);
             }
             else
             {
                 // Trigger the "DIE2" animation in the animator
                 animator.SetTrigger("DIE2");
-                Invoke("DestroyZombie", 3f);
             }
             // Play the zombie death sound
             SoundManager.Instance.ZombieChannel.PlayOneShot(SoundManager.Instance.ZombieDeath);
@@ -70,7 +67,7 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                CoinManager.Instance.AddCoins(Random.Range(25, 51));
+                CoinManager.Instance.AddCoins(Random.Range(10, 51));
             }
         }
         else
@@ -80,12 +77,6 @@ public class Enemy : MonoBehaviour
             // Play the zombie hit sound
             SoundManager.Instance.ZombieChannel.PlayOneShot(SoundManager.Instance.ZombieHit);
         }
-    }
-
-    // This method will be called by the animation event to destroy the zombie
-    public void DestroyZombie()
-    {
-        Destroy(gameObject);
     }
 
     // Method to draw gizmos for attack distance, detection distance, and stop chasing distance

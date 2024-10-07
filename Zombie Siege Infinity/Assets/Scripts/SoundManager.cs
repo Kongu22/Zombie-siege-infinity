@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager Instance { get;  set; }
+    public static SoundManager Instance { get; set; }
 
     public AudioSource ShootingChannel;
-
     public AudioSource emptyMagazineSound;
 
-    [Header(" Shooting Sounds")]
+    [Header("Shooting Sounds")]
     public AudioClip Pistol92Shot;
     public AudioClip SAR2000Shot;
     public AudioClip GlockShot;
@@ -23,7 +22,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip MP7Shot;
     public AudioClip Scorpion;
 
-    [Header(" Reloading Sounds")]
+    [Header("Reloading Sounds")]
     public AudioSource ReloadingSoundPistol92;
     public AudioSource ReloadingSoundScorpion;
     public AudioSource ReloadingSoundSAR2000;
@@ -44,21 +43,18 @@ public class SoundManager : MonoBehaviour
     public AudioClip ZombieHit;
     public AudioClip ZombieDeath;
 
-    
-
     [Header("Player Sound")]
     public AudioSource PlayerChannel;
     public AudioClip PlayerHit;
     public AudioClip PlayerDeath;
     public AudioClip DeathMusic;
 
-
     [Header("Heli Sound")]
     public AudioSource HeliChannel;
 
     private void Awake()
     {
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
         }
@@ -68,10 +64,46 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+public void TogglePause(bool isPaused)
+{
+    AudioSource[] allAudioSources = {
+        ShootingChannel, emptyMagazineSound, 
+        ReloadingSoundPistol92, ReloadingSoundScorpion, ReloadingSoundSAR2000,
+        ReloadingSoundGlock, ReloadingSoundThompson, ReloadingSoundMP40,
+        ReloadingSoundM4A4, ReloadingSoundAK47, ReloadingSoundP90, 
+        ReloadingSoundScar, ReloadingSoundMP7, ZombieChannel, PlayerChannel, HeliChannel
+    };
+
+    foreach (AudioSource audioSource in allAudioSources)
+    {
+        if (audioSource != null)
+        {
+            if (isPaused && audioSource.isPlaying)
+            {
+                Debug.Log(audioSource.name + " is being paused.");
+                audioSource.Pause();
+            }
+            else if (!isPaused && audioSource.clip != null)
+            {
+                Debug.Log(audioSource.name + " is being unpaused.");
+                audioSource.UnPause();
+            }
+        }
+    }
+
+    // Логирование для отладки ZombieChannel
+    if (ZombieChannel != null)
+    {
+        Debug.Log("ZombieChannel is playing: " + ZombieChannel.isPlaying);
+    }
+}
+
+
+
     // Plays the shooting sound based on the weapon model
     public void PlayShootingSound(Weapon.WeaponModel weaponModel)
     {
-        switch(weaponModel)
+        switch (weaponModel)
         {
             case Weapon.WeaponModel.Pistol92:
                 ShootingChannel.PlayOneShot(Pistol92Shot);
@@ -91,7 +123,7 @@ public class SoundManager : MonoBehaviour
             case Weapon.WeaponModel.Thompson:
                 ShootingChannel.PlayOneShot(ThompsonShot);
                 break;
-            case Weapon.WeaponModel.M16:  
+            case Weapon.WeaponModel.M16:
                 ShootingChannel.PlayOneShot(M4A4Shot);
                 break;
             case Weapon.WeaponModel.M4A4:
@@ -118,7 +150,7 @@ public class SoundManager : MonoBehaviour
     // Plays the reloading sound based on the weapon model
     public void PlayReloadingSound(Weapon.WeaponModel weaponModel)
     {
-        switch(weaponModel)
+        switch (weaponModel)
         {
             case Weapon.WeaponModel.Pistol92:
                 ReloadingSoundPistol92.Play();
@@ -138,7 +170,7 @@ public class SoundManager : MonoBehaviour
             case Weapon.WeaponModel.Thompson:
                 ReloadingSoundThompson.Play();
                 break;
-            case Weapon.WeaponModel.M16:  
+            case Weapon.WeaponModel.M16:
                 ReloadingSoundM4A4.Play();
                 break;
             case Weapon.WeaponModel.M4A4:
