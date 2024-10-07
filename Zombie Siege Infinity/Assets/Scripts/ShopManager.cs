@@ -89,14 +89,19 @@ public class ShopManager : MonoBehaviour
     {
         isShopOpen = !isShopOpen;
         shopPanel.SetActive(isShopOpen);
+
         Cursor.lockState = isShopOpen ? CursorLockMode.None : CursorLockMode.Locked;
         Cursor.visible = isShopOpen;
-    
+
         if (playerWeapon != null)
         {
             Debug.Log("Shop open: " + isShopOpen + "; Weapon active: " + playerWeapon.isActiveAndEnabled);
             playerWeapon.isShooting = !isShopOpen;
             playerWeapon.enabled = !isShopOpen;
         }
+
+        // Pause/Resume game time and sound
+        Time.timeScale = isShopOpen ? 0 : 1;
+        SoundManager.Instance.TogglePause(isShopOpen);
     }
 }

@@ -179,7 +179,6 @@ public class HUDManager : MonoBehaviour
                 return weaponSlot;
             }
         }
-        // this will never happen, but we need to return something.
         return null;
 
     }
